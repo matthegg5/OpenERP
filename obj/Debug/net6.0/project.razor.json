@@ -16316,6 +16316,11 @@
       "FilePath": "/home/saffron/Development/c#/OpenERP/Views/Shared/_layout.cshtml",
       "TargetPath": "Views\\Shared\\_layout.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/saffron/Development/c#/OpenERP/Views/_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"
