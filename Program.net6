@@ -1,0 +1,51 @@
+using Microsoft.EntityFrameworkCore;
+
+//Main (in old style)
+var builder = WebApplication.CreateBuilder(args);
+
+// ConfigureServices
+builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<ErpDbContext.Models.OpenERPContext>(options =>
+        options.UseSqlServer(builder.Configuration.GetConnectionString("SQLServer")));
+
+//Main (in old style)
+
+var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<ErpDbContext.Models.OpenERPContext>();
+}
+
+// Configure
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Home/Error");
+    app.UseHsts();
+}
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseRouting();
+
+app.UseEndpoints(endpoints => 
+{
+    endpoints.MapGet("/", async context =>
+    {
+        await context.Response.WriteAsync("Hello world!");
+
+    });
+});
+
+//End Configure
+
+app.UseAuthorization();
+
+//app.MapGet("/", () => "Hello World!");
+
+//app.MapControllerRoute(
+//   name: "default",
+//    pattern: "{controller=Home}/{action=Index/{id?}");
+
+// Main
+app.Run();

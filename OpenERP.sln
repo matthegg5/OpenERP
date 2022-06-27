@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErpDbContext", "ErpDbContext\ErpDbContext.csproj", "{B8B7B0E6-9ADB-497A-B99C-A65753DBC815}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenERP", "OpenERP.csproj", "{847017B1-B52E-437B-BC88-B267AE6A5C28}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8B7B0E6-9ADB-497A-B99C-A65753DBC815}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8B7B0E6-9ADB-497A-B99C-A65753DBC815}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8B7B0E6-9ADB-497A-B99C-A65753DBC815}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8B7B0E6-9ADB-497A-B99C-A65753DBC815}.Release|Any CPU.Build.0 = Release|Any CPU
+		{847017B1-B52E-437B-BC88-B267AE6A5C28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{847017B1-B52E-437B-BC88-B267AE6A5C28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{847017B1-B52E-437B-BC88-B267AE6A5C28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{847017B1-B52E-437B-BC88-B267AE6A5C28}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

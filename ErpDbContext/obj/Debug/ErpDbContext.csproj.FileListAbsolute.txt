@@ -1,0 +1,12 @@
+/home/saffron/Development/c#/OpenERP/OpenERP-binaries/ErpDbContext.deps.json
+/home/saffron/Development/c#/OpenERP/OpenERP-binaries/ErpDbContext.runtimeconfig.json
+/home/saffron/Development/c#/OpenERP/OpenERP-binaries/ErpDbContext.dll
+/home/saffron/Development/c#/OpenERP/OpenERP-binaries/ErpDbContext.pdb
+/home/saffron/Development/c#/OpenERP/ErpDbContext/obj/Debug/ErpDbContext.csproj.AssemblyReference.cache
+/home/saffron/Development/c#/OpenERP/ErpDbContext/obj/Debug/ErpDbContext.GeneratedMSBuildEditorConfig.editorconfig
+/home/saffron/Development/c#/OpenERP/ErpDbContext/obj/Debug/ErpDbContext.csproj.CoreCompileInputs.cache
+/home/saffron/Development/c#/OpenERP/ErpDbContext/obj/Debug/ErpDbContext.dll
+/home/saffron/Development/c#/OpenERP/ErpDbContext/obj/Debug/refint/ErpDbContext.dll
+/home/saffron/Development/c#/OpenERP/ErpDbContext/obj/Debug/ErpDbContext.pdb
+/home/saffron/Development/c#/OpenERP/ErpDbContext/obj/Debug/ErpDbContext.genruntimeconfig.cache
+/home/saffron/Development/c#/OpenERP/ErpDbContext/obj/Debug/ref/ErpDbContext.dll

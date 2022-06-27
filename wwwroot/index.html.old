@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/site.css" rel="stylesheet" />
+    <title>OpenERP</title>
+</head>    
+<body>
+    <h1 class="pageTitle">Login to OpenERP</h1>
+    <div class="loginFormArea">
+        <div>
+            <label>User name:</label>
+            <input type="text" />
+        </div>
+        <div>
+            <label>Password:</label>
+            <input type="password" />
+        </div>
+        <div>
+            <label>Remember me?</label>
+            <input type="checkbox" />
+        </div>
+        <div>
+            <input class="submitButton" type="submit" value="Login" />
+        </div>
+    </div>
+    <br />
+    <div class="listArea">
+        <ul class="list">
+            <li>Harder</li>
+            <li>Better</li>
+            <li>Faster</li>
+            <li>Stronger</li>
+        </ul>
+    </div>
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

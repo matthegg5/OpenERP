@@ -1,0 +1,59 @@
+.loginFormArea {
+    background-color: rgb(219, 231, 241);
+    font-size:large;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display:inline-block;
+    padding: 5px 3px 5px 3px;
+    margin: 2px;
+
+}
+
+.loginFormArea img {
+    margin: 3px;
+
+}
+
+.loginFormArea input {
+    width: 200px;
+}
+.loginFormArea label {
+    width: 150px;
+    display:inline-block;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.loginFormArea input[type=checkbox], .loginFormArea input[type=submit] {
+    width:auto;
+}
+
+.pageTitle {
+    text-size-adjust: 3px;
+    text-emphasis-color: blue;
+    text-align: left;
+    cursor: pointer;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.submitButton {
+    text-transform: none;
+}
+
+.listArea {
+    background-color:aliceblue;
+    display:inline-block;
+    border-radius: 5px;
+    border: solid aliceblue;
+}
+
+.list {
+
+    font-size: small;
+}
+
+.list li {
+    list-style-type:none;
+}
+
+#loginToggle {
+    cursor:pointer; 
+}
