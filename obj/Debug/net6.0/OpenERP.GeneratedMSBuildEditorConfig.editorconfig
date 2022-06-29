@@ -11,9 +11,17 @@ build_property.RootNamespace = OpenERP
 build_property.ProjectDir = /home/saffron/Development/c#/OpenERP/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = /home/saffron/Development/c#/OpenERP
 build_property._RazorSourceGeneratorDebug = 
+
+[/home/saffron/Development/c\#/OpenERP/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/saffron/Development/c\#/OpenERP/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
 
 [/home/saffron/Development/c\#/OpenERP/Views/App/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL0Fib3V0LmNzaHRtbA==
@@ -29,6 +37,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/home/saffron/Development/c\#/OpenERP/Views/Shared/_layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19sYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/saffron/Development/c\#/OpenERP/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/saffron/Development/c\#/OpenERP/Views/_ViewStart.cshtml]

@@ -5,6 +5,14 @@
     {
       "library": "jquery@3.6.0",
       "destination": "wwwroot/lib/jquery"
+    },
+    {
+      "library": "jquery-validation@1.19.4",
+      "destination": "wwwroot/lib/jquery-validation"
+    },
+    {
+      "library": "jquery-validation-unobtrusive@3.2.12",
+      "destination": "wwwroot/lib/jquery-validation-unobtrusive"
     }
   ]
 }

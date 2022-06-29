@@ -16308,6 +16308,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/saffron/Development/c#/OpenERP/Pages/_ViewStart.cshtml",
+      "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/saffron/Development/c#/OpenERP/Views/App/Contact.cshtml",
       "TargetPath": "Views\\App\\Contact.cshtml",
       "FileKind": "mvc"
@@ -16315,6 +16320,16 @@
     {
       "FilePath": "/home/saffron/Development/c#/OpenERP/Views/Shared/_layout.cshtml",
       "TargetPath": "Views\\Shared\\_layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/saffron/Development/c#/OpenERP/Pages/Error.cshtml",
+      "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/saffron/Development/c#/OpenERP/Views/_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {

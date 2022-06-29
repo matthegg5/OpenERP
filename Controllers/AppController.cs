@@ -1,4 +1,4 @@
-
+using OpenERP.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace OpenERP.Controllers
@@ -10,9 +10,26 @@ namespace OpenERP.Controllers
             return View();
         }
 
-        public IActionResult Contact()
+        [HttpGet("contact")]
+        public IActionResult Contact() //name of IAction needs to match the name of the .cshtml file
         {
-            ViewBag.Title = "OpenERP - Contact Administrators";
+            return View();
+        }
+
+        [HttpPost("contact")]
+        public IActionResult Contact(ContactViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                //Send email and process
+                
+
+            }
+            else 
+            {
+                //throw new InvalidProgramException("Model is invalid");
+            }
+
             return View();
         }
 

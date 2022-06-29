@@ -5,7 +5,16 @@
     <title>@ViewBag.Title</title>
 </head>    
 <body>
-    <header>Welcome to OpenERP</header>
+    <header>
+        <h1>Welcome to OpenERP</h1>
+        <menu>
+            <ul>
+                <li><a asp-controller="App" asp-action="Index"/>Home</a></li>
+                <li><a asp-controller="App" asp-action="Contact">Contact</a></li>
+                <li><a asp-controller="App" asp-action="About">About OpenErp</a></li>
+            </ul>
+        </menu>
+    </header>
     <section>
         <h2>@ViewBag.Title</h2>
     </section>
@@ -13,5 +22,6 @@
     <footer>2022 OpenERP project. MIT License</footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/js/index.js"></script>
+    @RenderSection("Scripts", false)
 </body>
 </html>
