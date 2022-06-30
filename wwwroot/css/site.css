@@ -1,3 +1,33 @@
+/* .menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.5em;
+  }
+  
+  .menu-grid > * {
+    flex: 1 0 10em;
+    margin: 0.5em;
+  }
+  
+   .menu-grid > *:first-child {
+    flex-basis: calc(100% - 1em);
+  }
+
+  .menu-grid > * {
+    background: #222;
+    padding: 1em;
+    color: #fff;
+    text-align: center;
+  } */
+
+/*   header {
+    background-color:aliceblue;
+  } */
+
+  * {
+    box-sizing: border-box; /* should be covered by reset */
+  }
+
 .loginFormArea {
     background-color: rgb(219, 231, 241);
     font-size:large;
@@ -69,4 +99,3 @@ menu li::after {
 menu li:last-of-type::after {
     content:"";
 }
-

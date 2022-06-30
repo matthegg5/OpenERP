@@ -1,10 +1,17 @@
 using OpenERP.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using OpenERP.Services;
 
 namespace OpenERP.Controllers
 {
     public class AppController : Controller
     {
+        private readonly IMailService _mailService;
+
+        public AppController(IMailService mailService)
+        {
+            this._mailService = mailService;
+        }
         public IActionResult Index()
         { 
             return View();
@@ -22,12 +29,9 @@ namespace OpenERP.Controllers
             if (ModelState.IsValid)
             {
                 //Send email and process
-                
-
-            }
-            else 
-            {
-                //throw new InvalidProgramException("Model is invalid");
+                _mailService.SendMessage("system@openerp.com", model.Subject, $"From: {model.Name} - {model.Email}, Message: {model.Message}");              
+                ViewBag.MessageToUser = "Mail sent";
+                ModelState.Clear(); //clear the form after submit
             }
 
             return View();

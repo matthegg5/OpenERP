@@ -18,9 +18,19 @@ namespace OpenERP
 
     public static IHostBuilder CreateHostBuilder(string[] args) =>
         Host.CreateDefaultBuilder(args)
+            .ConfigureAppConfiguration(AddConfiguration)
             .ConfigureWebHostDefaults(webBuilder =>
             {
               webBuilder.UseStartup<Startup>();
             });
-  }
+
+        private static void AddConfiguration(HostBuilderContext context, 
+        IConfigurationBuilder builder)
+        {
+            builder.Sources.Clear();
+            builder.SetBasePath(Directory.GetCurrentDirectory())
+              .AddJsonFile("config.json")
+              .AddEnvironmentVariables();
+        }
+    }
 }
