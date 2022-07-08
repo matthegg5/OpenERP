@@ -2,14 +2,11 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.Extensions.Configuration;
 
-namespace ErpDbContext.Models
+namespace OpenERP.ErpDbContext.Models
 {
     public partial class OpenERPContext : DbContext
     {
-        private readonly IConfiguration _config;
-
         public OpenERPContext()
         {
         }
@@ -23,6 +20,7 @@ namespace ErpDbContext.Models
         public virtual DbSet<Company> Companies { get; set; } = null!;
         public virtual DbSet<Customer> Customers { get; set; } = null!;
         public virtual DbSet<Part> Parts { get; set; } = null!;
+        public virtual DbSet<PartRev> PartRevs { get; set; } = null!;
         public virtual DbSet<PurchaseOrderDtl> PurchaseOrderDtls { get; set; } = null!;
         public virtual DbSet<PurchaseOrderHed> PurchaseOrderHeds { get; set; } = null!;
         public virtual DbSet<PurchaseOrderRel> PurchaseOrderRels { get; set; } = null!;
@@ -33,16 +31,11 @@ namespace ErpDbContext.Models
         public virtual DbSet<Uomcode> Uomcodes { get; set; } = null!;
         public virtual DbSet<User> Users { get; set; } = null!;
 
-        public OpenERPContext(IConfiguration config)
-        {
-            this._config = config;
-        }
-
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer(_config["ConnectionStrings:OpenERPContextDb"]);
+                optionsBuilder.UseSqlServer("Name=OpenERPContextDb");
             }
         }
 
@@ -86,6 +79,12 @@ namespace ErpDbContext.Models
                 entity.Property(e => e.PostCode)
                     .HasMaxLength(20)
                     .HasDefaultValueSql("('')");
+
+                entity.HasOne(d => d.Company)
+                    .WithMany(p => p.Addresses)
+                    .HasForeignKey(d => d.CompanyId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_AddressCompany");
             });
 
             modelBuilder.Entity<Company>(entity =>
@@ -126,17 +125,27 @@ namespace ErpDbContext.Models
                 entity.Property(e => e.Status)
                     .HasMaxLength(5)
                     .HasDefaultValueSql("('')");
+
+                entity.HasOne(d => d.Company)
+                    .WithMany(p => p.Customers)
+                    .HasForeignKey(d => d.CompanyId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_CustomerCompany");
             });
 
             modelBuilder.Entity<Part>(entity =>
             {
-                entity.HasNoKey();
+                entity.HasKey(e => new { e.CompanyId, e.PartNum });
 
                 entity.ToTable("Part", "Erp");
 
                 entity.Property(e => e.CompanyId)
                     .HasMaxLength(8)
                     .HasColumnName("CompanyID")
+                    .HasDefaultValueSql("('')");
+
+                entity.Property(e => e.PartNum)
+                    .HasMaxLength(120)
                     .HasDefaultValueSql("('')");
 
                 entity.Property(e => e.DefaultUomcode)
@@ -148,9 +157,55 @@ namespace ErpDbContext.Models
                     .HasMaxLength(1000)
                     .HasDefaultValueSql("('')");
 
+                entity.HasOne(d => d.Company)
+                    .WithMany(p => p.Parts)
+                    .HasForeignKey(d => d.CompanyId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Part_Company");
+            });
+
+            modelBuilder.Entity<PartRev>(entity =>
+            {
+                entity.HasKey(e => new { e.CompanyId, e.PartNum, e.PartRevNum });
+
+                entity.ToTable("PartRev", "Erp");
+
+                entity.Property(e => e.CompanyId)
+                    .HasMaxLength(8)
+                    .HasColumnName("CompanyID")
+                    .HasDefaultValueSql("('')");
+
                 entity.Property(e => e.PartNum)
                     .HasMaxLength(120)
                     .HasDefaultValueSql("('')");
+
+                entity.Property(e => e.PartRevNum)
+                    .HasMaxLength(20)
+                    .HasDefaultValueSql("('')");
+
+                entity.Property(e => e.ApprovedDate).HasColumnType("datetime");
+
+                entity.Property(e => e.PartRevDesc)
+                    .HasMaxLength(200)
+                    .HasDefaultValueSql("('')");
+
+                entity.HasOne(d => d.ApprovedUserNavigation)
+                    .WithMany(p => p.PartRevs)
+                    .HasForeignKey(d => d.ApprovedUser)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_User");
+
+                entity.HasOne(d => d.Company)
+                    .WithMany(p => p.PartRevs)
+                    .HasForeignKey(d => d.CompanyId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_PartRev_Company");
+
+                entity.HasOne(d => d.Part)
+                    .WithMany(p => p.PartRevs)
+                    .HasForeignKey(d => new { d.CompanyId, d.PartNum })
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_PR_Part");
             });
 
             modelBuilder.Entity<PurchaseOrderDtl>(entity =>
@@ -189,6 +244,12 @@ namespace ErpDbContext.Models
                     .HasMaxLength(15)
                     .HasColumnName("SupplierUOMCode")
                     .HasDefaultValueSql("('')");
+
+                entity.HasOne(d => d.Company)
+                    .WithMany(p => p.PurchaseOrderDtls)
+                    .HasForeignKey(d => d.CompanyId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_POD_Company");
             });
 
             modelBuilder.Entity<PurchaseOrderHed>(entity =>
@@ -221,6 +282,18 @@ namespace ErpDbContext.Models
                 entity.Property(e => e.OrderDate).HasColumnType("datetime");
 
                 entity.Property(e => e.SupplierId).HasColumnName("SupplierID");
+
+                entity.HasOne(d => d.Company)
+                    .WithMany(p => p.PurchaseOrderHeds)
+                    .HasForeignKey(d => d.CompanyId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_POH_Company");
+
+                entity.HasOne(d => d.Supplier)
+                    .WithMany(p => p.PurchaseOrderHeds)
+                    .HasForeignKey(d => new { d.CompanyId, d.SupplierId })
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_POH_Supplier");
             });
 
             modelBuilder.Entity<PurchaseOrderRel>(entity =>
@@ -253,6 +326,12 @@ namespace ErpDbContext.Models
                     .HasMaxLength(15)
                     .HasColumnName("SupplierUOMCode")
                     .HasDefaultValueSql("('')");
+
+                entity.HasOne(d => d.Company)
+                    .WithMany(p => p.PurchaseOrderRels)
+                    .HasForeignKey(d => d.CompanyId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_POR_Company");
             });
 
             modelBuilder.Entity<SalesOrderDtl>(entity =>
@@ -280,6 +359,23 @@ namespace ErpDbContext.Models
                     .HasMaxLength(15)
                     .HasColumnName("SalesUOM")
                     .HasDefaultValueSql("('')");
+
+                entity.Property(e => e.SolineComments)
+                    .HasMaxLength(1000)
+                    .HasColumnName("SOLineComments")
+                    .HasDefaultValueSql("('')");
+
+                entity.HasOne(d => d.Part)
+                    .WithMany(p => p.SalesOrderDtls)
+                    .HasForeignKey(d => new { d.CompanyId, d.PartNum })
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_SOD_Part");
+
+                entity.HasOne(d => d.SalesOrderHed)
+                    .WithMany(p => p.SalesOrderDtls)
+                    .HasForeignKey(d => new { d.CompanyId, d.SalesOrderNum })
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_SOD_SOHed");
             });
 
             modelBuilder.Entity<SalesOrderHed>(entity =>
@@ -309,6 +405,18 @@ namespace ErpDbContext.Models
                 entity.Property(e => e.ShippingAddressId).HasColumnName("ShippingAddressID");
 
                 entity.Property(e => e.SuggestedShipDate).HasColumnType("datetime");
+
+                entity.HasOne(d => d.Company)
+                    .WithMany(p => p.SalesOrderHeds)
+                    .HasForeignKey(d => d.CompanyId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_SOH_Company");
+
+                entity.HasOne(d => d.C)
+                    .WithMany(p => p.SalesOrderHeds)
+                    .HasForeignKey(d => new { d.CompanyId, d.CustomerId })
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_SOH_Customer");
             });
 
             modelBuilder.Entity<SalesOrderRel>(entity =>
@@ -325,6 +433,18 @@ namespace ErpDbContext.Models
                 entity.Property(e => e.ReleaseQty).HasColumnType("decimal(9, 2)");
 
                 entity.Property(e => e.RequiredByDate).HasColumnType("datetime");
+
+                entity.HasOne(d => d.Company)
+                    .WithMany(p => p.SalesOrderRels)
+                    .HasForeignKey(d => d.CompanyId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_SOR_Company");
+
+                entity.HasOne(d => d.SalesOrderDtl)
+                    .WithMany(p => p.SalesOrderRels)
+                    .HasForeignKey(d => new { d.CompanyId, d.SalesOrderNum, d.SalesOrderLineNum })
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_SOR_SODtl");
             });
 
             modelBuilder.Entity<Supplier>(entity =>
@@ -345,6 +465,12 @@ namespace ErpDbContext.Models
                 entity.Property(e => e.SupplierName)
                     .HasMaxLength(200)
                     .HasDefaultValueSql("('')");
+
+                entity.HasOne(d => d.Company)
+                    .WithMany(p => p.Suppliers)
+                    .HasForeignKey(d => d.CompanyId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Supplier_Company");
             });
 
             modelBuilder.Entity<Uomcode>(entity =>
@@ -367,6 +493,12 @@ namespace ErpDbContext.Models
                     .HasMaxLength(100)
                     .HasColumnName("UOMDescription")
                     .HasDefaultValueSql("('')");
+
+                entity.HasOne(d => d.Company)
+                    .WithMany(p => p.Uomcodes)
+                    .HasForeignKey(d => d.CompanyId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_UOM_Company");
             });
 
             modelBuilder.Entity<User>(entity =>

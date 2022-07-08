@@ -13,11 +13,74 @@ BEGIN
 CREATE TABLE [Erp].[Company] (
     CompanyID NVARCHAR(8) NOT NULL DEFAULT (''),
     [Name] NVARCHAR(200) NOT NULL DEFAULT (''),
-    [Active] BIT NOT NULL DEFAULT (0)
+    [Active] BIT NOT NULL DEFAULT (0),
+    CONSTRAINT PK_Company PRIMARY KEY (CompanyID)
 );
 
+END
 
-ALTER TABLE Erp.Company ADD CONSTRAINT PK_Company PRIMARY KEY (CompanyID);
+IF NOT EXISTS (SELECT * FROM sys.tables where tables.name = 'User') 
+BEGIN
+
+    CREATE TABLE [Erp].[User] (
+        UserID UNIQUEIDENTIFIER NOT NULL, --system generated, used for internal reference (ASP.NET Core 6 Identity implementation so may change)
+        LoginID NVARCHAR(100) NOT NULL DEFAULT(''), --user assigned, used to login to environment
+        UserName NVARCHAR(300) NOT NULL DEFAULT(''),
+        AuthKey NVARCHAR(4000) NOT NULL DEFAULT(''), -- password in encrypted form
+        UserDisabled BIT NOT NULL DEFAULT(0),
+        CompanyList NVARCHAR(1000) NOT NULL DEFAULT(''),
+        SSODomain NVARCHAR(50) NOT NULL DEFAULT(''),
+        SSOUser NVARCHAR(300) NOT NULL DEFAULT(''),
+        CONSTRAINT PK_User PRIMARY KEY (UserID)
+    )
+
+END
+
+IF NOT EXISTS (SELECT * FROM sys.tables where tables.name = 'UOMCode') 
+BEGIN
+
+    CREATE TABLE [Erp].[UOMCode] (
+        CompanyID NVARCHAR(8) NOT NULL DEFAULT (''),
+        UOMCode NVARCHAR(15) NOT NULL DEFAULT (''),
+        UOMDescription NVARCHAR(100) NOT NULL DEFAULT(''),  
+        Active BIT NOT NULL DEFAULT (0),
+        CONSTRAINT PK_UOMCode PRIMARY KEY (CompanyID, UOMCode),
+        CONSTRAINT FK_UOM_Company FOREIGN KEY (CompanyID) REFERENCES Erp.Company(CompanyID)
+    )
+
+END
+
+IF NOT EXISTS (SELECT * FROM sys.tables where tables.name = 'Part') 
+BEGIN
+
+    CREATE TABLE [Erp].[Part] (
+        CompanyID NVARCHAR(8) NOT NULL DEFAULT(''),
+        PartNum NVARCHAR(120) NOT NULL DEFAULT(''),
+        PartDescription NVARCHAR(1000) NOT NULL DEFAULT(''),
+        SerialTracked BIT NOT NULL DEFAULT(0),
+        DefaultUOMCode NVARCHAR(15) NOT NULL DEFAULT(''),
+        CONSTRAINT PK_Part PRIMARY KEY (CompanyID, PartNum),
+        CONSTRAINT FK_Part_Company FOREIGN KEY (CompanyID) REFERENCES Erp.Company(CompanyID)
+    )
+
+END
+
+IF NOT EXISTS (SELECT * FROM sys.tables where tables.name = 'PartRev') 
+BEGIN
+
+CREATE TABLE [Erp].[PartRev] (
+    CompanyID NVARCHAR(8) NOT NULL DEFAULT (''),
+    [PartNum] NVARCHAR(120) NOT NULL DEFAULT (''),
+    [PartRevNum] NVARCHAR(20) NOT NULL DEFAULT (''),
+    [PartRevDesc] NVARCHAR(200) NOT NULL DEFAULT(''),
+    [Approved] BIT NOT NULL DEFAULT(0),
+    [ApprovedDate] DATETIME NULL,
+    [ApprovedUser] UNIQUEIDENTIFIER NOT NULL,
+    CONSTRAINT PK_PartRev PRIMARY KEY (CompanyID, PartNum, PartRevNum),
+    CONSTRAINT FK_PartRev_Company FOREIGN KEY (CompanyID) REFERENCES [Erp].[Company](CompanyID),
+    CONSTRAINT FK_PR_Part FOREIGN KEY (CompanyID, PartNum) REFERENCES [Erp].[Part](CompanyID, PartNum),
+    CONSTRAINT FK_User FOREIGN KEY (ApprovedUser) REFERENCES [Erp].[User](UserID)
+);
 
 END
 
@@ -29,11 +92,10 @@ BEGIN
             CustomerID INT NOT NULL DEFAULT (0),
             [Name] NVARCHAR(200) NOT NULL DEFAULT (''),
             [Status] NVARCHAR(5) NOT NULL DEFAULT(''),
-            [EmailAddress] NVARCHAR(200) NOT NULL DEFAULT('')
+            [EmailAddress] NVARCHAR(200) NOT NULL DEFAULT(''),
+            CONSTRAINT PK_Customer PRIMARY KEY (CompanyID, CustomerID),
+            CONSTRAINT FK_CustomerCompany FOREIGN KEY (CompanyID) REFERENCES [Erp].Company(CompanyID)
         );
-
-
-    ALTER TABLE Erp.Customer ADD CONSTRAINT PK_Customer PRIMARY KEY (CompanyID, CustomerID);
 
 END
 
@@ -50,10 +112,11 @@ BEGIN
             Address3 NVARCHAR(200) NOT NULL DEFAULT (''),
             City NVARCHAR(200) NOT NULL DEFAULT (''),
             CountryNum INT NOT NULL DEFAULT (0),
-            PostCode NVARCHAR(20) NOT NULL DEFAULT('')
+            PostCode NVARCHAR(20) NOT NULL DEFAULT(''),
+            CONSTRAINT PK_Address PRIMARY KEY (CompanyID, ReferenceTable, ForeignKeyID, AddressID),
+            CONSTRAINT FK_AddressCompany FOREIGN KEY (CompanyID) REFERENCES Erp.Company(CompanyID)
     );
 
-ALTER TABLE Erp.Address ADD CONSTRAINT PK_Address PRIMARY KEY (CompanyID, ReferenceTable, ForeignKeyID, AddressID);
 
 END
 
@@ -72,10 +135,12 @@ CREATE TABLE  [Erp].[SalesOrderHed] (
     OpenOrder BIT NOT NULL DEFAULT (0),
     CancelledOrder BIT NOT NULL DEFAULT (0),
     ClosedDate DATETIME NULL,
-    CustomerPONum NVARCHAR(50) NOT NULL DEFAULT('')
+    CustomerPONum NVARCHAR(50) NOT NULL DEFAULT(''),
+    CONSTRAINT PK_SalesOrderHed PRIMARY KEY (CompanyID, SalesOrderNum),
+    CONSTRAINT FK_SOH_Company FOREIGN KEY (CompanyID) REFERENCES Erp.Company(CompanyID),
+    CONSTRAINT FK_SOH_Customer FOREIGN KEY (CompanyID, CustomerID) REFERENCES Erp.Customer(CompanyID, CustomerID)
 );
 
-ALTER TABLE Erp.SalesOrderHed ADD CONSTRAINT PK_SalesOrderHed PRIMARY KEY (CompanyID, SalesOrderNum);
 
 END
 
@@ -90,10 +155,12 @@ BEGIN
         LineDesc NVARCHAR(1000) NOT NULL DEFAULT (''),
         LineQty DECIMAL(9,2) NOT NULL DEFAULT (0),
         SalesUOM NVARCHAR(15) NOT NULL DEFAULT (''),
-
+        SOLineComments NVARCHAR(1000) NOT NULL DEFAULT(''),
+        CONSTRAINT PK_SalesOrderDtl PRIMARY KEY (CompanyID, SalesOrderNum, SalesOrderLineNum),
+        CONSTRAINT FK_SOD_SOHed FOREIGN KEY (CompanyID, SalesOrderNum) REFERENCES Erp.SalesOrderHed(CompanyID, SalesOrderNum),
+        CONSTRAINT FK_SOD_Part FOREIGN KEY (CompanyID, PartNum) REFERENCES Erp.Part(CompanyID, PartNum)
     );
 
-    ALTER TABLE Erp.SalesOrderDtl ADD CONSTRAINT PK_SalesOrderDtl PRIMARY KEY (CompanyID, SalesOrderNum, SalesOrderLineNum);
 
 END
 
@@ -106,59 +173,29 @@ BEGIN
         SalesOrderLineNum INT NOT NULL DEFAULT(0),
         SalesOrderRelNum INT NOT NULL DEFAULT (0),
         ReleaseQty DECIMAL(9,2) NOT NULL DEFAULT (0),
-        RequiredByDate DATETIME NULL
-
+        RequiredByDate DATETIME NULL,
+        CONSTRAINT PK_SalesOrderRel PRIMARY KEY (CompanyID, SalesOrderNum, SalesOrderLineNum, SalesOrderRelNum),
+        CONSTRAINT FK_SOR_Company FOREIGN KEY (CompanyID) REFERENCES Erp.Company(CompanyID),
+        CONSTRAINT FK_SOR_SODtl FOREIGN KEY (CompanyID, SalesOrderNum, SalesOrderLineNum) REFERENCES Erp.SalesOrderDtl(CompanyID, SalesOrderNum, SalesOrderLineNum)
     );
 
-    ALTER TABLE Erp.SalesOrderRel ADD CONSTRAINT PK_SalesOrderRel PRIMARY KEY (CompanyID, SalesOrderNum, SalesOrderLineNum, SalesOrderRelNum);
-
 END
 
-IF NOT EXISTS (SELECT * FROM sys.tables where tables.name = 'UOMCode') 
+IF NOT EXISTS (SELECT * FROM sys.tables where tables.name = 'Supplier') 
 BEGIN
 
-    CREATE TABLE [Erp].[UOMCode] (
-        CompanyID NVARCHAR(8) NOT NULL DEFAULT (''),
-        UOMCode NVARCHAR(15) NOT NULL DEFAULT (''),
-        UOMDescription NVARCHAR(100) NOT NULL DEFAULT(''),  
-        Active BIT NOT NULL DEFAULT (0),
-    )
-
-    ALTER TABLE Erp.UOMCode ADD CONSTRAINT PK_UOMCode PRIMARY KEY (CompanyID, UOMCode)
-
-END
-
-IF NOT EXISTS (SELECT * FROM sys.tables where tables.name = 'Part') 
-BEGIN
-
-    CREATE TABLE [Erp].[Part] (
+    CREATE TABLE [Erp].[Supplier] (
         CompanyID NVARCHAR(8) NOT NULL DEFAULT(''),
-        PartNum NVARCHAR(120) NOT NULL DEFAULT(''),
-        PartDescription NVARCHAR(1000) NOT NULL DEFAULT(''),
-        SerialTracked BIT NOT NULL DEFAULT(0),
-        DefaultUOMCode NVARCHAR(15) NOT NULL DEFAULT('')
+        SupplierID INT NOT NULL DEFAULT(0),
+        SupplierName NVARCHAR(200) NOT NULL DEFAULT(''),
+        Active BIT NOT NULL DEFAULT(0),
+        AddressID INT NOT NULL DEFAULT(0),
+        CONSTRAINT PK_Supplier PRIMARY KEY (CompanyID, SupplierID),
+        CONSTRAINT FK_Supplier_Company FOREIGN KEY (CompanyID) REFERENCES Erp.Company(CompanyID)
     )
 
 END
 
-IF NOT EXISTS (SELECT * FROM sys.tables where tables.name = 'User') 
-BEGIN
-
-    CREATE TABLE [Erp].[User] (
-        UserID INT NOT NULL DEFAULT(0), --system generated, used for internal reference
-        LoginID NVARCHAR(100) NOT NULL DEFAULT(''), --user assigned, used to login to environment
-        UserName NVARCHAR(300) NOT NULL DEFAULT(''),
-        AuthKey NVARCHAR(4000) NOT NULL DEFAULT(''), -- password in encrypted form
-        UserDisabled BIT NOT NULL DEFAULT(0),
-        CompanyList NVARCHAR(1000) NOT NULL DEFAULT(''),
-        SSODomain NVARCHAR(50) NOT NULL DEFAULT(''),
-        SSOUser NVARCHAR(300) NOT NULL DEFAULT('')
-    )
-
-
-    ALTER TABLE [Erp].[User] ADD CONSTRAINT PK_User PRIMARY KEY (UserID)
-
-END
 
 IF NOT EXISTS (SELECT * FROM sys.tables where tables.name = 'PurchaseOrderHed') 
 BEGIN
@@ -169,16 +206,16 @@ BEGIN
         SupplierID INT NOT NULL DEFAULT(0),
         OrderDate DATETIME NULL,
         CurrencyCode NVARCHAR(10) NOT NULL DEFAULT(''),
-        CreatedByUserID INT NOT NULL DEFAULT(0),
+        CreatedByUserID UNIQUEIDENTIFIER NOT NULL,
         CreatedDate DATETIME NULL,
         ApprovalStatus NVARCHAR(1) NOT NULL DEFAULT(''),
         ApprovedDate DATETIME NULL,
         LastChangeDate DATETIME NULL,
-        LastChangeUser INT NOT NULL DEFAULT(0)
+        LastChangeUser UNIQUEIDENTIFIER NOT NULL,
+        CONSTRAINT PK_PurchaseOrderHed PRIMARY KEY (CompanyID, PurchaseOrderNum),
+        CONSTRAINT FK_POH_Company FOREIGN KEY (CompanyID) REFERENCES Erp.Company(CompanyID),
+        CONSTRAINT FK_POH_Supplier FOREIGN KEY (CompanyID, SupplierID) REFERENCES Erp.Supplier(CompanyID, SupplierID)
     )
-
-
-    ALTER TABLE [Erp].[PurchaseOrderHed] ADD CONSTRAINT PK_PurchaseOrderHed PRIMARY KEY (CompanyID, PurchaseOrderNum)
 
 END
 
@@ -197,12 +234,10 @@ BEGIN
         SupplierUOMCode NVARCHAR(15) NOT NULL DEFAULT(''),
         RequiredDate DATETIME NULL, -- is used to default the releases, one of which is created at the same time as the order line is saved
         LastChangeDate DATETIME NULL,
-        LastChangeUser INT NOT NULL DEFAULT(0)
+        LastChangeUser UNIQUEIDENTIFIER NOT NULL,
+        CONSTRAINT PK_PurchaseOrderDtl PRIMARY KEY (CompanyID, PurchaseOrderNum, PurchaseOrderLineNum),
+        CONSTRAINT FK_POD_Company FOREIGN KEY (CompanyID) REFERENCES Erp.Company(CompanyID)
     )
-
-
-    ALTER TABLE [Erp].[PurchaseOrderDtl] ADD CONSTRAINT PK_PurchaseOrderDtl PRIMARY KEY (CompanyID, PurchaseOrderNum, PurchaseOrderLineNum)
-
 
 END
 
@@ -222,36 +257,9 @@ BEGIN
         OurUOMCode NVARCHAR(15) NOT NULL DEFAULT(''),
         SupplierUOMCode NVARCHAR(15) NOT NULL DEFAULT(''),
         LastChangeDate DATETIME NULL,
-        LastChangeUser INT NOT NULL DEFAULT(0)
+        LastChangeUser UNIQUEIDENTIFIER NOT NULL,
+        CONSTRAINT PK_PurchaseOrderRel PRIMARY KEY (CompanyID, PurchaseOrderNum, PurchaseOrderLineNum, PurchaseOrderRelNum),
+        CONSTRAINT FK_POR_Company FOREIGN KEY (CompanyID) REFERENCES Erp.Company(CompanyID)
     )
-
-
-    ALTER TABLE [Erp].[PurchaseOrderRel] ADD CONSTRAINT PK_PurchaseOrderRel PRIMARY KEY (CompanyID, PurchaseOrderNum, PurchaseOrderLineNum, PurchaseOrderRelNum)
-
 END
 
-IF NOT EXISTS (SELECT * FROM sys.tables where tables.name = 'Supplier') 
-BEGIN
-
-    CREATE TABLE [Erp].[Supplier] (
-        CompanyID NVARCHAR(8) NOT NULL DEFAULT(''),
-        SupplierID INT NOT NULL DEFAULT(0),
-        SupplierName NVARCHAR(200) NOT NULL DEFAULT(''),
-        Active BIT NOT NULL DEFAULT(0),
-        AddressID INT NOT NULL DEFAULT(0)
-    )
-
-
-    ALTER TABLE [Erp].[Supplier] ADD CONSTRAINT PK_Supplier PRIMARY KEY (CompanyID, SupplierID)
-
-END
-
---SEED DATA
-
-/* IF NOT EXISTS (SELECT * FROM Erp.Company WHERE Company = 'TEST1')
-BEGIN
-    INSERT INTO Erp.Company VALUES ('TEST1', 'Test Company 1', 1)
-    INSERT INTO Erp.Company VALUES ('XMPL1', 'Example Company 1', 1)
-END
-GO
- */

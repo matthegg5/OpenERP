@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ErpDbContext.Models
+namespace OpenERP.ErpDbContext.Models
 {
     public partial class Uomcode
     {
@@ -9,5 +9,7 @@ namespace ErpDbContext.Models
         public string Uomcode1 { get; set; } = null!;
         public string Uomdescription { get; set; } = null!;
         public bool Active { get; set; }
+
+        public virtual Company Company { get; set; } = null!;
     }
 }

@@ -1,16 +1,19 @@
 using OpenERP.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using OpenERP.Services;
+using OpenERP.ErpDbContext.Models;
 
 namespace OpenERP.Controllers
 {
     public class AppController : Controller
     {
         private readonly IMailService _mailService;
+        private readonly OpenERPContext _context;
 
-        public AppController(IMailService mailService)
+        public AppController(IMailService mailService, OpenERPContext context)
         {
             this._mailService = mailService;
+            this._context = context;
         }
         public IActionResult Index()
         { 
@@ -43,5 +46,14 @@ namespace OpenERP.Controllers
             return View();
 
         }
+
+        public IActionResult Part()
+        {
+            var results = _context.Parts
+            //.Where(p => p.CompanyId == Session.CompanyID)
+            .OrderBy(p => p.PartNum).ToList();
+            return View(results);
+        }
+
     }
 }

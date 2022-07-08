@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ErpDbContext.Models
+namespace OpenERP.ErpDbContext.Models
 {
     public partial class PurchaseOrderDtl
     {
@@ -16,6 +16,8 @@ namespace ErpDbContext.Models
         public string SupplierUomcode { get; set; } = null!;
         public DateTime? RequiredDate { get; set; }
         public DateTime? LastChangeDate { get; set; }
-        public int LastChangeUser { get; set; }
+        public Guid LastChangeUser { get; set; }
+
+        public virtual Company Company { get; set; } = null!;
     }
 }

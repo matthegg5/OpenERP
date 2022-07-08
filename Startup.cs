@@ -14,10 +14,10 @@ namespace OpenERP
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-        /*  services.AddDbContext<ErpDbContext.Models.OpenERPContext>(cfg =>
+         services.AddDbContext<ErpDbContext.Models.OpenERPContext>(cfg =>
             {
-                cfg.UseSqlServer();
-            }); */
+                cfg.UseSqlServer("Name=OpenERPContextDb");
+            }); 
 
             services.AddTransient<IMailService, NullMailService>();
             services.AddControllersWithViews().AddRazorRuntimeCompilation();

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ErpDbContext.Models
+namespace OpenERP.ErpDbContext.Models
 {
     public partial class PurchaseOrderHed
     {
@@ -10,11 +10,14 @@ namespace ErpDbContext.Models
         public int SupplierId { get; set; }
         public DateTime? OrderDate { get; set; }
         public string CurrencyCode { get; set; } = null!;
-        public int CreatedByUserId { get; set; }
+        public Guid CreatedByUserId { get; set; }
         public DateTime? CreatedDate { get; set; }
         public string ApprovalStatus { get; set; } = null!;
         public DateTime? ApprovedDate { get; set; }
         public DateTime? LastChangeDate { get; set; }
-        public int LastChangeUser { get; set; }
+        public Guid LastChangeUser { get; set; }
+
+        public virtual Company Company { get; set; } = null!;
+        public virtual Supplier Supplier { get; set; } = null!;
     }
 }

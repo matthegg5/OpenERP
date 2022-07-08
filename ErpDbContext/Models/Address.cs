@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ErpDbContext.Models
+namespace OpenERP.ErpDbContext.Models
 {
     public partial class Address
     {
@@ -15,5 +15,7 @@ namespace ErpDbContext.Models
         public string City { get; set; } = null!;
         public int CountryNum { get; set; }
         public string PostCode { get; set; } = null!;
+
+        public virtual Company Company { get; set; } = null!;
     }
 }

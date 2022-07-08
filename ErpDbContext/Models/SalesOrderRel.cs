@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ErpDbContext.Models
+namespace OpenERP.ErpDbContext.Models
 {
     public partial class SalesOrderRel
     {
@@ -11,5 +11,8 @@ namespace ErpDbContext.Models
         public int SalesOrderRelNum { get; set; }
         public decimal ReleaseQty { get; set; }
         public DateTime? RequiredByDate { get; set; }
+
+        public virtual Company Company { get; set; } = null!;
+        public virtual SalesOrderDtl SalesOrderDtl { get; set; } = null!;
     }
 }

@@ -3,7 +3,6 @@
 /home/saffron/Development/c#/OpenERP/obj/Debug/net6.0/OpenERP.csproj.CoreCompileInputs.cache
 /home/saffron/Development/c#/OpenERP/obj/Debug/net6.0/OpenERP.MvcApplicationPartsAssemblyInfo.cache
 /home/saffron/Development/c#/OpenERP/bin/Debug/net6.0/appsettings.Development.json
-/home/saffron/Development/c#/OpenERP/bin/Debug/net6.0/appsettings.json
 /home/saffron/Development/c#/OpenERP/bin/Debug/net6.0/ErpDbContext/bin/Debug/net6.0/ErpDbContext.deps.json
 /home/saffron/Development/c#/OpenERP/bin/Debug/net6.0/ErpDbContext/bin/Debug/net6.0/ErpDbContext.runtimeconfig.json
 /home/saffron/Development/c#/OpenERP/bin/Debug/net6.0/ErpDbContext/obj/ErpDbContext.csproj.nuget.dgspec.json
@@ -384,3 +383,4 @@
 /home/saffron/Development/c#/OpenERP/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
 /home/saffron/Development/c#/OpenERP/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
 /home/saffron/Development/c#/OpenERP/obj/Debug/net6.0/OpenERP.MvcApplicationPartsAssemblyInfo.cs
+/home/saffron/Development/c#/OpenERP/bin/Debug/net6.0/config.json
