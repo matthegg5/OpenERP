@@ -563,3 +563,11 @@ wwwroot/lib/bootstrap/scss/mixins/_utilities.scss
 wwwroot/lib/bootstrap/scss/mixins/_visually-hidden.scss
 wwwroot/lib/bootstrap/scss/utilities/_api.scss
 wwwroot/lib/bootstrap/scss/vendor/_rfs.scss
+bin/Debug/net6.0/Newtonsoft.Json.dll
+bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll
+bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll
+bin/Debug/net6.0/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+bin/Debug/net6.0/Microsoft.AspNetCore.Server.Kestrel.Https.dll
+bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll
