@@ -13,7 +13,6 @@ namespace OpenERP.ErpDbContext.Models
         public DateTime? ApprovedDate { get; set; }
         public Guid ApprovedUser { get; set; }
 
-        public virtual User ApprovedUserNavigation { get; set; } = null!;
         public virtual Company Company { get; set; } = null!;
         public virtual Part Part { get; set; } = null!;
     }

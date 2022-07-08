@@ -19,7 +19,10 @@ CREATE TABLE [Erp].[Company] (
 
 END
 
-IF NOT EXISTS (SELECT * FROM sys.tables where tables.name = 'User') 
+
+-- custom user table on hold - will see what EF Identity generates and adapt from there
+
+/* IF NOT EXISTS (SELECT * FROM sys.tables where tables.name = 'User') 
 BEGIN
 
     CREATE TABLE [Erp].[User] (
@@ -34,7 +37,7 @@ BEGIN
         CONSTRAINT PK_User PRIMARY KEY (UserID)
     )
 
-END
+END */
 
 IF NOT EXISTS (SELECT * FROM sys.tables where tables.name = 'UOMCode') 
 BEGIN
@@ -78,8 +81,8 @@ CREATE TABLE [Erp].[PartRev] (
     [ApprovedUser] UNIQUEIDENTIFIER NOT NULL,
     CONSTRAINT PK_PartRev PRIMARY KEY (CompanyID, PartNum, PartRevNum),
     CONSTRAINT FK_PartRev_Company FOREIGN KEY (CompanyID) REFERENCES [Erp].[Company](CompanyID),
-    CONSTRAINT FK_PR_Part FOREIGN KEY (CompanyID, PartNum) REFERENCES [Erp].[Part](CompanyID, PartNum),
-    CONSTRAINT FK_User FOREIGN KEY (ApprovedUser) REFERENCES [Erp].[User](UserID)
+    CONSTRAINT FK_PR_Part FOREIGN KEY (CompanyID, PartNum) REFERENCES [Erp].[Part](CompanyID, PartNum)
+    --CONSTRAINT FK_User FOREIGN KEY (ApprovedUser) REFERENCES [Erp].[User](UserID)
 );
 
 END

@@ -1,24 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Identity;
 
-namespace OpenERP.ErpDbContext.Models
-{
-    public partial class User
+namespace OpenERP.ErpDbContext.Models {
+
+    public class User : IdentityUser
     {
-        public User()
-        {
-            PartRevs = new HashSet<PartRev>();
-        }
-
-        public Guid UserId { get; set; }
-        public string LoginId { get; set; } = null!;
-        public string UserName { get; set; } = null!;
-        public string AuthKey { get; set; } = null!;
-        public bool UserDisabled { get; set; }
-        public string CompanyList { get; set; } = null!;
-        public string Ssodomain { get; set; } = null!;
-        public string Ssouser { get; set; } = null!;
-
-        public virtual ICollection<PartRev> PartRevs { get; set; }
+        //extensions to AspNetUser DB column defined here.
+        [MaxLength(256)]
+        public string CompanyList { get; set; }
     }
+
 }

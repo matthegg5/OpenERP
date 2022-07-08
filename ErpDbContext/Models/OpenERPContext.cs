@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace OpenERP.ErpDbContext.Models
 {
-    public partial class OpenERPContext : DbContext
+    public partial class OpenERPContext : IdentityDbContext<User>
     {
         public OpenERPContext()
         {
@@ -29,7 +30,6 @@ namespace OpenERP.ErpDbContext.Models
         public virtual DbSet<SalesOrderRel> SalesOrderRels { get; set; } = null!;
         public virtual DbSet<Supplier> Suppliers { get; set; } = null!;
         public virtual DbSet<Uomcode> Uomcodes { get; set; } = null!;
-        public virtual DbSet<User> Users { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -41,6 +41,7 @@ namespace OpenERP.ErpDbContext.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Address>(entity =>
             {
                 entity.HasKey(e => new { e.CompanyId, e.ReferenceTable, e.ForeignKeyId, e.AddressId });
@@ -188,12 +189,6 @@ namespace OpenERP.ErpDbContext.Models
                 entity.Property(e => e.PartRevDesc)
                     .HasMaxLength(200)
                     .HasDefaultValueSql("('')");
-
-                entity.HasOne(d => d.ApprovedUserNavigation)
-                    .WithMany(p => p.PartRevs)
-                    .HasForeignKey(d => d.ApprovedUser)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_User");
 
                 entity.HasOne(d => d.Company)
                     .WithMany(p => p.PartRevs)
@@ -499,42 +494,6 @@ namespace OpenERP.ErpDbContext.Models
                     .HasForeignKey(d => d.CompanyId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_UOM_Company");
-            });
-
-            modelBuilder.Entity<User>(entity =>
-            {
-                entity.ToTable("User", "Erp");
-
-                entity.Property(e => e.UserId)
-                    .ValueGeneratedNever()
-                    .HasColumnName("UserID");
-
-                entity.Property(e => e.AuthKey)
-                    .HasMaxLength(4000)
-                    .HasDefaultValueSql("('')");
-
-                entity.Property(e => e.CompanyList)
-                    .HasMaxLength(1000)
-                    .HasDefaultValueSql("('')");
-
-                entity.Property(e => e.LoginId)
-                    .HasMaxLength(100)
-                    .HasColumnName("LoginID")
-                    .HasDefaultValueSql("('')");
-
-                entity.Property(e => e.Ssodomain)
-                    .HasMaxLength(50)
-                    .HasColumnName("SSODomain")
-                    .HasDefaultValueSql("('')");
-
-                entity.Property(e => e.Ssouser)
-                    .HasMaxLength(300)
-                    .HasColumnName("SSOUser")
-                    .HasDefaultValueSql("('')");
-
-                entity.Property(e => e.UserName)
-                    .HasMaxLength(300)
-                    .HasDefaultValueSql("('')");
             });
 
             OnModelCreatingPartial(modelBuilder);

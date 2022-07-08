@@ -2,6 +2,7 @@ using OpenERP.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using OpenERP.Services;
 using OpenERP.ErpDbContext.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace OpenERP.Controllers
 {
@@ -47,6 +48,7 @@ namespace OpenERP.Controllers
 
         }
 
+        [Authorize]
         public IActionResult Part()
         {
             var results = _context.Parts
