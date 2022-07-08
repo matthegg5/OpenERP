@@ -1,0 +1,7 @@
+@model IEnumerable<OpenERP.ErpDbContext.Models.Part>
+    <h1>Part</h1>
+    <p>Count: @Model.Count()</p>
+    @foreach (var p in Model)
+    {
+        <li>@p.PartNum</li>
+    }
