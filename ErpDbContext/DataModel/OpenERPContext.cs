@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace OpenERP.ErpDbContext.DataModel
 {
-    public partial class OpenERPContext : IdentityDbContext
+    public partial class OpenERPContext : IdentityDbContext<User>
     {
         public OpenERPContext()
         {
