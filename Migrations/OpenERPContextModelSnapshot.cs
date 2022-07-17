@@ -4,11 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-<<<<<<< HEAD
-using OpenERP.ErpDbContext.Models;
-=======
 using OpenERP.ErpDbContext.DataModel;
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
 
 #nullable disable
 
@@ -78,8 +74,6 @@ namespace OpenERP.Migrations
                     b.ToTable("AspNetRoleClaims", (string)null);
                 });
 
-<<<<<<< HEAD
-=======
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUser", b =>
                 {
                     b.Property<string>("Id")
@@ -145,7 +139,6 @@ namespace OpenERP.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
                     b.Property<int>("Id")
@@ -227,11 +220,7 @@ namespace OpenERP.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.Address", b =>
-=======
             modelBuilder.Entity("OpenERP.ErpDbContext.DataModel.Address", b =>
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                 {
                     b.Property<string>("CompanyId")
                         .ValueGeneratedOnAdd()
@@ -297,11 +286,7 @@ namespace OpenERP.Migrations
                     b.ToTable("Address", "Erp");
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.Company", b =>
-=======
             modelBuilder.Entity("OpenERP.ErpDbContext.DataModel.Company", b =>
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                 {
                     b.Property<string>("CompanyId")
                         .ValueGeneratedOnAdd()
@@ -325,11 +310,7 @@ namespace OpenERP.Migrations
                     b.ToTable("Company", "Erp");
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.Customer", b =>
-=======
             modelBuilder.Entity("OpenERP.ErpDbContext.DataModel.Customer", b =>
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                 {
                     b.Property<string>("CompanyId")
                         .ValueGeneratedOnAdd()
@@ -368,11 +349,7 @@ namespace OpenERP.Migrations
                     b.ToTable("Customer", "Erp");
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.Part", b =>
-=======
             modelBuilder.Entity("OpenERP.ErpDbContext.DataModel.Part", b =>
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                 {
                     b.Property<string>("CompanyId")
                         .ValueGeneratedOnAdd()
@@ -387,20 +364,12 @@ namespace OpenERP.Migrations
                         .HasColumnType("nvarchar(120)")
                         .HasDefaultValueSql("('')");
 
-<<<<<<< HEAD
-                    b.Property<string>("DefaultUomcode")
-=======
                     b.Property<string>("DefaultUom")
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(15)
                         .HasColumnType("nvarchar(15)")
-<<<<<<< HEAD
-                        .HasColumnName("DefaultUOMCode")
-=======
                         .HasColumnName("DefaultUOM")
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                         .HasDefaultValueSql("('')");
 
                     b.Property<string>("PartDescription")
@@ -415,19 +384,12 @@ namespace OpenERP.Migrations
 
                     b.HasKey("CompanyId", "PartNum");
 
-<<<<<<< HEAD
-                    b.ToTable("Part", "Erp");
-                });
-
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.PartRev", b =>
-=======
                     b.HasIndex(new[] { "CompanyId", "DefaultUom" }, "IX_Part_CompanyID_DefaultUOM");
 
                     b.ToTable("Part", "Erp");
                 });
 
             modelBuilder.Entity("OpenERP.ErpDbContext.DataModel.PartRev", b =>
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                 {
                     b.Property<string>("CompanyId")
                         .ValueGeneratedOnAdd()
@@ -454,17 +416,12 @@ namespace OpenERP.Migrations
                     b.Property<DateTime?>("ApprovedDate")
                         .HasColumnType("datetime");
 
-<<<<<<< HEAD
-                    b.Property<Guid>("ApprovedUser")
-                        .HasColumnType("uniqueidentifier");
-=======
                     b.Property<string>("ApprovedUser")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(450)
                         .HasColumnType("nvarchar(450)")
                         .HasDefaultValueSql("('')");
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
 
                     b.Property<string>("PartRevDesc")
                         .IsRequired()
@@ -478,11 +435,7 @@ namespace OpenERP.Migrations
                     b.ToTable("PartRev", "Erp");
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.PurchaseOrderDtl", b =>
-=======
             modelBuilder.Entity("OpenERP.ErpDbContext.DataModel.PurchaseOrderDtl", b =>
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                 {
                     b.Property<string>("CompanyId")
                         .ValueGeneratedOnAdd()
@@ -497,13 +450,6 @@ namespace OpenERP.Migrations
                     b.Property<int>("PurchaseOrderLineNum")
                         .HasColumnType("int");
 
-<<<<<<< HEAD
-                    b.Property<DateTime?>("LastChangeDate")
-                        .HasColumnType("datetime");
-
-                    b.Property<Guid>("LastChangeUser")
-                        .HasColumnType("uniqueidentifier");
-=======
                     b.Property<string>("CostCentre")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
@@ -534,7 +480,6 @@ namespace OpenERP.Migrations
                         .HasMaxLength(450)
                         .HasColumnType("nvarchar(450)")
                         .HasDefaultValueSql("('')");
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
 
                     b.Property<string>("LineDesc")
                         .IsRequired()
@@ -546,20 +491,12 @@ namespace OpenERP.Migrations
                     b.Property<decimal>("OurOrderQty")
                         .HasColumnType("decimal(9,2)");
 
-<<<<<<< HEAD
-                    b.Property<string>("OurUomcode")
-=======
                     b.Property<string>("OurUom")
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(15)
                         .HasColumnType("nvarchar(15)")
-<<<<<<< HEAD
-                        .HasColumnName("OurUOMCode")
-=======
                         .HasColumnName("OurUOM")
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                         .HasDefaultValueSql("('')");
 
                     b.Property<string>("PartNum")
@@ -575,30 +512,16 @@ namespace OpenERP.Migrations
                     b.Property<decimal>("SupplierOrderQty")
                         .HasColumnType("decimal(9,2)");
 
-<<<<<<< HEAD
-                    b.Property<string>("SupplierUomcode")
-=======
                     b.Property<string>("SupplierUom")
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(15)
                         .HasColumnType("nvarchar(15)")
-<<<<<<< HEAD
-                        .HasColumnName("SupplierUOMCode")
-=======
                         .HasColumnName("SupplierUOM")
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                         .HasDefaultValueSql("('')");
 
                     b.HasKey("CompanyId", "PurchaseOrderNum", "PurchaseOrderLineNum");
 
-<<<<<<< HEAD
-                    b.ToTable("PurchaseOrderDtl", "Erp");
-                });
-
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.PurchaseOrderHed", b =>
-=======
                     b.HasIndex(new[] { "CompanyId", "OurUom" }, "IX_PurchaseOrderDtl_CompanyID_OurUOM");
 
                     b.HasIndex(new[] { "CompanyId", "SupplierUom" }, "IX_PurchaseOrderDtl_CompanyID_SupplierUOM");
@@ -607,7 +530,6 @@ namespace OpenERP.Migrations
                 });
 
             modelBuilder.Entity("OpenERP.ErpDbContext.DataModel.PurchaseOrderHed", b =>
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                 {
                     b.Property<string>("CompanyId")
                         .ValueGeneratedOnAdd()
@@ -629,11 +551,6 @@ namespace OpenERP.Migrations
                     b.Property<DateTime?>("ApprovedDate")
                         .HasColumnType("datetime");
 
-<<<<<<< HEAD
-                    b.Property<Guid>("CreatedByUserId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("CreatedByUserID");
-=======
                     b.Property<string>("CreatedByUserId")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
@@ -641,7 +558,6 @@ namespace OpenERP.Migrations
                         .HasColumnType("nvarchar(450)")
                         .HasColumnName("CreatedByUserID")
                         .HasDefaultValueSql("('')");
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
 
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime");
@@ -656,17 +572,12 @@ namespace OpenERP.Migrations
                     b.Property<DateTime?>("LastChangeDate")
                         .HasColumnType("datetime");
 
-<<<<<<< HEAD
-                    b.Property<Guid>("LastChangeUser")
-                        .HasColumnType("uniqueidentifier");
-=======
                     b.Property<string>("LastChangeUser")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(450)
                         .HasColumnType("nvarchar(450)")
                         .HasDefaultValueSql("('')");
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
 
                     b.Property<DateTime?>("OrderDate")
                         .HasColumnType("datetime");
@@ -677,20 +588,12 @@ namespace OpenERP.Migrations
 
                     b.HasKey("CompanyId", "PurchaseOrderNum");
 
-<<<<<<< HEAD
-                    b.HasIndex("CompanyId", "SupplierId");
-=======
                     b.HasIndex(new[] { "CompanyId", "SupplierId" }, "IX_PurchaseOrderHed_CompanyID_SupplierID");
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
 
                     b.ToTable("PurchaseOrderHed", "Erp");
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.PurchaseOrderRel", b =>
-=======
             modelBuilder.Entity("OpenERP.ErpDbContext.DataModel.PurchaseOrderRel", b =>
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                 {
                     b.Property<string>("CompanyId")
                         .ValueGeneratedOnAdd()
@@ -714,59 +617,28 @@ namespace OpenERP.Migrations
                     b.Property<DateTime?>("LastChangeDate")
                         .HasColumnType("datetime");
 
-<<<<<<< HEAD
-                    b.Property<Guid>("LastChangeUser")
-                        .HasColumnType("uniqueidentifier");
-=======
                     b.Property<string>("LastChangeUser")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(450)
                         .HasColumnType("nvarchar(450)")
                         .HasDefaultValueSql("('')");
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
 
                     b.Property<decimal>("OurOrderQty")
                         .HasColumnType("decimal(9,2)");
 
-<<<<<<< HEAD
-                    b.Property<string>("OurUomcode")
-                        .IsRequired()
-                        .ValueGeneratedOnAdd()
-                        .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)")
-                        .HasColumnName("OurUOMCode")
-                        .HasDefaultValueSql("('')");
-
-=======
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                     b.Property<DateTime?>("RequiredDate")
                         .HasColumnType("datetime");
 
                     b.Property<decimal>("SupplierOrderQty")
                         .HasColumnType("decimal(9,2)");
 
-<<<<<<< HEAD
-                    b.Property<string>("SupplierUomcode")
-                        .IsRequired()
-                        .ValueGeneratedOnAdd()
-                        .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)")
-                        .HasColumnName("SupplierUOMCode")
-                        .HasDefaultValueSql("('')");
-
-=======
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                     b.HasKey("CompanyId", "PurchaseOrderNum", "PurchaseOrderLineNum", "PurchaseOrderRelNum");
 
                     b.ToTable("PurchaseOrderRel", "Erp");
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.SalesOrderDtl", b =>
-=======
             modelBuilder.Entity("OpenERP.ErpDbContext.DataModel.SalesOrderDtl", b =>
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                 {
                     b.Property<string>("CompanyId")
                         .ValueGeneratedOnAdd()
@@ -781,8 +653,6 @@ namespace OpenERP.Migrations
                     b.Property<int>("SalesOrderLineNum")
                         .HasColumnType("int");
 
-<<<<<<< HEAD
-=======
                     b.Property<string>("CostCentre")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
@@ -804,7 +674,6 @@ namespace OpenERP.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasDefaultValueSql("('')");
 
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                     b.Property<string>("LineDesc")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
@@ -840,22 +709,14 @@ namespace OpenERP.Migrations
 
                     b.HasKey("CompanyId", "SalesOrderNum", "SalesOrderLineNum");
 
-<<<<<<< HEAD
-                    b.HasIndex("CompanyId", "PartNum");
-=======
                     b.HasIndex(new[] { "CompanyId", "PartNum" }, "IX_SalesOrderDtl_CompanyID_PartNum");
 
                     b.HasIndex(new[] { "CompanyId", "SalesUom" }, "IX_SalesOrderDtl_CompanyID_SalesUOM");
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
 
                     b.ToTable("SalesOrderDtl", "Erp");
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.SalesOrderHed", b =>
-=======
             modelBuilder.Entity("OpenERP.ErpDbContext.DataModel.SalesOrderHed", b =>
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                 {
                     b.Property<string>("CompanyId")
                         .ValueGeneratedOnAdd()
@@ -877,8 +738,6 @@ namespace OpenERP.Migrations
                     b.Property<DateTime?>("ClosedDate")
                         .HasColumnType("datetime");
 
-<<<<<<< HEAD
-=======
                     b.Property<string>("CreatedByUser")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
@@ -889,7 +748,6 @@ namespace OpenERP.Migrations
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime");
 
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                     b.Property<int>("CustomerId")
                         .HasColumnType("int")
                         .HasColumnName("CustomerID");
@@ -917,20 +775,12 @@ namespace OpenERP.Migrations
 
                     b.HasKey("CompanyId", "SalesOrderNum");
 
-<<<<<<< HEAD
-                    b.HasIndex("CompanyId", "CustomerId");
-=======
                     b.HasIndex(new[] { "CompanyId", "CustomerId" }, "IX_SalesOrderHed_CompanyID_CustomerID");
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
 
                     b.ToTable("SalesOrderHed", "Erp");
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.SalesOrderRel", b =>
-=======
             modelBuilder.Entity("OpenERP.ErpDbContext.DataModel.SalesOrderRel", b =>
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                 {
                     b.Property<string>("CompanyId")
                         .ValueGeneratedOnAdd()
@@ -959,11 +809,7 @@ namespace OpenERP.Migrations
                     b.ToTable("SalesOrderRel", "Erp");
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.Supplier", b =>
-=======
             modelBuilder.Entity("OpenERP.ErpDbContext.DataModel.Supplier", b =>
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                 {
                     b.Property<string>("CompanyId")
                         .ValueGeneratedOnAdd()
@@ -995,11 +841,7 @@ namespace OpenERP.Migrations
                     b.ToTable("Supplier", "Erp");
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.Uomcode", b =>
-=======
             modelBuilder.Entity("OpenERP.ErpDbContext.DataModel.Uom", b =>
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                 {
                     b.Property<string>("CompanyId")
                         .ValueGeneratedOnAdd()
@@ -1008,19 +850,11 @@ namespace OpenERP.Migrations
                         .HasColumnName("CompanyID")
                         .HasDefaultValueSql("('')");
 
-<<<<<<< HEAD
-                    b.Property<string>("Uomcode1")
-                        .ValueGeneratedOnAdd()
-                        .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)")
-                        .HasColumnName("UOMCode")
-=======
                     b.Property<string>("Uom1")
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(15)
                         .HasColumnType("nvarchar(15)")
                         .HasColumnName("UOM")
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                         .HasDefaultValueSql("('')");
 
                     b.Property<bool>("Active")
@@ -1034,85 +868,9 @@ namespace OpenERP.Migrations
                         .HasColumnName("UOMDescription")
                         .HasDefaultValueSql("('')");
 
-<<<<<<< HEAD
-                    b.HasKey("CompanyId", "Uomcode1");
-
-                    b.ToTable("UOMCode", "Erp");
-                });
-
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.User", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<int>("AccessFailedCount")
-                        .HasColumnType("int");
-
-                    b.Property<string>("CompanyList")
-                        .IsRequired()
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.Property<string>("ConcurrencyStamp")
-                        .IsConcurrencyToken()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.Property<bool>("EmailConfirmed")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("LockoutEnabled")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTimeOffset?>("LockoutEnd")
-                        .HasColumnType("datetimeoffset");
-
-                    b.Property<string>("NormalizedEmail")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.Property<string>("NormalizedUserName")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.Property<string>("PasswordHash")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PhoneNumber")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("PhoneNumberConfirmed")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("SecurityStamp")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("TwoFactorEnabled")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("UserName")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("NormalizedEmail")
-                        .HasDatabaseName("EmailIndex");
-
-                    b.HasIndex("NormalizedUserName")
-                        .IsUnique()
-                        .HasDatabaseName("UserNameIndex")
-                        .HasFilter("[NormalizedUserName] IS NOT NULL");
-
-                    b.ToTable("AspNetUsers", (string)null);
-=======
                     b.HasKey("CompanyId", "Uom1");
 
                     b.ToTable("UOM", "Erp");
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -1126,11 +884,7 @@ namespace OpenERP.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-<<<<<<< HEAD
-                    b.HasOne("OpenERP.ErpDbContext.Models.User", null)
-=======
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1139,11 +893,7 @@ namespace OpenERP.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-<<<<<<< HEAD
-                    b.HasOne("OpenERP.ErpDbContext.Models.User", null)
-=======
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1158,11 +908,7 @@ namespace OpenERP.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-<<<<<<< HEAD
-                    b.HasOne("OpenERP.ErpDbContext.Models.User", null)
-=======
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1171,79 +917,37 @@ namespace OpenERP.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-<<<<<<< HEAD
-                    b.HasOne("OpenERP.ErpDbContext.Models.User", null)
-=======
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.Address", b =>
-                {
-                    b.HasOne("OpenERP.ErpDbContext.Models.Company", "Company")
-                        .WithMany("Addresses")
-                        .HasForeignKey("CompanyId")
-=======
             modelBuilder.Entity("OpenERP.ErpDbContext.DataModel.Address", b =>
                 {
                     b.HasOne("OpenERP.ErpDbContext.DataModel.Company", "Company")
                         .WithMany("Addresses")
                         .HasForeignKey("CompanyId")
                         .OnDelete(DeleteBehavior.Cascade)
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                         .IsRequired()
                         .HasConstraintName("FK_AddressCompany");
 
                     b.Navigation("Company");
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.Customer", b =>
-                {
-                    b.HasOne("OpenERP.ErpDbContext.Models.Company", "Company")
-                        .WithMany("Customers")
-                        .HasForeignKey("CompanyId")
-=======
             modelBuilder.Entity("OpenERP.ErpDbContext.DataModel.Customer", b =>
                 {
                     b.HasOne("OpenERP.ErpDbContext.DataModel.Company", "Company")
                         .WithMany("Customers")
                         .HasForeignKey("CompanyId")
                         .OnDelete(DeleteBehavior.Cascade)
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                         .IsRequired()
                         .HasConstraintName("FK_CustomerCompany");
 
                     b.Navigation("Company");
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.Part", b =>
-                {
-                    b.HasOne("OpenERP.ErpDbContext.Models.Company", "Company")
-                        .WithMany("Parts")
-                        .HasForeignKey("CompanyId")
-                        .IsRequired()
-                        .HasConstraintName("FK_Part_Company");
-
-                    b.Navigation("Company");
-                });
-
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.PartRev", b =>
-                {
-                    b.HasOne("OpenERP.ErpDbContext.Models.Company", "Company")
-                        .WithMany("PartRevs")
-                        .HasForeignKey("CompanyId")
-                        .IsRequired()
-                        .HasConstraintName("FK_PartRev_Company");
-
-                    b.HasOne("OpenERP.ErpDbContext.Models.Part", "Part")
-=======
             modelBuilder.Entity("OpenERP.ErpDbContext.DataModel.Part", b =>
                 {
                     b.HasOne("OpenERP.ErpDbContext.DataModel.Company", "Company")
@@ -1274,7 +978,6 @@ namespace OpenERP.Migrations
                         .HasConstraintName("FK_PartRev_Company");
 
                     b.HasOne("OpenERP.ErpDbContext.DataModel.Part", "Part")
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                         .WithMany("PartRevs")
                         .HasForeignKey("CompanyId", "PartNum")
                         .IsRequired()
@@ -1285,28 +988,6 @@ namespace OpenERP.Migrations
                     b.Navigation("Part");
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.PurchaseOrderDtl", b =>
-                {
-                    b.HasOne("OpenERP.ErpDbContext.Models.Company", "Company")
-                        .WithMany("PurchaseOrderDtls")
-                        .HasForeignKey("CompanyId")
-                        .IsRequired()
-                        .HasConstraintName("FK_POD_Company");
-
-                    b.Navigation("Company");
-                });
-
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.PurchaseOrderHed", b =>
-                {
-                    b.HasOne("OpenERP.ErpDbContext.Models.Company", "Company")
-                        .WithMany("PurchaseOrderHeds")
-                        .HasForeignKey("CompanyId")
-                        .IsRequired()
-                        .HasConstraintName("FK_POH_Company");
-
-                    b.HasOne("OpenERP.ErpDbContext.Models.Supplier", "Supplier")
-=======
             modelBuilder.Entity("OpenERP.ErpDbContext.DataModel.PurchaseOrderDtl", b =>
                 {
                     b.HasOne("OpenERP.ErpDbContext.DataModel.Company", "Company")
@@ -1345,7 +1026,6 @@ namespace OpenERP.Migrations
                         .HasConstraintName("FK_POH_Company");
 
                     b.HasOne("OpenERP.ErpDbContext.DataModel.Supplier", "Supplier")
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                         .WithMany("PurchaseOrderHeds")
                         .HasForeignKey("CompanyId", "SupplierId")
                         .IsRequired()
@@ -1356,31 +1036,18 @@ namespace OpenERP.Migrations
                     b.Navigation("Supplier");
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.PurchaseOrderRel", b =>
-                {
-                    b.HasOne("OpenERP.ErpDbContext.Models.Company", "Company")
-                        .WithMany("PurchaseOrderRels")
-                        .HasForeignKey("CompanyId")
-=======
             modelBuilder.Entity("OpenERP.ErpDbContext.DataModel.PurchaseOrderRel", b =>
                 {
                     b.HasOne("OpenERP.ErpDbContext.DataModel.Company", "Company")
                         .WithMany("PurchaseOrderRels")
                         .HasForeignKey("CompanyId")
                         .OnDelete(DeleteBehavior.Cascade)
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                         .IsRequired()
                         .HasConstraintName("FK_POR_Company");
 
                     b.Navigation("Company");
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.SalesOrderDtl", b =>
-                {
-                    b.HasOne("OpenERP.ErpDbContext.Models.Part", "Part")
-=======
             modelBuilder.Entity("OpenERP.ErpDbContext.DataModel.SalesOrderDtl", b =>
                 {
                     b.HasOne("OpenERP.ErpDbContext.DataModel.Company", "Company")
@@ -1391,38 +1058,17 @@ namespace OpenERP.Migrations
                         .HasConstraintName("FK_SOD_Company");
 
                     b.HasOne("OpenERP.ErpDbContext.DataModel.Part", "Part")
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                         .WithMany("SalesOrderDtls")
                         .HasForeignKey("CompanyId", "PartNum")
                         .IsRequired()
                         .HasConstraintName("FK_SOD_Part");
 
-<<<<<<< HEAD
-                    b.HasOne("OpenERP.ErpDbContext.Models.SalesOrderHed", "SalesOrderHed")
-=======
                     b.HasOne("OpenERP.ErpDbContext.DataModel.SalesOrderHed", "SalesOrderHed")
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                         .WithMany("SalesOrderDtls")
                         .HasForeignKey("CompanyId", "SalesOrderNum")
                         .IsRequired()
                         .HasConstraintName("FK_SOD_SOHed");
 
-<<<<<<< HEAD
-                    b.Navigation("Part");
-
-                    b.Navigation("SalesOrderHed");
-                });
-
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.SalesOrderHed", b =>
-                {
-                    b.HasOne("OpenERP.ErpDbContext.Models.Company", "Company")
-                        .WithMany("SalesOrderHeds")
-                        .HasForeignKey("CompanyId")
-                        .IsRequired()
-                        .HasConstraintName("FK_SOH_Company");
-
-                    b.HasOne("OpenERP.ErpDbContext.Models.Customer", "C")
-=======
                     b.HasOne("OpenERP.ErpDbContext.DataModel.Uom", "Uom")
                         .WithMany("SalesOrderDtls")
                         .HasForeignKey("CompanyId", "SalesUom")
@@ -1448,7 +1094,6 @@ namespace OpenERP.Migrations
                         .HasConstraintName("FK_SOH_Company");
 
                     b.HasOne("OpenERP.ErpDbContext.DataModel.Customer", "C")
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                         .WithMany("SalesOrderHeds")
                         .HasForeignKey("CompanyId", "CustomerId")
                         .IsRequired()
@@ -1459,17 +1104,6 @@ namespace OpenERP.Migrations
                     b.Navigation("Company");
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.SalesOrderRel", b =>
-                {
-                    b.HasOne("OpenERP.ErpDbContext.Models.Company", "Company")
-                        .WithMany("SalesOrderRels")
-                        .HasForeignKey("CompanyId")
-                        .IsRequired()
-                        .HasConstraintName("FK_SOR_Company");
-
-                    b.HasOne("OpenERP.ErpDbContext.Models.SalesOrderDtl", "SalesOrderDtl")
-=======
             modelBuilder.Entity("OpenERP.ErpDbContext.DataModel.SalesOrderRel", b =>
                 {
                     b.HasOne("OpenERP.ErpDbContext.DataModel.Company", "Company")
@@ -1480,7 +1114,6 @@ namespace OpenERP.Migrations
                         .HasConstraintName("FK_SOR_Company");
 
                     b.HasOne("OpenERP.ErpDbContext.DataModel.SalesOrderDtl", "SalesOrderDtl")
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                         .WithMany("SalesOrderRels")
                         .HasForeignKey("CompanyId", "SalesOrderNum", "SalesOrderLineNum")
                         .IsRequired()
@@ -1491,51 +1124,31 @@ namespace OpenERP.Migrations
                     b.Navigation("SalesOrderDtl");
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.Supplier", b =>
-                {
-                    b.HasOne("OpenERP.ErpDbContext.Models.Company", "Company")
-                        .WithMany("Suppliers")
-                        .HasForeignKey("CompanyId")
-=======
             modelBuilder.Entity("OpenERP.ErpDbContext.DataModel.Supplier", b =>
                 {
                     b.HasOne("OpenERP.ErpDbContext.DataModel.Company", "Company")
                         .WithMany("Suppliers")
                         .HasForeignKey("CompanyId")
                         .OnDelete(DeleteBehavior.Cascade)
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                         .IsRequired()
                         .HasConstraintName("FK_Supplier_Company");
 
                     b.Navigation("Company");
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.Uomcode", b =>
-                {
-                    b.HasOne("OpenERP.ErpDbContext.Models.Company", "Company")
-                        .WithMany("Uomcodes")
-                        .HasForeignKey("CompanyId")
-=======
             modelBuilder.Entity("OpenERP.ErpDbContext.DataModel.Uom", b =>
                 {
                     b.HasOne("OpenERP.ErpDbContext.DataModel.Company", "Company")
                         .WithMany("Uoms")
                         .HasForeignKey("CompanyId")
                         .OnDelete(DeleteBehavior.Cascade)
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                         .IsRequired()
                         .HasConstraintName("FK_UOM_Company");
 
                     b.Navigation("Company");
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.Company", b =>
-=======
             modelBuilder.Entity("OpenERP.ErpDbContext.DataModel.Company", b =>
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                 {
                     b.Navigation("Addresses");
 
@@ -1551,67 +1164,39 @@ namespace OpenERP.Migrations
 
                     b.Navigation("PurchaseOrderRels");
 
-<<<<<<< HEAD
-=======
                     b.Navigation("SalesOrderDtls");
 
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                     b.Navigation("SalesOrderHeds");
 
                     b.Navigation("SalesOrderRels");
 
                     b.Navigation("Suppliers");
 
-<<<<<<< HEAD
-                    b.Navigation("Uomcodes");
-                });
-
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.Customer", b =>
-=======
                     b.Navigation("Uoms");
                 });
 
             modelBuilder.Entity("OpenERP.ErpDbContext.DataModel.Customer", b =>
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                 {
                     b.Navigation("SalesOrderHeds");
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.Part", b =>
-=======
             modelBuilder.Entity("OpenERP.ErpDbContext.DataModel.Part", b =>
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                 {
                     b.Navigation("PartRevs");
 
                     b.Navigation("SalesOrderDtls");
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.SalesOrderDtl", b =>
-=======
             modelBuilder.Entity("OpenERP.ErpDbContext.DataModel.SalesOrderDtl", b =>
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                 {
                     b.Navigation("SalesOrderRels");
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.SalesOrderHed", b =>
-=======
             modelBuilder.Entity("OpenERP.ErpDbContext.DataModel.SalesOrderHed", b =>
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
                 {
                     b.Navigation("SalesOrderDtls");
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("OpenERP.ErpDbContext.Models.Supplier", b =>
-                {
-                    b.Navigation("PurchaseOrderHeds");
-                });
-=======
             modelBuilder.Entity("OpenERP.ErpDbContext.DataModel.Supplier", b =>
                 {
                     b.Navigation("PurchaseOrderHeds");
@@ -1627,7 +1212,6 @@ namespace OpenERP.Migrations
 
                     b.Navigation("SalesOrderDtls");
                 });
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
 #pragma warning restore 612, 618
         }
     }

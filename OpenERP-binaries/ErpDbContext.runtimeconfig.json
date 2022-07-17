@@ -1,12 +1,6 @@
 {
   "runtimeOptions": {
     "tfm": "net6.0",
-<<<<<<< HEAD
-    "framework": {
-      "name": "Microsoft.NETCore.App",
-      "version": "6.0.0"
-    },
-=======
     "frameworks": [
       {
         "name": "Microsoft.NETCore.App",
@@ -17,7 +11,6 @@
         "version": "6.0.0"
       }
     ],
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
     "configProperties": {
       "System.Reflection.NullabilityInfoContext.IsSupported": true
     }
