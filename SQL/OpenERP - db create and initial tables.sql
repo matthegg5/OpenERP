@@ -20,28 +20,6 @@ CREATE TABLE [Erp].[Company] (
 END
 
 
-<<<<<<< HEAD
--- custom user table on hold - will see what EF Identity generates and adapt from there
-
-/* IF NOT EXISTS (SELECT * FROM sys.tables where tables.name = 'User') 
-BEGIN
-
-    CREATE TABLE [Erp].[User] (
-        UserID UNIQUEIDENTIFIER NOT NULL, --system generated, used for internal reference (ASP.NET Core 6 Identity implementation so may change)
-        LoginID NVARCHAR(100) NOT NULL DEFAULT(''), --user assigned, used to login to environment
-        UserName NVARCHAR(300) NOT NULL DEFAULT(''),
-        AuthKey NVARCHAR(4000) NOT NULL DEFAULT(''), -- password in encrypted form
-        UserDisabled BIT NOT NULL DEFAULT(0),
-        CompanyList NVARCHAR(1000) NOT NULL DEFAULT(''),
-        SSODomain NVARCHAR(50) NOT NULL DEFAULT(''),
-        SSOUser NVARCHAR(300) NOT NULL DEFAULT(''),
-        CONSTRAINT PK_User PRIMARY KEY (UserID)
-    )
-
-END */
-
-=======
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
 IF NOT EXISTS (SELECT * FROM sys.tables where tables.name = 'UOMCode') 
 BEGIN
 
@@ -269,8 +247,6 @@ BEGIN
     )
 END
 
-<<<<<<< HEAD
-=======
 
 /* 
 tables to add
@@ -294,4 +270,3 @@ GO
 USE [master]
 
 GO
->>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)

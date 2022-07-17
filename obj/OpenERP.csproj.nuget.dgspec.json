@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/saffron/Development/c#/OpenERP/ErpDbContext/ErpDbContext.csproj": {}
+    "/home/saffron/Development/c#/OpenERP/OpenERP.csproj": {}
   },
   "projects": {
-    "/home/saffron/Development/c#/OpenERP/ErpDbContext/ErpDbContext.csproj": {
+    "/home/saffron/Development/c#/OpenERP/OpenERP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/saffron/Development/c#/OpenERP/ErpDbContext/ErpDbContext.csproj",
-        "projectName": "ErpDbContext",
-        "projectPath": "/home/saffron/Development/c#/OpenERP/ErpDbContext/ErpDbContext.csproj",
+        "projectUniqueName": "/home/saffron/Development/c#/OpenERP/OpenERP.csproj",
+        "projectName": "OpenERP",
+        "projectPath": "/home/saffron/Development/c#/OpenERP/OpenERP.csproj",
         "packagesPath": "/home/saffron/.nuget/packages/",
-        "outputPath": "/home/saffron/Development/c#/OpenERP/ErpDbContext/obj/",
+        "outputPath": "/home/saffron/Development/c#/OpenERP/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/saffron/.nuget/NuGet/NuGet.Config"
@@ -54,7 +54,7 @@
               "target": "Package",
               "version": "[6.0.7, )"
             },
-            "Microsoft.EntityFrameworkCore": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
               "version": "[6.0.6, )"
             },
@@ -86,6 +86,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
