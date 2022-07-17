@@ -20,6 +20,7 @@ CREATE TABLE [Erp].[Company] (
 END
 
 
+<<<<<<< HEAD
 -- custom user table on hold - will see what EF Identity generates and adapt from there
 
 /* IF NOT EXISTS (SELECT * FROM sys.tables where tables.name = 'User') 
@@ -39,6 +40,8 @@ BEGIN
 
 END */
 
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
 IF NOT EXISTS (SELECT * FROM sys.tables where tables.name = 'UOMCode') 
 BEGIN
 
@@ -266,3 +269,29 @@ BEGIN
     )
 END
 
+<<<<<<< HEAD
+=======
+
+/* 
+tables to add
+
+costelement costcentre internalorder
+warehouse
+warehouselocations
+receiptheader
+receiptdtl
+SOShipmentHeader
+SOShipmentDtl
+PartTranHistory
+SerialNo
+SerialNoTranHistory
+
+ */
+
+
+
+GO
+USE [master]
+
+GO
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)

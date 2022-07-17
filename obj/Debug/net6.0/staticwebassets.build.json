@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "TJRvNGIogQdYgUXmvj7JSVS2HZRJzhWZc9Xcx5NrWnA=",
+=======
+  "Hash": "ase20tD+MogAWuP98NpS1ld/QNxD79TUk33Vv+I4h2s=",
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
   "Source": "OpenERP",
   "BasePath": "_content/OpenERP",
   "Mode": "Default",
@@ -68,6 +72,7 @@
       "OriginalItemSpec": "wwwroot/js/index.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
@@ -3281,6 +3286,8 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/scss/vendor/_rfs.scss"
     },
     {
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
       "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",

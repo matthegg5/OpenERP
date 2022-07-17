@@ -11,6 +11,10 @@
           "Microsoft.AspNetCore": "2.2.0",
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.6",
+<<<<<<< HEAD
+=======
+          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.7",
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
           "Microsoft.EntityFrameworkCore": "6.0.6",
           "Microsoft.EntityFrameworkCore.Design": "6.0.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.6",
@@ -48,12 +52,15 @@
           "Microsoft.Extensions.Logging.Console": "2.2.0",
           "Microsoft.Extensions.Logging.Debug": "2.2.0",
           "Microsoft.Extensions.Logging.EventSource": "2.2.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18316"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.AspNetCore.Authentication/2.2.0": {
@@ -65,12 +72,15 @@
           "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
           "Microsoft.Extensions.Options": "6.0.0",
           "Microsoft.Extensions.WebEncoders": "2.2.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18316"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
@@ -78,23 +88,29 @@
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
           "Microsoft.Extensions.Options": "6.0.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.Abstractions.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18316"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.AspNetCore.Authentication.Cookies/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Authentication": "2.2.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.Cookies.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18316"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.AspNetCore.Authentication.Core/2.2.0": {
@@ -102,24 +118,30 @@
           "Microsoft.AspNetCore.Authentication.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Http": "2.2.0",
           "Microsoft.AspNetCore.Http.Extensions": "2.2.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.Core.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18316"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.AspNetCore.Connections.Abstractions/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Features": "2.2.0",
           "System.IO.Pipelines": "4.5.2"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Connections.Abstractions.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18316"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.AspNetCore.Cryptography.Internal/6.0.6": {
@@ -152,6 +174,7 @@
           "Microsoft.Win32.Registry": "4.7.0",
           "System.Security.Cryptography.Xml": "4.5.0",
           "System.Security.Principal.Windows": "4.7.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.DataProtection.dll": {
@@ -168,6 +191,11 @@
           }
         }
       },
+=======
+        }
+      },
+      "Microsoft.AspNetCore.DataProtection.Abstractions/2.2.0": {},
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
       "Microsoft.AspNetCore.Diagnostics/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Diagnostics.Abstractions": "2.2.0",
@@ -179,6 +207,7 @@
           "Microsoft.Extensions.Options": "6.0.0",
           "System.Diagnostics.DiagnosticSource": "6.0.0",
           "System.Reflection.Metadata": "1.6.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Diagnostics.dll": {
@@ -195,18 +224,26 @@
           }
         }
       },
+=======
+        }
+      },
+      "Microsoft.AspNetCore.Diagnostics.Abstractions/2.2.0": {},
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
       "Microsoft.AspNetCore.HostFiltering/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Http": "2.2.0",
           "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
           "Microsoft.Extensions.Options": "6.0.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.HostFiltering.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18316"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.AspNetCore.Hosting/2.2.0": {
@@ -224,12 +261,15 @@
           "Microsoft.Extensions.Options": "6.0.0",
           "System.Diagnostics.DiagnosticSource": "6.0.0",
           "System.Reflection.Metadata": "1.6.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18316"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.AspNetCore.Hosting.Abstractions/2.2.0": {
@@ -237,24 +277,30 @@
           "Microsoft.AspNetCore.Hosting.Server.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.Extensions.Hosting.Abstractions": "2.2.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Abstractions.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18316"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.AspNetCore.Hosting.Server.Abstractions/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Features": "2.2.0",
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18316"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.AspNetCore.Http/2.2.0": {
@@ -264,24 +310,30 @@
           "Microsoft.Extensions.ObjectPool": "2.2.0",
           "Microsoft.Extensions.Options": "6.0.0",
           "Microsoft.Net.Http.Headers": "2.2.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Http.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18316"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Features": "2.2.0",
           "System.Text.Encodings.Web": "4.5.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18316"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.AspNetCore.Http.Extensions/2.2.0": {
@@ -290,23 +342,29 @@
           "Microsoft.Extensions.FileProviders.Abstractions": "2.2.0",
           "Microsoft.Net.Http.Headers": "2.2.0",
           "System.Buffers": "4.5.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Http.Extensions.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18316"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.AspNetCore.Http.Features/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "6.0.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18316"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.AspNetCore.HttpOverrides/2.2.0": {
@@ -314,12 +372,15 @@
           "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
           "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
           "Microsoft.Extensions.Options": "6.0.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.HttpOverrides.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18316"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.AspNetCore.Identity/2.2.0": {
@@ -328,12 +389,15 @@
           "Microsoft.AspNetCore.Cryptography.KeyDerivation": "6.0.6",
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
           "Microsoft.Extensions.Identity.Core": "6.0.6"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Identity.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18316"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore/6.0.6": {
@@ -348,6 +412,34 @@
           }
         }
       },
+<<<<<<< HEAD
+=======
+      "Microsoft.AspNetCore.JsonPatch/6.0.7": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.JsonPatch.dll": {
+            "assemblyVersion": "6.0.7.0",
+            "fileVersion": "6.0.722.32205"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.NewtonsoftJson/6.0.7": {
+        "dependencies": {
+          "Microsoft.AspNetCore.JsonPatch": "6.0.7",
+          "Newtonsoft.Json": "13.0.1",
+          "Newtonsoft.Json.Bson": "1.0.2"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll": {
+            "assemblyVersion": "6.0.7.0",
+            "fileVersion": "6.0.722.32205"
+          }
+        }
+      },
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
       "Microsoft.AspNetCore.Routing/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
@@ -355,23 +447,29 @@
           "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
           "Microsoft.Extensions.ObjectPool": "2.2.0",
           "Microsoft.Extensions.Options": "6.0.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netcoreapp2.2/Microsoft.AspNetCore.Routing.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18316"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.AspNetCore.Routing.Abstractions/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Routing.Abstractions.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18316"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.AspNetCore.Server.IIS/2.2.0": {
@@ -381,6 +479,7 @@
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
           "System.IO.Pipelines": "4.5.2",
           "System.Security.Principal.Windows": "4.7.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Server.IIS.dll": {
@@ -399,6 +498,8 @@
             "assetType": "native",
             "fileVersion": "0.0.0.0"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.AspNetCore.Server.IISIntegration/2.2.0": {
@@ -416,12 +517,15 @@
           "System.Numerics.Vectors": "4.5.0",
           "System.Runtime.CompilerServices.Unsafe": "6.0.0",
           "System.Security.Principal.Windows": "4.7.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Server.IISIntegration.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18316"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.AspNetCore.Server.Kestrel/2.2.0": {
@@ -430,12 +534,15 @@
           "Microsoft.AspNetCore.Server.Kestrel.Core": "2.2.0",
           "Microsoft.AspNetCore.Server.Kestrel.Https": "2.2.0",
           "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets": "2.2.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Server.Kestrel.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18316"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.AspNetCore.Server.Kestrel.Core/2.2.0": {
@@ -453,12 +560,15 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0",
           "System.Security.Cryptography.Cng": "4.5.0",
           "System.Threading.Tasks.Extensions": "4.5.1"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netcoreapp2.1/Microsoft.AspNetCore.Server.Kestrel.Core.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18316"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.AspNetCore.Server.Kestrel.Https/2.2.0": {
@@ -489,18 +599,22 @@
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions": "2.2.0",
           "Microsoft.Extensions.Options": "6.0.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netcoreapp2.1/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18316"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.AspNetCore.WebUtilities/2.2.0": {
         "dependencies": {
           "Microsoft.Net.Http.Headers": "2.2.0",
           "System.Text.Encodings.Web": "4.5.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.WebUtilities.dll": {
@@ -510,6 +624,11 @@
         }
       },
       "Microsoft.CSharp/4.5.0": {},
+=======
+        }
+      },
+      "Microsoft.CSharp/4.7.0": {},
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
       "Microsoft.Data.SqlClient/2.1.4": {
         "dependencies": {
           "Microsoft.Data.SqlClient.SNI.runtime": "2.1.1",
@@ -638,12 +757,15 @@
       "Microsoft.Extensions.Caching.Abstractions/6.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "6.0.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.21.52210"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.Extensions.Caching.Memory/6.0.1": {
@@ -664,74 +786,93 @@
       "Microsoft.Extensions.Configuration/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18315"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.Extensions.Configuration.Abstractions/6.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "6.0.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.21.52210"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.Extensions.Configuration.Binder/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.2.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18315"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.Extensions.Configuration.CommandLine/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.2.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.CommandLine.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18315"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.Extensions.Configuration.EnvironmentVariables/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.2.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18315"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.Extensions.Configuration.FileExtensions/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.2.0",
           "Microsoft.Extensions.FileProviders.Physical": "2.2.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18315"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.Extensions.Configuration.Json/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.2.0",
           "Microsoft.Extensions.Configuration.FileExtensions": "2.2.0",
+<<<<<<< HEAD
           "Newtonsoft.Json": "11.0.2"
         },
         "runtime": {
@@ -739,23 +880,30 @@
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18315"
           }
+=======
+          "Newtonsoft.Json": "13.0.1"
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.Extensions.Configuration.UserSecrets/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Json": "2.2.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.UserSecrets.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18315"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.Extensions.DependencyInjection/6.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {
@@ -781,12 +929,21 @@
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18315"
           }
+=======
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {},
+      "Microsoft.Extensions.FileProviders.Abstractions/2.2.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "6.0.0"
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.Extensions.FileProviders.Physical/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "2.2.0",
           "Microsoft.Extensions.FileSystemGlobbing": "2.2.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll": {
@@ -803,18 +960,26 @@
           }
         }
       },
+=======
+        }
+      },
+      "Microsoft.Extensions.FileSystemGlobbing/2.2.0": {},
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
       "Microsoft.Extensions.Hosting.Abstractions/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "Microsoft.Extensions.FileProviders.Abstractions": "2.2.0",
           "Microsoft.Extensions.Logging.Abstractions": "6.0.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Hosting.Abstractions.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18316"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.Extensions.Identity.Core/6.0.6": {
@@ -850,6 +1015,7 @@
           "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
           "Microsoft.Extensions.Options": "6.0.0",
           "System.Diagnostics.DiagnosticSource": "6.0.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.1/Microsoft.Extensions.Logging.dll": {
@@ -866,16 +1032,24 @@
           }
         }
       },
+=======
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/6.0.0": {},
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
       "Microsoft.Extensions.Logging.Configuration/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.Logging": "6.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "2.2.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.Configuration.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18315"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.Extensions.Logging.Console/2.2.0": {
@@ -883,28 +1057,35 @@
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
           "Microsoft.Extensions.Logging": "6.0.0",
           "Microsoft.Extensions.Logging.Configuration": "2.2.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.Console.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18315"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.Extensions.Logging.Debug/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.Logging": "6.0.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.Debug.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18315"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.Extensions.Logging.EventSource/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.Logging": "6.0.0",
+<<<<<<< HEAD
           "Newtonsoft.Json": "11.0.2"
         },
         "runtime": {
@@ -922,16 +1103,25 @@
           }
         }
       },
+=======
+          "Newtonsoft.Json": "13.0.1"
+        }
+      },
+      "Microsoft.Extensions.ObjectPool/2.2.0": {},
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
       "Microsoft.Extensions.Options/6.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "Microsoft.Extensions.Primitives": "6.0.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.1/Microsoft.Extensions.Options.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.21.52210"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.Extensions.Options.ConfigurationExtensions/2.2.0": {
@@ -940,23 +1130,29 @@
           "Microsoft.Extensions.Configuration.Binder": "2.2.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "Microsoft.Extensions.Options": "6.0.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18315"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.Extensions.Primitives/6.0.0": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/net6.0/Microsoft.Extensions.Primitives.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.21.52210"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.Extensions.WebEncoders/2.2.0": {
@@ -964,12 +1160,15 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "Microsoft.Extensions.Options": "6.0.0",
           "System.Text.Encodings.Web": "4.5.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.WebEncoders.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18316"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.Identity.Client/4.21.1": {
@@ -1025,7 +1224,11 @@
       },
       "Microsoft.IdentityModel.Tokens/6.8.0": {
         "dependencies": {
+<<<<<<< HEAD
           "Microsoft.CSharp": "4.5.0",
+=======
+          "Microsoft.CSharp": "4.7.0",
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
           "Microsoft.IdentityModel.Logging": "6.8.0",
           "System.Security.Cryptography.Cng": "4.5.0"
         },
@@ -1040,12 +1243,15 @@
         "dependencies": {
           "Microsoft.Extensions.Primitives": "6.0.0",
           "System.Buffers": "4.5.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Net.Http.Headers.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18316"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "Microsoft.NETCore.Platforms/3.1.0": {},
@@ -1074,11 +1280,30 @@
           }
         }
       },
+<<<<<<< HEAD
       "Newtonsoft.Json/11.0.2": {
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
             "assemblyVersion": "11.0.0.0",
             "fileVersion": "11.0.2.21924"
+=======
+      "Newtonsoft.Json/13.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.25517"
+          }
+        }
+      },
+      "Newtonsoft.Json.Bson/1.0.2": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.2.22727"
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
           }
         }
       },
@@ -1143,6 +1368,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "System.IO.Pipelines/4.5.2": {
         "runtime": {
           "lib/netcoreapp2.1/System.IO.Pipelines.dll": {
@@ -1151,6 +1377,9 @@
           }
         }
       },
+=======
+      "System.IO.Pipelines/4.5.2": {},
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
       "System.Memory/4.5.1": {},
       "System.Numerics.Vectors/4.5.0": {},
       "System.Reflection.Metadata/1.6.0": {},
@@ -1184,6 +1413,7 @@
       "System.Security.Cryptography.Pkcs/4.5.0": {
         "dependencies": {
           "System.Security.Cryptography.Cng": "4.5.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netcoreapp2.1/System.Security.Cryptography.Pkcs.dll": {
@@ -1198,6 +1428,8 @@
             "assemblyVersion": "4.0.3.0",
             "fileVersion": "4.6.26515.6"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "System.Security.Cryptography.ProtectedData/4.7.0": {
@@ -1220,12 +1452,15 @@
         "dependencies": {
           "System.Security.Cryptography.Pkcs": "4.5.0",
           "System.Security.Permissions": "4.7.0"
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/netstandard2.0/System.Security.Cryptography.Xml.dll": {
             "assemblyVersion": "4.0.1.0",
             "fileVersion": "4.6.26515.6"
           }
+=======
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
         }
       },
       "System.Security.Permissions/4.7.0": {
@@ -1443,6 +1678,23 @@
       "path": "microsoft.aspnetcore.identity.entityframeworkcore/6.0.6",
       "hashPath": "microsoft.aspnetcore.identity.entityframeworkcore.6.0.6.nupkg.sha512"
     },
+<<<<<<< HEAD
+=======
+    "Microsoft.AspNetCore.JsonPatch/6.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ybv3udO2SaGW74NKIxj06ozTtcEJf2yOCNj4OGY/ZvB+LG/mZGBVKrwZYaZBXaWR9dakrf4+M3LiMAhasTEamg==",
+      "path": "microsoft.aspnetcore.jsonpatch/6.0.7",
+      "hashPath": "microsoft.aspnetcore.jsonpatch.6.0.7.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Mvc.NewtonsoftJson/6.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zkt7EFRR5fZQUc6taa8sO8aG+EF7XQ6Z7+fPW3gXCh6l7+vyDpZ9PbTODYMsXaS1tOjP1b+jJgf7hY/kaciO4Q==",
+      "path": "microsoft.aspnetcore.mvc.newtonsoftjson/6.0.7",
+      "hashPath": "microsoft.aspnetcore.mvc.newtonsoftjson.6.0.7.nupkg.sha512"
+    },
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
     "Microsoft.AspNetCore.Routing/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -1513,12 +1765,21 @@
       "path": "microsoft.aspnetcore.webutilities/2.2.0",
       "hashPath": "microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Microsoft.CSharp/4.5.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
       "path": "microsoft.csharp/4.5.0",
       "hashPath": "microsoft.csharp.4.5.0.nupkg.sha512"
+=======
+    "Microsoft.CSharp/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
     },
     "Microsoft.Data.SqlClient/2.1.4": {
       "type": "package",
@@ -1856,12 +2117,28 @@
       "path": "microsoft.win32.systemevents/4.7.0",
       "hashPath": "microsoft.win32.systemevents.4.7.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Newtonsoft.Json/11.0.2": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
       "path": "newtonsoft.json/11.0.2",
       "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
+=======
+    "Newtonsoft.Json/13.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "path": "newtonsoft.json/13.0.1",
+      "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
+    },
+    "Newtonsoft.Json.Bson/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QYFyxhaABwmq3p/21VrZNYvCg3DaEoN/wUuw5nmfAf0X3HLjgupwhkEWdgfb9nvGAUIv3osmZoD3kKl4jxEmYQ==",
+      "path": "newtonsoft.json.bson/1.0.2",
+      "hashPath": "newtonsoft.json.bson.1.0.2.nupkg.sha512"
+>>>>>>> 5fd5afd (	new file:   Controllers/AppController.cs)
     },
     "System.Buffers/4.5.0": {
       "type": "package",
