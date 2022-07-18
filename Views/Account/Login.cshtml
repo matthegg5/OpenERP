@@ -1,0 +1,39 @@
+@model LoginViewModel
+@{
+    ViewBag.Title="Login to OpenERP";
+}
+@section Scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"></script>
+}
+<!DOCTYPE html>
+<html>
+<head>
+</head>    
+<body>
+    <h1 class="pageTitle">Login to OpenERP</h1>
+        <form method="post">
+        <div asp-validation-summary="ModelOnly"></div>
+        <div class="loginFormArea">
+            <div>
+                <label asp-for="Username">User name:</label>
+                <input asp-for="Username" type="text" class="form-control" />
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+            <div>
+                <label asp-for="Password">Password:</label>
+                <input asp-for="Password" type="password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div> 
+                <label asp-for="RememberMe" class="form-check-label">Remember me?</label>
+                <input asp-for="RememberMe" type="checkbox" />
+            </div>
+            <div>
+                <input class="submitButton" type="submit" value="Login" class="btn btn-success" />
+            </div>
+        </div>
+        </form>
+    <br />
+</body>
+</html>

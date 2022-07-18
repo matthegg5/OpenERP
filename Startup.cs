@@ -1,9 +1,11 @@
-    using Microsoft.AspNetCore.Builder;
-    using Microsoft.AspNetCore.Hosting;
-    using Microsoft.EntityFrameworkCore;
-    using Microsoft.Extensions.DependencyInjection;
-    using Microsoft.Extensions.Hosting;
-    using OpenERP.Services;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using OpenERP.ErpDbContext.DataModel;
+using OpenERP.Services;
 
 namespace OpenERP
 {
@@ -13,10 +15,20 @@ namespace OpenERP
 
         public void ConfigureServices(IServiceCollection services)
         {
-         services.AddDbContext<ErpDbContext.DataModel.OpenERPContext>(cfg =>
-            {
-                cfg.UseSqlServer("Name=OpenERPContextDb");
-            }); 
+
+            services.AddIdentity<User, IdentityRole>(
+                cfg => {
+                    //requirements for login validation
+                    cfg.User.RequireUniqueEmail = true;
+                    cfg.Password.RequireUppercase = true;
+
+                })
+                .AddEntityFrameworkStores<ErpDbContext.DataModel.OpenERPContext>();
+
+            services.AddDbContext<ErpDbContext.DataModel.OpenERPContext>(cfg =>
+               {
+                   cfg.UseSqlServer("Name=OpenERPContextDb");
+               });
 
             services.AddControllersWithViews()
                     .AddRazorRuntimeCompilation()
@@ -24,9 +36,12 @@ namespace OpenERP
             services.AddRazorPages();
             services.AddDistributedMemoryCache();
 
-            
+            services.AddTransient<OpenERPSeeder>();
 
-            services.AddSession(options => {
+
+
+            services.AddSession(options =>
+            {
                 options.IdleTimeout = TimeSpan.FromSeconds(10);
                 options.Cookie.HttpOnly = true;
                 options.Cookie.IsEssential = true;
@@ -38,22 +53,23 @@ namespace OpenERP
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
 
-          if(env.IsDevelopment())
+            if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
             else
             {
                 app.UseExceptionHandler("/error");
-            } 
+            }
             //important that the order below remains
             //app.UseDefaultFiles(); //allows index.html to be picked up as default
             app.UseStaticFiles(); //allows the server to host html files under wwwroot folder          
-            
-            
+
+
             app.UseRouting();
 
-            //app.UseAuthorization();
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseSession();
 

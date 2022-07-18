@@ -8,6 +8,12 @@ namespace OpenERP.ErpDbContext.DataModel {
         //extensions to AspNetUser DB column defined here.
         [MaxLength(256)]
         public string CompanyList { get; set; }
+        [MaxLength(256)]
+        public string FirstName { get; set; }
+        [MaxLength(256)]
+        public string LastName { get; set; }
+        
+
     }
 
 }

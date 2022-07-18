@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OpenERP.ErpDbContext.DataModel;
 
@@ -11,9 +12,10 @@ using OpenERP.ErpDbContext.DataModel;
 namespace OpenERP.Migrations
 {
     [DbContext(typeof(OpenERPContext))]
-    partial class OpenERPContextModelSnapshot : ModelSnapshot
+    [Migration("20220718161642_IdentityUser")]
+    partial class IdentityUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

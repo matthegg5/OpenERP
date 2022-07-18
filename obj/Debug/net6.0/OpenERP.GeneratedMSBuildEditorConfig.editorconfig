@@ -23,6 +23,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/saffron/Development/c\#/OpenERP/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/saffron/Development/c\#/OpenERP/Views/App/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL0Fib3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
