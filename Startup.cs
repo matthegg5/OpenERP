@@ -1,9 +1,11 @@
+using System.Text;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.IdentityModel.Tokens;
 using OpenERP.ErpDbContext.DataModel;
 using OpenERP.Services;
 
@@ -12,6 +14,12 @@ namespace OpenERP
 
     public class Startup
     {
+        private readonly IConfiguration _config;
+
+        public Startup(IConfiguration config)
+        {
+            this._config = config;
+        }
 
         public void ConfigureServices(IServiceCollection services)
         {
@@ -24,6 +32,19 @@ namespace OpenERP
 
                 })
                 .AddEntityFrameworkStores<ErpDbContext.DataModel.OpenERPContext>();
+
+            services.AddAuthentication()
+                .AddCookie()
+                .AddJwtBearer(cfg =>
+                {
+                    cfg.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters()
+                    {
+                        ValidIssuer = _config["Tokens:Issuer"],
+                        ValidAudience = _config["Tokens:Audience"],
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Tokens:Key"])),
+                        ValidateAudience = false
+                    };
+                });    
 
             services.AddDbContext<ErpDbContext.DataModel.OpenERPContext>(cfg =>
                {
