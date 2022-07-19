@@ -3,12 +3,13 @@ using Microsoft.AspNetCore.Mvc;
 using OpenERP.Services;
 using OpenERP.ErpDbContext.DataModel;
 using Microsoft.AspNetCore.Authorization;
-
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace OpenERP.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize(AuthenticationSchemes =JwtBearerDefaults.AuthenticationScheme)]
     public class PartController : ControllerBase
     {
         private readonly OpenERPContext _context;
@@ -30,7 +31,7 @@ namespace OpenERP.Controllers
 
                 var isPartValid = _context.Parts.Where(p => p.PartNum.Equals(partNum)).Any();
                 if(isPartValid) return Ok();
-                else return NotFound();
+                else return BadRequest($"Failed to return Part {partNum} via GetById");
 
             }
             catch (Exception ex)
