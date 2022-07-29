@@ -9,31 +9,37 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href="~/css/login.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
 </head>    
 <body>
-    <h1 class="pageTitle">Login to OpenERP</h1>
-        <form method="post">
+    <section class="showcase">
+    <header>
+        <h2 class="logo">@ViewBag.Title</h2>
+        <div class="toggle"></div>
+    </header>
         <div asp-validation-summary="ModelOnly"></div>
-        <div class="loginFormArea">
-            <div>
+        <video src="~/media/Login-background.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+    <form method="post">
+         <div class="loginFormArea">
+            <div class="text">
                 <label asp-for="Username">User name:</label>
-                <input asp-for="Username" type="text" class="form-control" />
-                <span asp-validation-for="Username" class="text-danger"></span>
+                <input asp-for="Username" type="text" />
+                <span asp-validation-for="Username"></span>
             </div>
-            <div>
+            <div class="text">
                 <label asp-for="Password">Password:</label>
-                <input asp-for="Password" type="password" class="form-control" />
+                <input asp-for="Password" type="password"/>
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
-            <div> 
-                <label asp-for="RememberMe" class="form-check-label">Remember me?</label>
-                <input asp-for="RememberMe" type="checkbox" />
+            <div class="text">
+                <input class="submitButton" type="submit" value="Login" />
             </div>
-            <div>
-                <input class="submitButton" type="submit" value="Login" class="btn btn-success" />
-            </div>
-        </div>
-        </form>
-    <br />
+        </div> 
+    </form> 
+    </section>
 </body>
 </html>

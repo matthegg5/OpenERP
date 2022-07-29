@@ -1,0 +1,58 @@
+.overlay {
+    background: blueviolet;
+}
+.loginFormArea {
+    position:relative;
+    background-color: rgb(219, 231, 241, 0.5);
+    font-size:large;
+    border: none;
+    border-radius: 5px;
+    display:inline-block;
+    padding: 5px 3px 5px 3px;
+    margin: 2px;
+    z-index: 1000;
+
+}
+
+.loginFormArea a
+{
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.2s;
+  opacity: 1;
+}
+.loginFormArea a:hover
+{
+  letter-spacing: 6px;
+  opacity: 1;
+}
+
+.loginFormArea img {
+    margin: 3px;
+
+}
+
+.loginFormArea input {
+    width: 200px;
+    z-index: 1001;
+    opacity: 1;
+}
+.loginFormArea label {
+    width: 150px;
+    display:inline-block;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1002;
+    opacity: 1;
+}
+.loginFormArea input[type=checkbox], .loginFormArea input[type=submit] {
+    width:auto;
+    opacity: 1;
+}
