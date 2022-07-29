@@ -1,4 +1,5 @@
 appsettings.json.old
+config.json
 .vscode/launch.json
 .vscode/tasks.json
 bin/Debug/net6.0/appsettings.Development.json
