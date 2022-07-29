@@ -22,22 +22,6 @@
       <p>OpenERP is completely open-source, and free! Your business can develop its own system and business logic rules as you see fit.</p>
       <a asp-controller="Account" asp-action="Login">Login</a>
     </div>
-  </section>
-  <div class="menu">
-      <ul>
-        <li><a asp-controller="App" asp-action="Index">Home</a></li>
-        @if (User.Identity.IsAuthenticated)
-        {
-            <li><a asp-controller="Account" asp-action="Logout">Logout</a></li>
-        }
-        else
-        {
-            <li><a asp-controller="Account" asp-action="Login">Login</a></li>
-        }    
-        <li><a asp-controller="App" asp-action="Part">Part</a></li>
-        <li><a asp-controller="App" asp-action="Contact">Contact</a></li>
-        <li><a asp-contoller="App" asp-action="About">About Us</a></li>
-      </ul>
-  </div>   
+  </section> 
 </body>
 </html>
