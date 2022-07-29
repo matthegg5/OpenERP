@@ -572,3 +572,4 @@ bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll
 wwwroot/media/index-background-cycling.mp4
+config.json
