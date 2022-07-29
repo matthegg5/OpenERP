@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "D8yOTsyyTtK0HG/x1ylbP/wAbB6Hfpdc7EA4/a/fxLM=",
+  "Hash": "AXsYCXgZLofQ811Px6MdL1hH85kYi4KxVaUMwOeAlTk=",
   "Source": "OpenERP",
   "BasePath": "_content/OpenERP",
   "Mode": "Default",
@@ -16,6 +16,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/css/index.css",
+      "SourceId": "OpenERP",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "BasePath": "_content/OpenERP",
+      "RelativePath": "css/index.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/index.css"
+    },
     {
       "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/css/site.css",
       "SourceId": "OpenERP",
@@ -2837,6 +2854,74 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.slim.min.map"
+    },
+    {
+      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/media/close.png",
+      "SourceId": "OpenERP",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "BasePath": "_content/OpenERP",
+      "RelativePath": "media/close.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/media/close.png"
+    },
+    {
+      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/media/index-background-cycling.mp4",
+      "SourceId": "OpenERP",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "BasePath": "_content/OpenERP",
+      "RelativePath": "media/index-background-cycling.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/media/index-background-cycling.mp4"
+    },
+    {
+      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/media/index-background.mp4",
+      "SourceId": "OpenERP",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "BasePath": "_content/OpenERP",
+      "RelativePath": "media/index-background.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/media/index-background.mp4"
+    },
+    {
+      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/media/menu.png",
+      "SourceId": "OpenERP",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "BasePath": "_content/OpenERP",
+      "RelativePath": "media/menu.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/media/menu.png"
     }
   ]
 }

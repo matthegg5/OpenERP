@@ -4,6 +4,7 @@ using OpenERP.Services;
 using OpenERP.ErpDbContext.DataModel;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 
 namespace OpenERP.Controllers
 {
@@ -14,20 +15,25 @@ namespace OpenERP.Controllers
     {
         private readonly OpenERPContext _context;
         private readonly ILogger<PartController> _logger;
+        private readonly Microsoft.AspNetCore.Identity.UserManager<User> _userManager;
 
-        public PartController(OpenERPContext context, ILogger<PartController> logger)
+        public PartController(OpenERPContext context, ILogger<PartController> logger, UserManager<User> userManager)
         {
             this._context = context;
             this._logger = logger;
+            this._userManager = userManager;
         }
 
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<Part> GetById(string partNum)
+        public async Task<ActionResult<Part>> GetById(string partNum)
         {
             try
             {
+                //var username = User.Identity.Name; //how to get username for current logged in user
+                //var currentUser = await _userManager.FindByNameAsync(User.Identity.Name);
+                
 
                 var isPartValid = _context.Parts.Where(p => p.PartNum.Equals(partNum)).Any();
                 if(isPartValid) return Ok();

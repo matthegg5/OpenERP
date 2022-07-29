@@ -1,19 +1,7 @@
-$(document).ready(function () {
+const menuToggle = document.querySelector('.toggle');
+const showcase = document.querySelector('.showcase');
 
-//console.log("Hello, from OpenERP");
-
-
-var listItems = $(".list li");
-listItems.on("click", function () {
-    console.log("You clicked on " + $(this).text());
-});
-
-var $loginFormArea = $(".loginFormArea");
-var $pageTitle = $(".pageTitle");
-
-$pageTitle.on("click", function () {
-    //$popUpForm.toggle(); //if hidden, show. if shown, hide.
-    $loginFormArea.slideToggle(200); //as above, but animated.
-});
-
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  showcase.classList.toggle('active');
 });

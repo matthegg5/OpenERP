@@ -1,32 +1,10 @@
-/* .menu-grid {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -0.5em;
-  }
-  
-  .menu-grid > * {
-    flex: 1 0 10em;
-    margin: 0.5em;
-  }
-  
-   .menu-grid > *:first-child {
-    flex-basis: calc(100% - 1em);
-  }
-
-  .menu-grid > * {
-    background: #222;
-    padding: 1em;
-    color: #fff;
-    text-align: center;
-  } */
-
-/*   header {
-    background-color:aliceblue;
-  } */
-
-  * {
-    box-sizing: border-box; /* should be covered by reset */
-  }
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 .loginFormArea {
     background-color: rgb(219, 231, 241);
@@ -57,13 +35,15 @@
 }
 
 .pageTitle {
+    position: relative;
+    z-index: 10;
     text-size-adjust: 3px;
     text-emphasis-color: blue;
     text-align: left;
     cursor: pointer;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
+}   
 .submitButton {
     text-transform: none;
 }
@@ -87,15 +67,48 @@
 #loginToggle {
     cursor:pointer; 
 }
-
-menu li {
-    display: inline;
+.menu
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-menu li::after {
-    content: ' |';
+.menu ul
+{
+  position: relative;
 }
-
-menu li:last-of-type::after {
-    content:"";
+.menu ul li
+{
+  list-style: none;
+}
+.menu ul li a
+{
+  text-decoration: none;
+  font-size: 24px;
+  color: #111;
+}
+.menu ul li a:hover
+{
+  color: #03a9f4; 
+}
+@media (max-width: 991px)
+{
+  .showcase,
+  .showcase header
+  {
+    padding: 40px;
+  }
+  .text h2
+  {
+    font-size: 3em;
+  }
+  .text h3
+  {
+    font-size: 2em;
+  }
 }

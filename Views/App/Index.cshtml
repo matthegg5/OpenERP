@@ -4,9 +4,40 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
 </head>    
 <body>
-    <h1 class="pageTitle">Welcome to OpenERP</h1>
-    <br />
+    <section class="showcase">
+    <header>
+      <h2 class="logo">Welcome to OpenERP</h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="~/media/index-background.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Create</h2> 
+      <h3>your own flow</h3>
+      <p>OpenERP is completely open-source, and free! Your business can develop its own system and business logic rules as you see fit.</p>
+      <a asp-controller="Account" asp-action="Login">Login</a>
+    </div>
+  </section>
+  <div class="menu">
+      <ul>
+        <li><a asp-controller="App" asp-action="Index">Home</a></li>
+        @if (User.Identity.IsAuthenticated)
+        {
+            <li><a asp-controller="Account" asp-action="Logout">Logout</a></li>
+        }
+        else
+        {
+            <li><a asp-controller="Account" asp-action="Login">Login</a></li>
+        }    
+        <li><a asp-controller="App" asp-action="Part">Part</a></li>
+        <li><a asp-controller="App" asp-action="Contact">Contact</a></li>
+        <li><a asp-contoller="App" asp-action="About">About Us</a></li>
+      </ul>
+  </div>   
 </body>
 </html>

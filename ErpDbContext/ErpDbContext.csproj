@@ -4,6 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
     <Nullable>enable</Nullable>
     <UserSecretsId>7595baf3-2e0d-4039-8e1d-765a57d8bad8</UserSecretsId>
     <OutputPath>../OpenERP-binaries/</OutputPath>
