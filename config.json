@@ -1,0 +1,16 @@
+{
+"ConnectionStrings": {
+    "OpenERPContextDb": ""
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Information"
+    }
+  },
+  "Tokens": {
+    "Key": "",
+    "Issuer":"http://localhost:5000",
+    "Audience":"http://localhost:5000"
+  }
+}
