@@ -16298,6 +16298,11 @@
   "RootNamespace": "OpenERP",
   "Documents": [
     {
+      "FilePath": "/home/saffron/Development/c#/OpenERP/Views/Part/Part.cshtml",
+      "TargetPath": "Views\\Part\\Part.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/saffron/Development/c#/OpenERP/Views/App/About.cshtml",
       "TargetPath": "Views\\App\\About.cshtml",
       "FileKind": "mvc"
@@ -16335,11 +16340,6 @@
     {
       "FilePath": "/home/saffron/Development/c#/OpenERP/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/saffron/Development/c#/OpenERP/Views/App/Part.cshtml",
-      "TargetPath": "Views\\App\\Part.cshtml",
       "FileKind": "mvc"
     },
     {

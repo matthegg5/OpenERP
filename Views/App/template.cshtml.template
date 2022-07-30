@@ -1,6 +1,6 @@
 @model IEnumerable<OpenERP.ErpDbContext.DataModel.Part>
 @{
-    ViewBag.Title = "OpenERP - Part Maintenance";
+    ViewBag.Title = "";
 }
 <!DOCTYPE html>
 <html>
@@ -16,12 +16,7 @@
         <h2 class="logo">@ViewBag.Title</h2>
         <div class="toggle"></div>
     </header>
-    <h1>Part</h1>
-    <p>Count: @Model.Count()</p>
-    @foreach (var p in Model)
-    {
-        <li>@p.PartNum</li>
-    }
+    <!--- insert content here --->
     </section>
 </body>
 </html>

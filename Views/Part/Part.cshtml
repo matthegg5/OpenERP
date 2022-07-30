@@ -1,0 +1,55 @@
+@model PartViewModel
+@{
+    ViewBag.Title = "OpenERP - Part Maintenance";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/css/part.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+</head>    
+<body>
+    <section class="showcase">
+    <header>
+        <h2 class="logo">@ViewBag.Title</h2>
+        <div class="toggle"></div>
+    </header>
+    <form method="post">
+        <div asp-validation-summary="ModelOnly"></div>
+        <div class="text">
+            <h3>Part</h3>
+        </div>
+        <div class="text">
+            <label asp-for="CompanyId">CompanyId</label>
+            <input asp-for="CompanyId" type="text" />
+            <span asp-validation-for="CompanyId"></span>
+        </div>
+        <div class="text">
+            <label asp-for="PartNum">Part Number</label>
+            <input asp-for="PartNum" type="text" />
+            <span asp-validation-for="PartNum"></span>
+        </div>
+        <div class="text">
+            <label asp-for="PartDescription">Part Description</label>
+            <input asp-for="PartDescription" type="text" />
+            <span asp-validation-for="PartDescription"></span>
+        </div>
+        <div class="text">
+            <label asp-for="SerialTracked">Track Serial Numbers</label>
+            <input asp-for="SerialTracked" type="checkbox" />
+            <span asp-validation-for="SerialTracked"></span>
+        </div>
+        <div class="text">
+            <label asp-for="DefaultUOM">Default Unit of Measure</label>
+            <input asp-for="DefaultUOM" type="text" />
+            <span asp-validation-for="DefaultUOM"></span>
+        </div>
+        <div class="text">
+            <input class="submitButton" type="submit" value="Create" />
+        </div>
+    </form>    
+    </section>
+</body>
+</html>

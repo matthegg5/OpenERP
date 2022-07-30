@@ -39,8 +39,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/saffron/Development/c\#/OpenERP/Views/App/Part.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL1BhcnQuY3NodG1s
+[/home/saffron/Development/c\#/OpenERP/Views/Part/Part.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFydC9QYXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/saffron/Development/c\#/OpenERP/Views/Shared/_layout.cshtml]

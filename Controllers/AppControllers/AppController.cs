@@ -4,7 +4,7 @@ using OpenERP.Services;
 using OpenERP.ErpDbContext.DataModel;
 using Microsoft.AspNetCore.Authorization;
 
-namespace OpenERP.Controllers
+namespace OpenERP.Controllers.App
 {
     public class AppController : Controller
     {
@@ -48,14 +48,14 @@ namespace OpenERP.Controllers
 
         }
 
-        [Authorize]
+/*         [Authorize]
         public IActionResult Part()
         {
             var results = _context.Parts
             //.Where(p => p.CompanyId == Session.CompanyID)
             .OrderBy(p => p.PartNum).ToList();
             return View(results);
-        }
+        } */
 
 
     }

@@ -7,7 +7,7 @@ using Microsoft.IdentityModel.Tokens;
 using OpenERP.ErpDbContext.DataModel;
 using OpenERP.ViewModels;
 
-namespace OpenERP.Controllers
+namespace OpenERP.Controllers.App
 {
     public class AccountController : Controller
     {

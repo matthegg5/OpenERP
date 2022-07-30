@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 
-namespace OpenERP.Controllers
+namespace OpenERP.Controllers.Api
 {
     [ApiController]
     [Route("api/[controller]")]

@@ -1,16 +1,16 @@
 {
-"ConnectionStrings": {
-    "OpenERPContextDb": ""
-  },
-  "Logging": {
-    "LogLevel": {
-      "Default": "Information",
-      "Microsoft": "Information"
+  "ConnectionStrings": {
+      "OpenERPContextDb": "Server=.;Database=OpenERP;User Id=OpenERP;Password=password;MultipleActiveResultSets=true;"
+    },
+    "Logging": {
+      "LogLevel": {
+        "Default": "Information",
+        "Microsoft": "Information"
+      }
+    },
+    "Tokens": {
+      "Key": "a7sh65djd72:1#a7sh65djd72:1#a7sh65djd72:1#a7sh65djd72:1#",
+      "Issuer":"http://localhost:5000",
+      "Audience":"http://localhost:5000"
     }
-  },
-  "Tokens": {
-    "Key": "",
-    "Issuer":"http://localhost:5000",
-    "Audience":"http://localhost:5000"
   }
-}

@@ -30,6 +30,9 @@ namespace OpenERP.ErpDbContext.DataModel
     {
         _ctx.Database.EnsureCreated();
 
+        CreateCompany("Test");
+        CreateUOM("Test","EA");
+
         User user = await _userManager.FindByEmailAsync("manager@openerp.com");
 
         if(user == null)
@@ -50,6 +53,33 @@ namespace OpenERP.ErpDbContext.DataModel
 
     }
 
+    private void CreateCompany(string CompanyID)
+    {
 
+      Company company = new Company(){
+        CompanyId = CompanyID,
+        Name = CompanyID,
+        Active = true
+      };
+
+      _ctx.Companies.Add(company);
+      _ctx.SaveChanges();
+
+    }
+
+    private void CreateUOM(string CompanyID, string uom)
+    {
+
+        Uom uomRow = new Uom(){
+          CompanyId = CompanyID,
+          Uom1 = uom,
+          Uomdescription = uom,
+          Active = true
+        };
+
+        _ctx.Uoms.Add(uomRow);
+        _ctx.SaveChanges();
+
+    }
   }
 }
