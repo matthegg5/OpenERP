@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "/home/saffron/Development/c#/OpenERP/OpenERP.csproj": {}
+    "/home/saffron/Development/c#/OpenERP/OpenERP.BO/OpenERP.BO.csproj": {}
   },
   "projects": {
     "/home/saffron/Development/c#/OpenERP/ErpDbContext/ErpDbContext.csproj": {
@@ -98,14 +98,14 @@
         }
       }
     },
-    "/home/saffron/Development/c#/OpenERP/OpenERP.Data.Repositories/OpenERP.Data.Repositories.csproj": {
+    "/home/saffron/Development/c#/OpenERP/OpenERP.BO/OpenERP.BO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/saffron/Development/c#/OpenERP/OpenERP.Data.Repositories/OpenERP.Data.Repositories.csproj",
-        "projectName": "OpenERP.Data.Repositories",
-        "projectPath": "/home/saffron/Development/c#/OpenERP/OpenERP.Data.Repositories/OpenERP.Data.Repositories.csproj",
+        "projectUniqueName": "/home/saffron/Development/c#/OpenERP/OpenERP.BO/OpenERP.BO.csproj",
+        "projectName": "OpenERP.BO",
+        "projectPath": "/home/saffron/Development/c#/OpenERP/OpenERP.BO/OpenERP.BO.csproj",
         "packagesPath": "/home/saffron/.nuget/packages/",
-        "outputPath": "/home/saffron/Development/c#/OpenERP/OpenERP.Data.Repositories/obj/",
+        "outputPath": "/home/saffron/Development/c#/OpenERP/OpenERP.BO/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/saffron/.nuget/NuGet/NuGet.Config"
@@ -174,107 +174,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.200/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/home/saffron/Development/c#/OpenERP/OpenERP.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/home/saffron/Development/c#/OpenERP/OpenERP.csproj",
-        "projectName": "OpenERP",
-        "projectPath": "/home/saffron/Development/c#/OpenERP/OpenERP.csproj",
-        "packagesPath": "/home/saffron/.nuget/packages/",
-        "outputPath": "/home/saffron/Development/c#/OpenERP/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/home/saffron/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {
-              "/home/saffron/Development/c#/OpenERP/OpenERP.Data.Repositories/OpenERP.Data.Repositories.csproj": {
-                "projectPath": "/home/saffron/Development/c#/OpenERP/OpenERP.Data.Repositories/OpenERP.Data.Repositories.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "dependencies": {
-            "Microsoft.AspNetCore": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
-              "target": "Package",
-              "version": "[6.0.7, )"
-            },
-            "Microsoft.AspNetCore.Identity": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[6.0.6, )"
-            },
-            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
-              "target": "Package",
-              "version": "[6.0.7, )"
-            },
-            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
-              "target": "Package",
-              "version": "[6.0.6, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.6, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[6.0.8, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.6, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

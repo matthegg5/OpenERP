@@ -1,6 +1,6 @@
 @model PartViewModel
 @{
-    ViewBag.Title = "OpenERP - Part Maintenance";
+    //ViewBag.Title = "OpenERP - Part Maintenance";
 }
 <!DOCTYPE html>
 <html>
@@ -23,7 +23,7 @@
         </div>
         <div class="text">
             <label asp-for="CompanyId">CompanyId</label>
-            <input asp-for="CompanyId" type="text" />
+            <input asp-for="CompanyId" type="text" value="@ViewBag.CurrentCompany.ToUpper()" />
             <span asp-validation-for="CompanyId"></span>
         </div>
         <div class="text">

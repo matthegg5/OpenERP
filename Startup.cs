@@ -8,6 +8,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using OpenERP.ErpDbContext.DataModel;
 using OpenERP.Services;
+using OpenERP.Data.Repositories;
 
 namespace OpenERP
 {
@@ -25,7 +26,8 @@ namespace OpenERP
         {
 
             services.AddIdentity<User, IdentityRole>(
-                cfg => {
+                cfg =>
+                {
                     //requirements for login validation
                     cfg.User.RequireUniqueEmail = true;
                     cfg.Password.RequireUppercase = true;
@@ -44,7 +46,7 @@ namespace OpenERP
                         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Tokens:Key"])),
                         ValidateAudience = false
                     };
-                });    
+                });
 
             services.AddDbContext<ErpDbContext.DataModel.OpenERPContext>(cfg =>
                {
@@ -58,6 +60,9 @@ namespace OpenERP
             services.AddDistributedMemoryCache();
 
             services.AddTransient<OpenERPSeeder>();
+            
+            //add the implementations for the interfaces in here so dependency injection chooses the right implementation
+            services.AddScoped<IRepository<Part>, PartRepository>();
 
 
 

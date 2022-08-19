@@ -15,16 +15,19 @@ namespace OpenERP.Controllers.App
         private readonly SignInManager<User> _signInManager;
         private readonly UserManager<User> _userManager;
         private readonly IConfiguration _config;
+        private readonly OpenERPContext _context;
 
         public AccountController(ILogger<AccountController> logger,
                 SignInManager<User> signInManager,
                 UserManager<User> userManager,
-                IConfiguration config)
+                IConfiguration config,
+                OpenERPContext context)
         {
             this._logger = logger;
             this._signInManager = signInManager;
             this._userManager = userManager;
             this._config = config;
+            this._context = context;
         }
 
         public IActionResult Login()
@@ -47,11 +50,12 @@ namespace OpenERP.Controllers.App
                 {
                     if (Request.Query.Keys.Contains("ReturnUrl"))
                     {
-                        Redirect(Request.Query["ReturnUrl"].First());
+                        //Redirect(Request.Query["ReturnUrl"].First());
+                        return RedirectToAction("SessionProperties", "Account", "", Request.Query["ReturnUrl"].First());
                     }
                     else
                     {
-                        return RedirectToAction("Index", "App");
+                        return RedirectToAction("SessionProperties", "Account");
                     }
                 }
 
@@ -59,6 +63,37 @@ namespace OpenERP.Controllers.App
             ModelState.AddModelError("", "User name or password not found");
             return View();
         }
+
+        [HttpGet]
+        public IActionResult SessionProperties()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult SessionProperties(SessionPropertiesViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                //sets the company for the current session and stores it as a Json record 
+                HttpContext.Session.SetObjectAsJson("CurrentCompany", model.CurrentCompanyID);
+                //how to retrieve-: 
+                //var company = HttpContext.Session.GetObjectFromJson<Company>("CurrentCompany");
+
+                if (Request.Query.Keys.Contains("ReturnUrl"))
+                {
+                    Redirect(Request.Query["ReturnUrl"].First());
+                }
+                else
+                {
+                    return RedirectToAction("Index", "App");
+                }
+            }
+
+            ModelState.AddModelError("", $"Invalid Company ID - {model.CurrentCompanyID}");
+            return View();
+        }
+
 
         [HttpGet]
         public async Task<IActionResult> Logout()
@@ -81,14 +116,14 @@ namespace OpenERP.Controllers.App
                 {
                     var result = await _signInManager.CheckPasswordSignInAsync(user, model.Password, false);
 
-                    if(result.Succeeded)
+                    if (result.Succeeded)
                     {
                         //Create JWT token for API authentication
-                        var claims = new []
+                        var claims = new[]
                         {
                           new Claim(JwtRegisteredClaimNames.Sub, user.Email),
                           new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                          new Claim(JwtRegisteredClaimNames.UniqueName, user.UserName)      
+                          new Claim(JwtRegisteredClaimNames.UniqueName, user.UserName)
                         };
 
                         var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Tokens:Key"]));
@@ -96,16 +131,16 @@ namespace OpenERP.Controllers.App
 
                         var token = new JwtSecurityToken(
                             _config["Tokens:Issuer"],
-                            _config["Tokens:Audience"], 
+                            _config["Tokens:Audience"],
                             claims,
                             signingCredentials: creds,
-                            expires:DateTime.UtcNow.AddMinutes(20));
+                            expires: DateTime.UtcNow.AddMinutes(20));
 
-                            return Created("", new 
-                            {
-                                token = new JwtSecurityTokenHandler().WriteToken(token),
-                                expiration = token.ValidTo
-                            });
+                        return Created("", new
+                        {
+                            token = new JwtSecurityTokenHandler().WriteToken(token),
+                            expiration = token.ValidTo
+                        });
                     }
                 }
             }

@@ -16338,6 +16338,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/saffron/Development/c#/OpenERP/Views/Account/SessionProperties.cshtml",
+      "TargetPath": "Views\\Account\\SessionProperties.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/saffron/Development/c#/OpenERP/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
