@@ -59,7 +59,8 @@ namespace OpenERP.Controllers.Api
             {
                 if(ModelState.IsValid) 
                 {
-                    _context.Parts.Add(part);
+                    //change to use the repository to add new part records
+                    _partRepository.Add(part);
                     return CreatedAtAction(nameof(CreatePart), new {id  = part.PartNum }, part);
                 }
                 else
