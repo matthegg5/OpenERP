@@ -56,6 +56,8 @@ namespace OpenERP
             services.AddControllersWithViews()
                     .AddRazorRuntimeCompilation()
                     .AddNewtonsoftJson(cfg => cfg.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+
+
             services.AddRazorPages();
             services.AddDistributedMemoryCache();
 
@@ -63,6 +65,9 @@ namespace OpenERP
             
             //add the implementations for the interfaces in here so dependency injection chooses the right implementation
             services.AddScoped<IRepository<Part>, PartRepository>();
+            services.AddScoped<IRepository<Uom>, UomRepository>();
+            services.AddScoped<IRepository<Company>, CompanyRepository>();
+            services.AddLogging();
 
 
 

@@ -43,7 +43,7 @@ namespace OpenERP.ErpDbContext.DataModel
                 user.Email = "manager@openerp.com";
                 user.FirstName = "manager";
                 user.LastName = "manager";
-                user.CompanyList = "TEST01";
+                user.CompanyList = "Test";
             }
 
             var result = await _userManager.CreateAsync(user, "T0A55um3#");

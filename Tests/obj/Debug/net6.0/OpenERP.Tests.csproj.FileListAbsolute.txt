@@ -1,0 +1,4 @@
+/home/saffron/Development/c#/OpenERP/Tests/bin/Debug/net6.0/CoverletSourceRootsMapping
+/home/saffron/Development/c#/OpenERP/Tests/obj/Debug/net6.0/OpenERP.Tests.csproj.AssemblyReference.cache
+/home/saffron/Development/c#/OpenERP/Tests/obj/Debug/net6.0/OpenERP.Tests.GeneratedMSBuildEditorConfig.editorconfig
+/home/saffron/Development/c#/OpenERP/Tests/obj/Debug/net6.0/OpenERP.Tests.csproj.CoreCompileInputs.cache

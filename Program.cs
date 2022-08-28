@@ -21,8 +21,9 @@ namespace OpenERP
         RunSeeding(host);
         return;
       }
-      
+
       host.Run();
+      
     }
 
     private static void RunSeeding(IHost host)
@@ -38,6 +39,11 @@ namespace OpenERP
     public static IHostBuilder CreateHostBuilder(string[] args) =>
         Host.CreateDefaultBuilder(args)
             .ConfigureAppConfiguration(AddConfiguration)
+            .ConfigureLogging(logging => {
+              logging.ClearProviders();
+              logging.SetMinimumLevel(LogLevel.Trace);
+              logging.AddConsole();
+            })
             .ConfigureWebHostDefaults(webBuilder =>
             {
               webBuilder.UseStartup<Startup>();
@@ -50,6 +56,7 @@ namespace OpenERP
             builder.SetBasePath(Directory.GetCurrentDirectory())
               .AddJsonFile("config.json")
               .AddEnvironmentVariables();
+
         }
     }
 }

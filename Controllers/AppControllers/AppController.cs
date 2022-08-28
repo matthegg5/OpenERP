@@ -9,15 +9,17 @@ namespace OpenERP.Controllers.App
     public class AppController : Controller
     {
 
-        private readonly OpenERPContext _context;
 
-        public AppController(OpenERPContext context)
+        public AppController()
         {
-
-            this._context = context;
         }
         public IActionResult Index()
         { 
+            var companyID = HttpContext.Session.GetString("CurrentCompanyID");
+            if (!String.IsNullOrEmpty(companyID))
+            {
+                HttpContext.Session.SetString("CurrentCompanyID", companyID);
+            }
             return View();
         }
 
@@ -47,16 +49,6 @@ namespace OpenERP.Controllers.App
             return View();
 
         }
-
-/*         [Authorize]
-        public IActionResult Part()
-        {
-            var results = _context.Parts
-            //.Where(p => p.CompanyId == Session.CompanyID)
-            .OrderBy(p => p.PartNum).ToList();
-            return View(results);
-        } */
-
 
     }
 }

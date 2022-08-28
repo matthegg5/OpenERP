@@ -28,9 +28,9 @@ namespace OpenERP.Data.Repositories
             return _context.Set<T>().AsQueryable().Where(predicate).ToList();
         }
 
-        public virtual T GetByID(T id)
+        public virtual T GetByID(params object[] ids)
         {
-            return _context.Find<T>(id);
+            return _context.Find<T>(ids);
         }
 
         public void SaveChanges()
@@ -42,5 +42,12 @@ namespace OpenERP.Data.Repositories
         {
             return _context.Update(entity).Entity;
         }
+
+        public virtual bool Exists(Expression<Func<T, bool>> predicate)
+        {
+
+            return _context.Set<T>().AsQueryable().Where(predicate).Any();
+        }
+
     }
 }

@@ -4,6 +4,7 @@ using System.Text;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using OpenERP.Data.Repositories;
 using OpenERP.ErpDbContext.DataModel;
 using OpenERP.ViewModels;
 
@@ -15,19 +16,19 @@ namespace OpenERP.Controllers.App
         private readonly SignInManager<User> _signInManager;
         private readonly UserManager<User> _userManager;
         private readonly IConfiguration _config;
-        private readonly OpenERPContext _context;
+        private readonly IRepository<Company> _companyRepository;
 
         public AccountController(ILogger<AccountController> logger,
                 SignInManager<User> signInManager,
                 UserManager<User> userManager,
                 IConfiguration config,
-                OpenERPContext context)
+                IRepository<Company> companyRepository)
         {
             this._logger = logger;
             this._signInManager = signInManager;
             this._userManager = userManager;
             this._config = config;
-            this._context = context;
+            this._companyRepository = companyRepository;
         }
 
         public IActionResult Login()
@@ -44,7 +45,7 @@ namespace OpenERP.Controllers.App
         {
             if (ModelState.IsValid)
             {
-                var result = await _signInManager.PasswordSignInAsync(model.Username, model.Password, model.RememberMe, false);
+                var result = await _signInManager.PasswordSignInAsync(model.Username, model.Password, model.RememberMe, false).ConfigureAwait(false);
 
                 if (result.Succeeded)
                 {
@@ -73,12 +74,22 @@ namespace OpenERP.Controllers.App
         [HttpPost]
         public IActionResult SessionProperties(SessionPropertiesViewModel model)
         {
+
             if (ModelState.IsValid)
             {
+                if(_companyRepository.GetByID(model.CurrentCompanyID) == null)
+                {
+                    //throw new InvalidDataException("Company record not found");
+                    ModelState.AddModelError("", $"Invalid Company ID - {model.CurrentCompanyID}");
+                    _logger.LogError($"Invalid Company ID - {model.CurrentCompanyID}");
+                    return View();
+                }
+
+                
                 //sets the company for the current session and stores it as a Json record 
-                HttpContext.Session.SetObjectAsJson("CurrentCompany", model.CurrentCompanyID);
-                //how to retrieve-: 
-                //var company = HttpContext.Session.GetObjectFromJson<Company>("CurrentCompany");
+                //HttpContext.Session.SetObjectAsJson("CurrentCompanyID", model.CurrentCompanyID);
+
+                HttpContext.Session.SetString("CurrentCompanyID", model.CurrentCompanyID);
 
                 if (Request.Query.Keys.Contains("ReturnUrl"))
                 {
@@ -88,9 +99,10 @@ namespace OpenERP.Controllers.App
                 {
                     return RedirectToAction("Index", "App");
                 }
+                
             }
 
-            ModelState.AddModelError("", $"Invalid Company ID - {model.CurrentCompanyID}");
+
             return View();
         }
 
@@ -98,7 +110,7 @@ namespace OpenERP.Controllers.App
         [HttpGet]
         public async Task<IActionResult> Logout()
         {
-            await _signInManager.SignOutAsync();
+            await _signInManager.SignOutAsync().ConfigureAwait(false);
             return RedirectToAction("Index", "App");
 
         }
@@ -110,11 +122,11 @@ namespace OpenERP.Controllers.App
             if (ModelState.IsValid)
             {
 
-                var user = await _userManager.FindByNameAsync(model.Username);
+                var user = await _userManager.FindByNameAsync(model.Username).ConfigureAwait(false);
 
                 if (user != null)
                 {
-                    var result = await _signInManager.CheckPasswordSignInAsync(user, model.Password, false);
+                    var result = await _signInManager.CheckPasswordSignInAsync(user, model.Password, false).ConfigureAwait(false);
 
                     if (result.Succeeded)
                     {

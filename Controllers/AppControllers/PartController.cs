@@ -14,23 +14,33 @@ namespace OpenERP.Controllers.App
         private readonly ILogger _logger;
         private readonly UserManager<User> _userManager;
         private readonly IRepository<Part> _partRepository;
+        private readonly IRepository<Company> _companyRepository;
+        private readonly IRepository<Uom> _uomRepository;
 
-        public PartController(ILogger<OpenERP.Controllers.App.PartController> logger, UserManager<User> userManager, IRepository<Part> partRepository)
+        public PartController(ILogger<OpenERP.Controllers.App.PartController> logger,
+                                UserManager<User> userManager, 
+                                IRepository<Part> partRepository, 
+                                IRepository<Company> companyRepository,
+                                IRepository<Uom> uomRepository)
         {
             this._logger = logger;
             this._userManager = userManager;
             this._partRepository = partRepository;
+            this._companyRepository = companyRepository;
+            this._uomRepository = uomRepository;
         }
 
         [HttpGet]
         public IActionResult Part()
         {
-            var companyID = HttpContext.Session.GetObjectFromJson<String>("CurrentCompanyID");
+            //var companyID = HttpContext.Session.GetObjectFromJson<String>("CurrentCompanyID");
             //above de-serializes so we want this data to persist so needs reset
-            HttpContext.Session.SetObjectAsJson("CurrentCompanyID", companyID);
+
+            var companyID = HttpContext.Session.GetString("CurrentCompanyID");
 
             ViewBag.CurrentCompany = companyID;
             ViewBag.Title = "OpenERP - Part Maintenance";
+            //HttpContext.Session.SetObjectAsJson("CurrentCompanyID", companyID);
             return View();
         }
 
@@ -53,9 +63,15 @@ namespace OpenERP.Controllers.App
 
                 //get company record for CompanyID    
                 //part.Company = _context.Companies.Where(c => c.CompanyId.Equals(part.CompanyId)).ToList().FirstOrDefault();
-                part.Company = HttpContext.Session.GetObjectFromJson<Company>("CurrentCompany");
+                part.CompanyId = HttpContext.Session.GetObjectFromJson<string>("CurrentCompanyID");
+
+                HttpContext.Session.SetObjectAsJson("CurrentCompanyID", part.CompanyId);
+
+                part.Company = _companyRepository.GetByID(part.CompanyId);
+                
+                
                 //get UOM record for DefaultUOM string
-                //part.Uom = _context.Uoms.Where(u => u.CompanyId.Equals(part.CompanyId) && u.Uom1.Equals(part.DefaultUom)).ToList().FirstOrDefault();
+                part.Uom = _uomRepository.GetByID(part.DefaultUom);
 
                 if (part.Company != null && part.Uom != null)
                 {

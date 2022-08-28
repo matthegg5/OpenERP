@@ -5,6 +5,7 @@ using OpenERP.ErpDbContext.DataModel;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
+using OpenERP.Data.Repositories;
 
 namespace OpenERP.Controllers.Api
 {
@@ -13,21 +14,21 @@ namespace OpenERP.Controllers.Api
     [Authorize(AuthenticationSchemes =JwtBearerDefaults.AuthenticationScheme)]
     public class PartController : ControllerBase
     {
-        private readonly OpenERPContext _context;
         private readonly ILogger<PartController> _logger;
         private readonly Microsoft.AspNetCore.Identity.UserManager<User> _userManager;
+        private readonly IRepository<Part> _partRepository;
 
-        public PartController(OpenERPContext context, ILogger<PartController> logger, UserManager<User> userManager)
+        public PartController(ILogger<PartController> logger, UserManager<User> userManager, IRepository<Part> partRepository)
         {
-            this._context = context;
             this._logger = logger;
             this._userManager = userManager;
+            this._partRepository = partRepository;
         }
 
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<Part>> GetById(string partNum)
+        public async Task<ActionResult<Part>> GetById(string companyID, string partNum)
         {
             try
             {
@@ -35,7 +36,8 @@ namespace OpenERP.Controllers.Api
                 //var currentUser = await _userManager.FindByNameAsync(User.Identity.Name);
                 
 
-                var isPartValid = _context.Parts.Where(p => p.PartNum.Equals(partNum)).Any();
+                var isPartValid =  _partRepository.Exists(p => p.CompanyId.Equals(companyID, StringComparison.InvariantCultureIgnoreCase)
+                                                                && p.PartNum.Equals(partNum, StringComparison.InvariantCultureIgnoreCase)); //_context.Parts.Where(p => p.PartNum.Equals(partNum)).Any();
                 if(isPartValid) return Ok();
                 else return BadRequest($"Failed to return Part {partNum} via GetById");
 
