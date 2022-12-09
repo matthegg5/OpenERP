@@ -406,3 +406,12 @@
 /home/saffron/Development/c#/OpenERP/bin/Debug/net6.0/OpenERP-binaries/ErpDbContext.runtimeconfig.json
 /home/saffron/Development/c#/OpenERP/bin/Debug/net6.0/OpenERP.Data.Repositories/bin/Debug/net6.0/OpenERP.Data.Repositories.deps.json
 /home/saffron/Development/c#/OpenERP/bin/Debug/net6.0/OpenERP.Data.Repositories/bin/Debug/net6.0/OpenERP.Data.Repositories.runtimeconfig.json
+/home/saffron/Development/c#/OpenERP/bin/Debug/net6.0/refs/Microsoft.AspNetCore.Cryptography.Internal.dll
+/home/saffron/Development/c#/OpenERP/bin/Debug/net6.0/refs/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/home/saffron/Development/c#/OpenERP/bin/Debug/net6.0/refs/Microsoft.Extensions.Identity.Core.dll
+/home/saffron/Development/c#/OpenERP/bin/Debug/net6.0/refs/Microsoft.Extensions.Identity.Stores.dll
+/home/saffron/Development/c#/OpenERP/obj/Debug/net6.0/staticwebassets/msbuild.OpenERP.Microsoft.AspNetCore.StaticWebAssets.props
+/home/saffron/Development/c#/OpenERP/obj/Debug/net6.0/staticwebassets/msbuild.build.OpenERP.props
+/home/saffron/Development/c#/OpenERP/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.OpenERP.props
+/home/saffron/Development/c#/OpenERP/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.OpenERP.props
+/home/saffron/Development/c#/OpenERP/obj/Debug/net6.0/staticwebassets.pack.json
