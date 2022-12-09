@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vg1XRqBnFN6xywllQlEEbkFoXKa7n6qT/+0GMc+aixh36FKyo83CEvwr2dQ9q57QCxsvPmJCz0GOLcHt4j+qwA==",
+  "dgSpecHash": "KYU3UhM1UbX1272/p6AjN9ChIXxo6jED6LufStTwcWOszGqMpSqwqe4xWpwwjk5U1qom/ie1Vii2sFKtpO+k/w==",
   "success": true,
   "projectFilePath": "/home/saffron/Development/c#/OpenERP/OpenERP.csproj",
   "expectedPackageFiles": [
@@ -128,7 +128,10 @@
     "/home/saffron/.nuget/packages/system.text.encodings.web/6.0.0/system.text.encodings.web.6.0.0.nupkg.sha512",
     "/home/saffron/.nuget/packages/system.text.json/6.0.0/system.text.json.6.0.0.nupkg.sha512",
     "/home/saffron/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "/home/saffron/.nuget/packages/system.windows.extensions/4.7.0/system.windows.extensions.4.7.0.nupkg.sha512"
+    "/home/saffron/.nuget/packages/system.windows.extensions/4.7.0/system.windows.extensions.4.7.0.nupkg.sha512",
+    "/home/saffron/.nuget/packages/microsoft.netcore.app.ref/6.0.11/microsoft.netcore.app.ref.6.0.11.nupkg.sha512",
+    "/home/saffron/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.11/microsoft.aspnetcore.app.ref.6.0.11.nupkg.sha512",
+    "/home/saffron/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.11/microsoft.netcore.app.host.linux-x64.6.0.11.nupkg.sha512"
   ],
   "logs": []
 }

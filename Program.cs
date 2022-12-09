@@ -43,6 +43,8 @@ namespace OpenERP
               logging.ClearProviders();
               logging.SetMinimumLevel(LogLevel.Trace);
               logging.AddConsole();
+              //logging.AddConsoleFormatter();
+              logging.AddDebug();
             })
             .ConfigureWebHostDefaults(webBuilder =>
             {

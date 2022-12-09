@@ -2,6 +2,7 @@ using System.Linq.Expressions;
 
 namespace OpenERP.Data.Repositories
 {
+    //interface for repository pattern
     public interface IRepository<T>
     {
         T Add(T entity);

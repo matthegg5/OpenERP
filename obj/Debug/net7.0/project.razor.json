@@ -1,0 +1,75 @@
+{
+  "FilePath": "/home/saffron/Development/c#/OpenERP/OpenERP.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-3.0",
+    "LanguageVersion": "6.0",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-3.0"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 1000
+  },
+  "RootNamespace": "OpenERP",
+  "Documents": [
+    {
+      "FilePath": "/home/saffron/Development/c#/OpenERP/Views/Part/Part.cshtml",
+      "TargetPath": "Views\\Part\\Part.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/saffron/Development/c#/OpenERP/Views/App/About.cshtml",
+      "TargetPath": "Views\\App\\About.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/saffron/Development/c#/OpenERP/Views/Account/Login.cshtml",
+      "TargetPath": "Views\\Account\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/saffron/Development/c#/OpenERP/Views/App/Index.cshtml",
+      "TargetPath": "Views\\App\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/saffron/Development/c#/OpenERP/Pages/_ViewStart.cshtml",
+      "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/saffron/Development/c#/OpenERP/Views/App/Contact.cshtml",
+      "TargetPath": "Views\\App\\Contact.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/saffron/Development/c#/OpenERP/Views/Shared/_layout.cshtml",
+      "TargetPath": "Views\\Shared\\_layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/saffron/Development/c#/OpenERP/Pages/Error.cshtml",
+      "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/saffron/Development/c#/OpenERP/Views/Account/SessionProperties.cshtml",
+      "TargetPath": "Views\\Account\\SessionProperties.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/saffron/Development/c#/OpenERP/Views/_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/saffron/Development/c#/OpenERP/Views/_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
+  "SerializationFormat": "0.2"
+}
