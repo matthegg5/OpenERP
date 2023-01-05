@@ -2,6 +2,8 @@ appsettings.json.old
 config.json
 .vscode/launch.json
 .vscode/tasks.json
+obj/Debug
+bin/Debug/net7.0
 bin/Debug/net6.0/appsettings.Development.json
 bin/Debug/net6.0/config.json
 bin/Debug/net6.0/Humanizer.dll
