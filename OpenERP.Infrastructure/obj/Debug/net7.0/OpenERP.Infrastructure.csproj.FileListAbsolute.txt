@@ -1,0 +1,17 @@
+/home/saffron/Development/c#/OpenERP/OpenERP.Infrastructure/bin/Debug/net7.0/OpenERP.Infrastructure.deps.json
+/home/saffron/Development/c#/OpenERP/OpenERP.Infrastructure/bin/Debug/net7.0/OpenERP.Infrastructure.runtimeconfig.json
+/home/saffron/Development/c#/OpenERP/OpenERP.Infrastructure/bin/Debug/net7.0/OpenERP.Infrastructure.dll
+/home/saffron/Development/c#/OpenERP/OpenERP.Infrastructure/bin/Debug/net7.0/OpenERP.Infrastructure.pdb
+/home/saffron/Development/c#/OpenERP/OpenERP.Infrastructure/bin/Debug/net7.0/ErpDbContext.dll
+/home/saffron/Development/c#/OpenERP/OpenERP.Infrastructure/bin/Debug/net7.0/ErpDbContext.pdb
+/home/saffron/Development/c#/OpenERP/OpenERP.Infrastructure/obj/Debug/net7.0/OpenERP.Infrastructure.csproj.AssemblyReference.cache
+/home/saffron/Development/c#/OpenERP/OpenERP.Infrastructure/obj/Debug/net7.0/OpenERP.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/saffron/Development/c#/OpenERP/OpenERP.Infrastructure/obj/Debug/net7.0/OpenERP.Infrastructure.AssemblyInfoInputs.cache
+/home/saffron/Development/c#/OpenERP/OpenERP.Infrastructure/obj/Debug/net7.0/OpenERP.Infrastructure.AssemblyInfo.cs
+/home/saffron/Development/c#/OpenERP/OpenERP.Infrastructure/obj/Debug/net7.0/OpenERP.Infrastructure.csproj.CoreCompileInputs.cache
+/home/saffron/Development/c#/OpenERP/OpenERP.Infrastructure/obj/Debug/net7.0/OpenERP.Infrastructure.csproj.CopyComplete
+/home/saffron/Development/c#/OpenERP/OpenERP.Infrastructure/obj/Debug/net7.0/OpenERP.Infrastructure.dll
+/home/saffron/Development/c#/OpenERP/OpenERP.Infrastructure/obj/Debug/net7.0/refint/OpenERP.Infrastructure.dll
+/home/saffron/Development/c#/OpenERP/OpenERP.Infrastructure/obj/Debug/net7.0/OpenERP.Infrastructure.pdb
+/home/saffron/Development/c#/OpenERP/OpenERP.Infrastructure/obj/Debug/net7.0/OpenERP.Infrastructure.genruntimeconfig.cache
+/home/saffron/Development/c#/OpenERP/OpenERP.Infrastructure/obj/Debug/net7.0/ref/OpenERP.Infrastructure.dll

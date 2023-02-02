@@ -602,8 +602,6 @@ OpenERP.Data.Repositories/obj/Debug/net6.0/refint/OpenERP.Data.Repositories.dll
 OpenERP.Infrastructure/obj/OpenERP.Infrastructure.csproj.nuget.g.targets
 OpenERP.Infrastructure/obj/OpenERP.Infrastructure.csproj.nuget.g.props
 OpenERP.Infrastructure/obj/OpenERP.Infrastructure.csproj.nuget.dgspec.json
-OpenERP.Infrastructure/OpenERP.Infrastructure.csproj
-OpenERP.Infrastructure/Class1.cs
 obj/Debug/net7.0/refint/OpenERP.dll
 obj/Debug/net7.0/ref/OpenERP.dll
 obj/Debug/net7.0/OpenERP.pdb

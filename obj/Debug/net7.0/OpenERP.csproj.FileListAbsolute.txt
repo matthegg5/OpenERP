@@ -11,8 +11,6 @@
 /home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/libman.json
 /home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/OpenERP-binaries/ErpDbContext.deps.json
 /home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/OpenERP-binaries/ErpDbContext.runtimeconfig.json
-/home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/OpenERP-binaries/OpenERP.Infrastructure.deps.json
-/home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/OpenERP-binaries/OpenERP.Infrastructure.runtimeconfig.json
 /home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/OpenERP.Infrastructure/obj/OpenERP.Infrastructure.csproj.nuget.dgspec.json
 /home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/OpenERP.Infrastructure/obj/project.assets.json
 /home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/Tests/obj/OpenERP.Tests.csproj.nuget.dgspec.json
@@ -39,8 +37,6 @@
 /home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/refs/Microsoft.AspNetCore.Connections.Abstractions.dll
 /home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/refs/Microsoft.AspNetCore.CookiePolicy.dll
 /home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/refs/Microsoft.AspNetCore.Cors.dll
-/home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/refs/Microsoft.AspNetCore.Cryptography.Internal.dll
-/home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/refs/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 /home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/refs/Microsoft.AspNetCore.DataProtection.Abstractions.dll
 /home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/refs/Microsoft.AspNetCore.DataProtection.dll
 /home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/refs/Microsoft.AspNetCore.DataProtection.Extensions.dll
@@ -133,8 +129,6 @@
 /home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/refs/Microsoft.Extensions.Hosting.Abstractions.dll
 /home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/refs/Microsoft.Extensions.Hosting.dll
 /home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/refs/Microsoft.Extensions.Http.dll
-/home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/refs/Microsoft.Extensions.Identity.Core.dll
-/home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/refs/Microsoft.Extensions.Identity.Stores.dll
 /home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/refs/Microsoft.Extensions.Localization.Abstractions.dll
 /home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/refs/Microsoft.Extensions.Localization.dll
 /home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/refs/Microsoft.Extensions.Logging.Abstractions.dll
@@ -426,3 +420,7 @@
 /home/saffron/Development/c#/OpenERP/obj/Debug/net7.0/OpenERP.pdb
 /home/saffron/Development/c#/OpenERP/obj/Debug/net7.0/OpenERP.genruntimeconfig.cache
 /home/saffron/Development/c#/OpenERP/obj/Debug/net7.0/ref/OpenERP.dll
+/home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/Microsoft.Extensions.Identity.Core.dll
+/home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/Microsoft.Extensions.Identity.Stores.dll
