@@ -1,5 +1,4 @@
 /home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/appsettings.Development.json
-/home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/config.json
 /home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/ErpDbContext/obj/ErpDbContext.csproj.nuget.dgspec.json
 /home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/ErpDbContext/obj/project.assets.json
 /home/saffron/Development/c#/OpenERP/bin/Debug/net7.0/libman.json
