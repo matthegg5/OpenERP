@@ -623,3 +623,4 @@ OpenERP-binaries/OpenERP.Infrastructure.runtimeconfig.json
 obj/*
 OpenErp.Infrastructure/obj/*
 OpenErp-binaries/*
+obj/Debug/net7.0/OpenERP.csproj.AssemblyReference.cache
