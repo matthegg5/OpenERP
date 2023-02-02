@@ -21,7 +21,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.0">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
@@ -32,7 +32,7 @@
 
 
   <ItemGroup>
-    <ProjectReference Include="OpenERP.Data.Repositories\OpenERP.Data.Repositories.csproj" />
+    <ProjectReference Include="OpenERP.Infrastructure\OpenERP.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

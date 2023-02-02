@@ -4,7 +4,7 @@ using System.Text;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
-using OpenERP.Data.Repositories;
+using OpenERP.Infrastructure;
 using OpenERP.ErpDbContext.DataModel;
 using OpenERP.ViewModels;
 

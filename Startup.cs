@@ -8,7 +8,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using OpenERP.ErpDbContext.DataModel;
 using OpenERP.Services;
-using OpenERP.Data.Repositories;
+using OpenERP.Infrastructure;
 
 namespace OpenERP
 {

@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErpDbContext", "ErpDbContex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenERP", "OpenERP.csproj", "{847017B1-B52E-437B-BC88-B267AE6A5C28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenERP.Data.Repositories", "OpenERP.Data.Repositories\OpenERP.Data.Repositories.csproj", "{4BB78127-FB38-441F-A795-2E25EAD4E8D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenERP.Infrastructure", "OpenERP.Infrastructure\OpenERP.Infrastructure.csproj", "{E75C0151-29BF-4C7D-BFE3-961BB936B924}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,13 +26,13 @@ Global
 		{847017B1-B52E-437B-BC88-B267AE6A5C28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{847017B1-B52E-437B-BC88-B267AE6A5C28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{847017B1-B52E-437B-BC88-B267AE6A5C28}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4BB78127-FB38-441F-A795-2E25EAD4E8D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4BB78127-FB38-441F-A795-2E25EAD4E8D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4BB78127-FB38-441F-A795-2E25EAD4E8D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4BB78127-FB38-441F-A795-2E25EAD4E8D1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{20CFE950-9A13-4809-8F9E-55E714375EC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{20CFE950-9A13-4809-8F9E-55E714375EC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20CFE950-9A13-4809-8F9E-55E714375EC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20CFE950-9A13-4809-8F9E-55E714375EC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E75C0151-29BF-4C7D-BFE3-961BB936B924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E75C0151-29BF-4C7D-BFE3-961BB936B924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E75C0151-29BF-4C7D-BFE3-961BB936B924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E75C0151-29BF-4C7D-BFE3-961BB936B924}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
