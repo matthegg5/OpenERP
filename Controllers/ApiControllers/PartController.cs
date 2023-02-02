@@ -5,7 +5,7 @@ using OpenERP.ErpDbContext.DataModel;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
-using OpenERP.Data.Repositories;
+using OpenERP.Infrastructure;
 
 namespace OpenERP.Controllers.Api
 {

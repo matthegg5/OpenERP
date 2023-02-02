@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
-using OpenERP.Data.Repositories;
+using OpenERP.Infrastructure;
 using OpenERP.ErpDbContext.DataModel;
 
 namespace OpenERP.Controllers.App
@@ -13,21 +13,15 @@ namespace OpenERP.Controllers.App
     {
         private readonly ILogger _logger;
         private readonly UserManager<User> _userManager;
-        private readonly IRepository<Part> _partRepository;
-        private readonly IRepository<Company> _companyRepository;
-        private readonly IRepository<Uom> _uomRepository;
+        private readonly UnitOfWork unitOfWork;
 
         public PartController(ILogger<OpenERP.Controllers.App.PartController> logger,
                                 UserManager<User> userManager, 
-                                IRepository<Part> partRepository, 
-                                IRepository<Company> companyRepository,
-                                IRepository<Uom> uomRepository)
+                                UnitOfWork unitOfWork)
         {
             this._logger = logger;
             this._userManager = userManager;
-            this._partRepository = partRepository;
-            this._companyRepository = companyRepository;
-            this._uomRepository = uomRepository;
+            this.unitOfWork = unitOfWork;
         }
 
         [HttpGet]
@@ -49,7 +43,7 @@ namespace OpenERP.Controllers.App
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public IActionResult CreatePart(Part part)  //(OpenERP.ViewModels.PartViewModel model)
+        public async Task<ActionResult> CreatePart(Part part)  //(OpenERP.ViewModels.PartViewModel model)
         {
 
             if (ModelState.IsValid)
@@ -67,17 +61,17 @@ namespace OpenERP.Controllers.App
 
                 HttpContext.Session.SetObjectAsJson("CurrentCompanyID", part.CompanyId);
 
-                part.Company = _companyRepository.GetByID(part.CompanyId);
+                part.Company = unitOfWork.CompanyRepository.GetByID(part.CompanyId);
                 
                 
                 //get UOM record for DefaultUOM string
-                part.Uom = _uomRepository.GetByID(part.DefaultUom);
+                part.Uom = unitOfWork.UomRepository.GetByID(part.DefaultUom);
 
                 if (part.Company != null && part.Uom != null)
                 {
 
-                    _partRepository.Add(part);
-                    _partRepository.SaveChanges();
+                    unitOfWork.PartRepository.Add(part);
+                    await unitOfWork.SaveChangesAsync();
                     return RedirectToAction("Part", "App");
                 }
                 else

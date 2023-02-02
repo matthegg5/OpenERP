@@ -17,14 +17,14 @@
           "/home/saffron/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net7.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -35,8 +35,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore": {
               "target": "Package",
@@ -90,16 +90,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.11, 6.0.11]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.11, 6.0.11]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -109,27 +99,27 @@
         }
       }
     },
-    "/home/saffron/Development/c#/OpenERP/OpenERP.Data.Repositories/OpenERP.Data.Repositories.csproj": {
+    "/home/saffron/Development/c#/OpenERP/OpenERP.Infrastructure/OpenERP.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/saffron/Development/c#/OpenERP/OpenERP.Data.Repositories/OpenERP.Data.Repositories.csproj",
-        "projectName": "OpenERP.Data.Repositories",
-        "projectPath": "/home/saffron/Development/c#/OpenERP/OpenERP.Data.Repositories/OpenERP.Data.Repositories.csproj",
+        "projectUniqueName": "/home/saffron/Development/c#/OpenERP/OpenERP.Infrastructure/OpenERP.Infrastructure.csproj",
+        "projectName": "OpenERP.Infrastructure",
+        "projectPath": "/home/saffron/Development/c#/OpenERP/OpenERP.Infrastructure/OpenERP.Infrastructure.csproj",
         "packagesPath": "/home/saffron/.nuget/packages/",
-        "outputPath": "/home/saffron/Development/c#/OpenERP/OpenERP.Data.Repositories/obj/",
+        "outputPath": "/home/saffron/Development/c#/OpenERP/OpenERP.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/saffron/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net7.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {
               "/home/saffron/Development/c#/OpenERP/ErpDbContext/ErpDbContext.csproj": {
                 "projectPath": "/home/saffron/Development/c#/OpenERP/ErpDbContext/ErpDbContext.csproj"
@@ -144,8 +134,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore": {
               "target": "Package",
@@ -157,17 +147,17 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.8, )"
+              "version": "[7.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.8, )"
+              "version": "[7.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.8, )"
+              "version": "[7.0.2, )"
             },
             "NewtonSoft.Json": {
               "target": "Package",
@@ -185,16 +175,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.11, 6.0.11]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.11, 6.0.11]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -226,8 +206,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/home/saffron/Development/c#/OpenERP/OpenERP.Data.Repositories/OpenERP.Data.Repositories.csproj": {
-                "projectPath": "/home/saffron/Development/c#/OpenERP/OpenERP.Data.Repositories/OpenERP.Data.Repositories.csproj"
+              "/home/saffron/Development/c#/OpenERP/OpenERP.Infrastructure/OpenERP.Infrastructure.csproj": {
+                "projectPath": "/home/saffron/Development/c#/OpenERP/OpenERP.Infrastructure/OpenERP.Infrastructure.csproj"
               }
             }
           }
@@ -274,7 +254,7 @@
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

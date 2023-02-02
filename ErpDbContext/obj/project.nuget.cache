@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "V23VfWb0vV13xnUmC+sbjgF5WLYkY819+T5cLWabF0q+CWm+FNNumK2JTU16VpJO6tYWN60rN4iPxM7psP3Ugg==",
+  "dgSpecHash": "JzxyHQWyPrjWuJzf8faJ6NmOYU7C8hvk3W/WWUACStTEmTSCTcjGx+D3D8U722MHiZlM5o/dMiEzmF6eJlhF1A==",
   "success": true,
   "projectFilePath": "/home/saffron/Development/c#/OpenERP/ErpDbContext/ErpDbContext.csproj",
   "expectedPackageFiles": [
@@ -114,9 +114,7 @@
     "/home/saffron/.nuget/packages/system.text.encoding.codepages/4.7.0/system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "/home/saffron/.nuget/packages/system.text.encodings.web/4.5.0/system.text.encodings.web.4.5.0.nupkg.sha512",
     "/home/saffron/.nuget/packages/system.threading.tasks.extensions/4.5.1/system.threading.tasks.extensions.4.5.1.nupkg.sha512",
-    "/home/saffron/.nuget/packages/system.windows.extensions/4.7.0/system.windows.extensions.4.7.0.nupkg.sha512",
-    "/home/saffron/.nuget/packages/microsoft.netcore.app.ref/6.0.11/microsoft.netcore.app.ref.6.0.11.nupkg.sha512",
-    "/home/saffron/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.11/microsoft.aspnetcore.app.ref.6.0.11.nupkg.sha512"
+    "/home/saffron/.nuget/packages/system.windows.extensions/4.7.0/system.windows.extensions.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }
