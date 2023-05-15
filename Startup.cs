@@ -48,10 +48,12 @@ namespace OpenERP
                     };
                 });
 
-            services.AddDbContext<ErpDbContext.DataModel.OpenERPContext>(cfg =>
-               {
-                   cfg.UseSqlServer("Name=OpenERPContextDb");
-               });
+            services.AddDbContext<ErpDbContext.DataModel.OpenERPContext>(cfg => cfg.UseMySQL("Name=OpenERPContextDb"));
+
+            //services.AddDbContext<ErpDbContext.DataModel.OpenERPContext>(cfg =>
+            //   {
+            //       cfg.UseSqlServer("Name=OpenERPContextDb");
+            //   });
 
             services.AddControllersWithViews()
                     .AddRazorRuntimeCompilation()
@@ -62,7 +64,7 @@ namespace OpenERP
             services.AddDistributedMemoryCache();
 
             services.AddTransient<OpenERPSeeder>();
-            
+
             //add the implementations for the interfaces in here so dependency injection chooses the right implementation
             services.AddScoped<IRepository<Part>, PartRepository>();
             services.AddScoped<IRepository<Uom>, UomRepository>();
