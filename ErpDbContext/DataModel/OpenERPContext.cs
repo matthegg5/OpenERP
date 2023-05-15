@@ -8,8 +8,10 @@ namespace OpenERP.ErpDbContext.DataModel
 {
     public partial class OpenERPContext : IdentityDbContext<User>
     {
+
         public OpenERPContext()
         {
+
         }
 
         public OpenERPContext(DbContextOptions<OpenERPContext> options)
@@ -35,7 +37,7 @@ namespace OpenERP.ErpDbContext.DataModel
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Name=OpenERPContextDb");
+                optionsBuilder.UseMySQL("Name=OpenERPContextDb");
             }
         }
 

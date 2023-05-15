@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Ih0dvRE0qUpD8KqE1k0kp0VBVIvleR74sUxM1cpHIZ1dC+pLo5Fx9wl5YuYz8HQeKBwZUrX7oDjPxNKzbGfMzA==",
+  "dgSpecHash": "cPigw07YQPuUEgx2jc+gMyZsbjwHxLsgGLtjE9tAqsOrHAHzuwW6xhn4Q3ILOGF5ypWQqv1Wl0j2HEpODAI+3g==",
   "success": true,
   "projectFilePath": "/home/saffron/repos/OpenERP/OpenERP.csproj",
   "expectedPackageFiles": [
@@ -114,10 +114,12 @@
     "/home/saffron/.nuget/packages/moq/4.18.2/moq.4.18.2.nupkg.sha512",
     "/home/saffron/.nuget/packages/mysql.data/8.0.33/mysql.data.8.0.33.nupkg.sha512",
     "/home/saffron/.nuget/packages/mysql.entityframeworkcore/7.0.2/mysql.entityframeworkcore.7.0.2.nupkg.sha512",
+    "/home/saffron/.nuget/packages/mysqlconnector/2.2.5/mysqlconnector.2.2.5.nupkg.sha512",
     "/home/saffron/.nuget/packages/netstandard.library/2.0.0/netstandard.library.2.0.0.nupkg.sha512",
     "/home/saffron/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
     "/home/saffron/.nuget/packages/newtonsoft.json.bson/1.0.2/newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "/home/saffron/.nuget/packages/nunit/3.13.3/nunit.3.13.3.nupkg.sha512",
+    "/home/saffron/.nuget/packages/pomelo.entityframeworkcore.mysql/7.0.0/pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512",
     "/home/saffron/.nuget/packages/portable.bouncycastle/1.9.0/portable.bouncycastle.1.9.0.nupkg.sha512",
     "/home/saffron/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
     "/home/saffron/.nuget/packages/system.codedom/4.4.0/system.codedom.4.4.0.nupkg.sha512",

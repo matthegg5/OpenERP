@@ -9,53 +9,53 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = OpenERP
 build_property.RootNamespace = OpenERP
-build_property.ProjectDir = /home/saffron/Development/c#/OpenERP/
+build_property.ProjectDir = /home/saffron/repos/OpenERP/
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = /home/saffron/Development/c#/OpenERP
+build_property.MSBuildProjectDirectory = /home/saffron/repos/OpenERP
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/saffron/Development/c\#/OpenERP/Pages/Error.cshtml]
+[/home/saffron/repos/OpenERP/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/saffron/Development/c\#/OpenERP/Pages/_ViewStart.cshtml]
+[/home/saffron/repos/OpenERP/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/saffron/Development/c\#/OpenERP/Views/Account/Login.cshtml]
+[/home/saffron/repos/OpenERP/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/saffron/Development/c\#/OpenERP/Views/Account/SessionProperties.cshtml]
+[/home/saffron/repos/OpenERP/Views/Account/SessionProperties.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9TZXNzaW9uUHJvcGVydGllcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/saffron/Development/c\#/OpenERP/Views/App/About.cshtml]
+[/home/saffron/repos/OpenERP/Views/App/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL0Fib3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/saffron/Development/c\#/OpenERP/Views/App/Contact.cshtml]
+[/home/saffron/repos/OpenERP/Views/App/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL0NvbnRhY3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/saffron/Development/c\#/OpenERP/Views/App/Index.cshtml]
+[/home/saffron/repos/OpenERP/Views/App/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/saffron/Development/c\#/OpenERP/Views/Part/Part.cshtml]
+[/home/saffron/repos/OpenERP/Views/Part/Part.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFydC9QYXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/saffron/Development/c\#/OpenERP/Views/Shared/_layout.cshtml]
+[/home/saffron/repos/OpenERP/Views/Shared/_layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19sYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/saffron/Development/c\#/OpenERP/Views/_ViewImports.cshtml]
+[/home/saffron/repos/OpenERP/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/saffron/Development/c\#/OpenERP/Views/_ViewStart.cshtml]
+[/home/saffron/repos/OpenERP/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

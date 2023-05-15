@@ -48,7 +48,10 @@ namespace OpenERP
                     };
                 });
 
-            services.AddDbContext<ErpDbContext.DataModel.OpenERPContext>(cfg => cfg.UseMySQL("Name=OpenERPContextDb"));
+            services.AddDbContext<ErpDbContext.DataModel.OpenERPContext>(cfg =>
+                {
+                    cfg.UseMySQL(_config["ConnectionStrings:OpenERPContextDb"]);
+                });
 
             //services.AddDbContext<ErpDbContext.DataModel.OpenERPContext>(cfg =>
             //   {

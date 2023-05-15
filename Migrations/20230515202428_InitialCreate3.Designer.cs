@@ -2,7 +2,6 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OpenERP.ErpDbContext.DataModel;
@@ -12,41 +11,39 @@ using OpenERP.ErpDbContext.DataModel;
 namespace OpenERP.Migrations
 {
     [DbContext(typeof(OpenERPContext))]
-    [Migration("20220717193511_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20230515202428_InitialCreate3")]
+    partial class InitialCreate3
     {
+        /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.6")
-                .HasAnnotation("Relational:MaxIdentifierLength", 128);
-
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+                .HasAnnotation("ProductVersion", "7.0.2")
+                .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("varchar(255)");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("longtext");
 
                     b.Property<string>("Name")
                         .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                        .HasColumnType("varchar(256)");
 
                     b.Property<string>("NormalizedName")
                         .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                        .HasColumnType("varchar(256)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("NormalizedName")
                         .IsUnique()
-                        .HasDatabaseName("RoleNameIndex")
-                        .HasFilter("[NormalizedName] IS NOT NULL");
+                        .HasDatabaseName("RoleNameIndex");
 
                     b.ToTable("AspNetRoles", (string)null);
                 });
@@ -57,17 +54,15 @@ namespace OpenERP.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
                     b.Property<string>("ClaimType")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("longtext");
 
                     b.Property<string>("ClaimValue")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("longtext");
 
                     b.Property<string>("RoleId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
@@ -82,17 +77,15 @@ namespace OpenERP.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
                     b.Property<string>("ClaimType")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("longtext");
 
                     b.Property<string>("ClaimValue")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("longtext");
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
@@ -104,17 +97,17 @@ namespace OpenERP.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("varchar(255)");
 
                     b.Property<string>("ProviderKey")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("varchar(255)");
 
                     b.Property<string>("ProviderDisplayName")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("longtext");
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("LoginProvider", "ProviderKey");
 
@@ -126,10 +119,10 @@ namespace OpenERP.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
                 {
                     b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("varchar(255)");
 
                     b.Property<string>("RoleId")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("UserId", "RoleId");
 
@@ -141,16 +134,16 @@ namespace OpenERP.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
                     b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("varchar(255)");
 
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("varchar(255)");
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("varchar(255)");
 
                     b.Property<string>("Value")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("longtext");
 
                     b.HasKey("UserId", "LoginProvider", "Name");
 
@@ -162,14 +155,14 @@ namespace OpenERP.Migrations
                     b.Property<string>("CompanyId")
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(8)
-                        .HasColumnType("nvarchar(8)")
+                        .HasColumnType("varchar(8)")
                         .HasColumnName("CompanyID")
                         .HasDefaultValueSql("('')");
 
                     b.Property<string>("ReferenceTable")
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(1)
-                        .HasColumnType("nvarchar(1)")
+                        .HasColumnType("varchar(1)")
                         .HasDefaultValueSql("('')");
 
                     b.Property<int>("ForeignKeyId")
@@ -184,28 +177,28 @@ namespace OpenERP.Migrations
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)")
+                        .HasColumnType("varchar(200)")
                         .HasDefaultValueSql("('')");
 
                     b.Property<string>("Address2")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)")
+                        .HasColumnType("varchar(200)")
                         .HasDefaultValueSql("('')");
 
                     b.Property<string>("Address3")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)")
+                        .HasColumnType("varchar(200)")
                         .HasDefaultValueSql("('')");
 
                     b.Property<string>("City")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)")
+                        .HasColumnType("varchar(200)")
                         .HasDefaultValueSql("('')");
 
                     b.Property<int>("CountryNum")
@@ -215,7 +208,7 @@ namespace OpenERP.Migrations
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)")
+                        .HasColumnType("varchar(20)")
                         .HasDefaultValueSql("('')");
 
                     b.HasKey("CompanyId", "ReferenceTable", "ForeignKeyId", "AddressId");
@@ -228,18 +221,18 @@ namespace OpenERP.Migrations
                     b.Property<string>("CompanyId")
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(8)
-                        .HasColumnType("nvarchar(8)")
+                        .HasColumnType("varchar(8)")
                         .HasColumnName("CompanyID")
                         .HasDefaultValueSql("('')");
 
                     b.Property<bool>("Active")
-                        .HasColumnType("bit");
+                        .HasColumnType("tinyint(1)");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)")
+                        .HasColumnType("varchar(200)")
                         .HasDefaultValueSql("('')");
 
                     b.HasKey("CompanyId");
@@ -252,7 +245,7 @@ namespace OpenERP.Migrations
                     b.Property<string>("CompanyId")
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(8)
-                        .HasColumnType("nvarchar(8)")
+                        .HasColumnType("varchar(8)")
                         .HasColumnName("CompanyID")
                         .HasDefaultValueSql("('')");
 
@@ -264,21 +257,21 @@ namespace OpenERP.Migrations
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)")
+                        .HasColumnType("varchar(200)")
                         .HasDefaultValueSql("('')");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)")
+                        .HasColumnType("varchar(200)")
                         .HasDefaultValueSql("('')");
 
                     b.Property<string>("Status")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(5)
-                        .HasColumnType("nvarchar(5)")
+                        .HasColumnType("varchar(5)")
                         .HasDefaultValueSql("('')");
 
                     b.HasKey("CompanyId", "CustomerId");
@@ -291,21 +284,21 @@ namespace OpenERP.Migrations
                     b.Property<string>("CompanyId")
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(8)
-                        .HasColumnType("nvarchar(8)")
+                        .HasColumnType("varchar(8)")
                         .HasColumnName("CompanyID")
                         .HasDefaultValueSql("('')");
 
                     b.Property<string>("PartNum")
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(120)
-                        .HasColumnType("nvarchar(120)")
+                        .HasColumnType("varchar(120)")
                         .HasDefaultValueSql("('')");
 
                     b.Property<string>("DefaultUom")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)")
+                        .HasColumnType("varchar(15)")
                         .HasColumnName("DefaultUOM")
                         .HasDefaultValueSql("('')");
 
@@ -313,11 +306,11 @@ namespace OpenERP.Migrations
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)")
+                        .HasColumnType("varchar(1000)")
                         .HasDefaultValueSql("('')");
 
                     b.Property<bool>("SerialTracked")
-                        .HasColumnType("bit");
+                        .HasColumnType("tinyint(1)");
 
                     b.HasKey("CompanyId", "PartNum");
 
@@ -331,24 +324,24 @@ namespace OpenERP.Migrations
                     b.Property<string>("CompanyId")
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(8)
-                        .HasColumnType("nvarchar(8)")
+                        .HasColumnType("varchar(8)")
                         .HasColumnName("CompanyID")
                         .HasDefaultValueSql("('')");
 
                     b.Property<string>("PartNum")
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(120)
-                        .HasColumnType("nvarchar(120)")
+                        .HasColumnType("varchar(120)")
                         .HasDefaultValueSql("('')");
 
                     b.Property<string>("PartRevNum")
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)")
+                        .HasColumnType("varchar(20)")
                         .HasDefaultValueSql("('')");
 
                     b.Property<bool>("Approved")
-                        .HasColumnType("bit");
+                        .HasColumnType("tinyint(1)");
 
                     b.Property<DateTime?>("ApprovedDate")
                         .HasColumnType("datetime");
@@ -357,14 +350,14 @@ namespace OpenERP.Migrations
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(450)
-                        .HasColumnType("nvarchar(450)")
+                        .HasColumnType("varchar(450)")
                         .HasDefaultValueSql("('')");
 
                     b.Property<string>("PartRevDesc")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)")
+                        .HasColumnType("varchar(200)")
                         .HasDefaultValueSql("('')");
 
                     b.HasKey("CompanyId", "PartNum", "PartRevNum");
@@ -377,7 +370,7 @@ namespace OpenERP.Migrations
                     b.Property<string>("CompanyId")
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(8)
-                        .HasColumnType("nvarchar(8)")
+                        .HasColumnType("varchar(8)")
                         .HasColumnName("CompanyID")
                         .HasDefaultValueSql("('')");
 
@@ -391,21 +384,21 @@ namespace OpenERP.Migrations
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
+                        .HasColumnType("varchar(50)")
                         .HasDefaultValueSql("('')");
 
                     b.Property<string>("CostElement")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
+                        .HasColumnType("varchar(50)")
                         .HasDefaultValueSql("('')");
 
                     b.Property<string>("InternalOrder")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
+                        .HasColumnType("varchar(50)")
                         .HasDefaultValueSql("('')");
 
                     b.Property<DateTime?>("LastChangeDate")
@@ -415,24 +408,24 @@ namespace OpenERP.Migrations
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(450)
-                        .HasColumnType("nvarchar(450)")
+                        .HasColumnType("varchar(450)")
                         .HasDefaultValueSql("('')");
 
                     b.Property<string>("LineDesc")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)")
+                        .HasColumnType("varchar(1000)")
                         .HasDefaultValueSql("('')");
 
                     b.Property<decimal>("OurOrderQty")
-                        .HasColumnType("decimal(9,2)");
+                        .HasColumnType("decimal(9, 2)");
 
                     b.Property<string>("OurUom")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)")
+                        .HasColumnType("varchar(15)")
                         .HasColumnName("OurUOM")
                         .HasDefaultValueSql("('')");
 
@@ -440,20 +433,20 @@ namespace OpenERP.Migrations
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(120)
-                        .HasColumnType("nvarchar(120)")
+                        .HasColumnType("varchar(120)")
                         .HasDefaultValueSql("('')");
 
                     b.Property<DateTime?>("RequiredDate")
                         .HasColumnType("datetime");
 
                     b.Property<decimal>("SupplierOrderQty")
-                        .HasColumnType("decimal(9,2)");
+                        .HasColumnType("decimal(9, 2)");
 
                     b.Property<string>("SupplierUom")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)")
+                        .HasColumnType("varchar(15)")
                         .HasColumnName("SupplierUOM")
                         .HasDefaultValueSql("('')");
 
@@ -471,7 +464,7 @@ namespace OpenERP.Migrations
                     b.Property<string>("CompanyId")
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(8)
-                        .HasColumnType("nvarchar(8)")
+                        .HasColumnType("varchar(8)")
                         .HasColumnName("CompanyID")
                         .HasDefaultValueSql("('')");
 
@@ -482,7 +475,7 @@ namespace OpenERP.Migrations
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(1)
-                        .HasColumnType("nvarchar(1)")
+                        .HasColumnType("varchar(1)")
                         .HasDefaultValueSql("('')");
 
                     b.Property<DateTime?>("ApprovedDate")
@@ -492,7 +485,7 @@ namespace OpenERP.Migrations
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(450)
-                        .HasColumnType("nvarchar(450)")
+                        .HasColumnType("varchar(450)")
                         .HasColumnName("CreatedByUserID")
                         .HasDefaultValueSql("('')");
 
@@ -503,7 +496,7 @@ namespace OpenERP.Migrations
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)")
+                        .HasColumnType("varchar(10)")
                         .HasDefaultValueSql("('')");
 
                     b.Property<DateTime?>("LastChangeDate")
@@ -513,7 +506,7 @@ namespace OpenERP.Migrations
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(450)
-                        .HasColumnType("nvarchar(450)")
+                        .HasColumnType("varchar(450)")
                         .HasDefaultValueSql("('')");
 
                     b.Property<DateTime?>("OrderDate")
@@ -535,7 +528,7 @@ namespace OpenERP.Migrations
                     b.Property<string>("CompanyId")
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(8)
-                        .HasColumnType("nvarchar(8)")
+                        .HasColumnType("varchar(8)")
                         .HasColumnName("CompanyID")
                         .HasDefaultValueSql("('')");
 
@@ -558,17 +551,17 @@ namespace OpenERP.Migrations
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(450)
-                        .HasColumnType("nvarchar(450)")
+                        .HasColumnType("varchar(450)")
                         .HasDefaultValueSql("('')");
 
                     b.Property<decimal>("OurOrderQty")
-                        .HasColumnType("decimal(9,2)");
+                        .HasColumnType("decimal(9, 2)");
 
                     b.Property<DateTime?>("RequiredDate")
                         .HasColumnType("datetime");
 
                     b.Property<decimal>("SupplierOrderQty")
-                        .HasColumnType("decimal(9,2)");
+                        .HasColumnType("decimal(9, 2)");
 
                     b.HasKey("CompanyId", "PurchaseOrderNum", "PurchaseOrderLineNum", "PurchaseOrderRelNum");
 
@@ -580,7 +573,7 @@ namespace OpenERP.Migrations
                     b.Property<string>("CompanyId")
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(8)
-                        .HasColumnType("nvarchar(8)")
+                        .HasColumnType("varchar(8)")
                         .HasColumnName("CompanyID")
                         .HasDefaultValueSql("('')");
 
@@ -594,45 +587,45 @@ namespace OpenERP.Migrations
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
+                        .HasColumnType("varchar(50)")
                         .HasDefaultValueSql("('')");
 
                     b.Property<string>("CostElement")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
+                        .HasColumnType("varchar(50)")
                         .HasDefaultValueSql("('')");
 
                     b.Property<string>("InternalOrder")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
+                        .HasColumnType("varchar(50)")
                         .HasDefaultValueSql("('')");
 
                     b.Property<string>("LineDesc")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)")
+                        .HasColumnType("varchar(1000)")
                         .HasDefaultValueSql("('')");
 
                     b.Property<decimal>("LineQty")
-                        .HasColumnType("decimal(9,2)");
+                        .HasColumnType("decimal(9, 2)");
 
                     b.Property<string>("PartNum")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(120)
-                        .HasColumnType("nvarchar(120)")
+                        .HasColumnType("varchar(120)")
                         .HasDefaultValueSql("('')");
 
                     b.Property<string>("SalesUom")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)")
+                        .HasColumnType("varchar(15)")
                         .HasColumnName("SalesUOM")
                         .HasDefaultValueSql("('')");
 
@@ -640,7 +633,7 @@ namespace OpenERP.Migrations
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)")
+                        .HasColumnType("varchar(1000)")
                         .HasColumnName("SOLineComments")
                         .HasDefaultValueSql("('')");
 
@@ -658,7 +651,7 @@ namespace OpenERP.Migrations
                     b.Property<string>("CompanyId")
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(8)
-                        .HasColumnType("nvarchar(8)")
+                        .HasColumnType("varchar(8)")
                         .HasColumnName("CompanyID")
                         .HasDefaultValueSql("('')");
 
@@ -670,7 +663,7 @@ namespace OpenERP.Migrations
                         .HasColumnName("BillingAddressID");
 
                     b.Property<bool>("CancelledOrder")
-                        .HasColumnType("bit");
+                        .HasColumnType("tinyint(1)");
 
                     b.Property<DateTime?>("ClosedDate")
                         .HasColumnType("datetime");
@@ -679,7 +672,7 @@ namespace OpenERP.Migrations
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(450)
-                        .HasColumnType("nvarchar(450)")
+                        .HasColumnType("varchar(450)")
                         .HasDefaultValueSql("('')");
 
                     b.Property<DateTime?>("CreatedDate")
@@ -693,7 +686,7 @@ namespace OpenERP.Migrations
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
+                        .HasColumnType("varchar(50)")
                         .HasColumnName("CustomerPONum")
                         .HasDefaultValueSql("('')");
 
@@ -701,7 +694,7 @@ namespace OpenERP.Migrations
                         .HasColumnType("datetime");
 
                     b.Property<bool>("OpenOrder")
-                        .HasColumnType("bit");
+                        .HasColumnType("tinyint(1)");
 
                     b.Property<int>("ShippingAddressId")
                         .HasColumnType("int")
@@ -722,7 +715,7 @@ namespace OpenERP.Migrations
                     b.Property<string>("CompanyId")
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(8)
-                        .HasColumnType("nvarchar(8)")
+                        .HasColumnType("varchar(8)")
                         .HasColumnName("CompanyID")
                         .HasDefaultValueSql("('')");
 
@@ -736,7 +729,7 @@ namespace OpenERP.Migrations
                         .HasColumnType("int");
 
                     b.Property<decimal>("ReleaseQty")
-                        .HasColumnType("decimal(9,2)");
+                        .HasColumnType("decimal(9, 2)");
 
                     b.Property<DateTime?>("RequiredByDate")
                         .HasColumnType("datetime");
@@ -751,7 +744,7 @@ namespace OpenERP.Migrations
                     b.Property<string>("CompanyId")
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(8)
-                        .HasColumnType("nvarchar(8)")
+                        .HasColumnType("varchar(8)")
                         .HasColumnName("CompanyID")
                         .HasDefaultValueSql("('')");
 
@@ -760,7 +753,7 @@ namespace OpenERP.Migrations
                         .HasColumnName("SupplierID");
 
                     b.Property<bool>("Active")
-                        .HasColumnType("bit");
+                        .HasColumnType("tinyint(1)");
 
                     b.Property<int>("AddressId")
                         .HasColumnType("int")
@@ -770,7 +763,7 @@ namespace OpenERP.Migrations
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)")
+                        .HasColumnType("varchar(200)")
                         .HasDefaultValueSql("('')");
 
                     b.HasKey("CompanyId", "SupplierId");
@@ -783,25 +776,25 @@ namespace OpenERP.Migrations
                     b.Property<string>("CompanyId")
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(8)
-                        .HasColumnType("nvarchar(8)")
+                        .HasColumnType("varchar(8)")
                         .HasColumnName("CompanyID")
                         .HasDefaultValueSql("('')");
 
                     b.Property<string>("Uom1")
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)")
+                        .HasColumnType("varchar(15)")
                         .HasColumnName("UOM")
                         .HasDefaultValueSql("('')");
 
                     b.Property<bool>("Active")
-                        .HasColumnType("bit");
+                        .HasColumnType("tinyint(1)");
 
                     b.Property<string>("Uomdescription")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)")
+                        .HasColumnType("varchar(100)")
                         .HasColumnName("UOMDescription")
                         .HasDefaultValueSql("('')");
 
@@ -813,7 +806,7 @@ namespace OpenERP.Migrations
             modelBuilder.Entity("OpenERP.ErpDbContext.DataModel.User", b =>
                 {
                     b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("varchar(255)");
 
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
@@ -821,51 +814,61 @@ namespace OpenERP.Migrations
                     b.Property<string>("CompanyList")
                         .IsRequired()
                         .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                        .HasColumnType("varchar(256)");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("longtext");
 
                     b.Property<string>("Email")
                         .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                        .HasColumnType("varchar(256)");
 
                     b.Property<bool>("EmailConfirmed")
-                        .HasColumnType("bit");
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasMaxLength(256)
+                        .HasColumnType("varchar(256)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasMaxLength(256)
+                        .HasColumnType("varchar(256)");
 
                     b.Property<bool>("LockoutEnabled")
-                        .HasColumnType("bit");
+                        .HasColumnType("tinyint(1)");
 
                     b.Property<DateTimeOffset?>("LockoutEnd")
-                        .HasColumnType("datetimeoffset");
+                        .HasColumnType("datetime(6)");
 
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                        .HasColumnType("varchar(256)");
 
                     b.Property<string>("NormalizedUserName")
                         .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                        .HasColumnType("varchar(256)");
 
                     b.Property<string>("PasswordHash")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("longtext");
 
                     b.Property<string>("PhoneNumber")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("longtext");
 
                     b.Property<bool>("PhoneNumberConfirmed")
-                        .HasColumnType("bit");
+                        .HasColumnType("tinyint(1)");
 
                     b.Property<string>("SecurityStamp")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("longtext");
 
                     b.Property<bool>("TwoFactorEnabled")
-                        .HasColumnType("bit");
+                        .HasColumnType("tinyint(1)");
 
                     b.Property<string>("UserName")
                         .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                        .HasColumnType("varchar(256)");
 
                     b.HasKey("Id");
 
@@ -874,8 +877,7 @@ namespace OpenERP.Migrations
 
                     b.HasIndex("NormalizedUserName")
                         .IsUnique()
-                        .HasDatabaseName("UserNameIndex")
-                        .HasFilter("[NormalizedUserName] IS NOT NULL");
+                        .HasDatabaseName("UserNameIndex");
 
                     b.ToTable("AspNetUsers", (string)null);
                 });

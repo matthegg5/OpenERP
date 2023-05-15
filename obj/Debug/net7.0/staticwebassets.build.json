@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KedNN77UBVuI/5iPEqwWw1ynWDO73qs2L/R2EOfCI0s=",
+  "Hash": "b/dZ2wEFdjAy0uKET3+wou6iKUGK6sXDJj1qmKqn4Tg=",
   "Source": "OpenERP",
   "BasePath": "_content/OpenERP",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "OpenERP/wwwroot",
       "Source": "OpenERP",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/css/index.css",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/css/index.css",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "css/index.css",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot/css/index.css"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/css/login.css",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/css/login.css",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "css/login.css",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot/css/login.css"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/css/part.css",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/css/part.css",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "css/part.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot/css/part.css"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/css/site.css",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/css/site.css",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/index.html.old",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/index.html.old",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "index.html.old",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot/index.html.old"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/js/menu.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/js/menu.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "js/menu.js",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot/js/menu.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation-unobtrusive/package.json",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation-unobtrusive/package.json",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation-unobtrusive/package.json",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/package.json"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation-unobtrusive/README.md",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation-unobtrusive/README.md",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation-unobtrusive/README.md",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/README.md"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/additional-methods.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ar.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ar.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_ar.js",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_ar.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ar.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ar.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_ar.min.js",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_ar.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_az.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_az.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_az.js",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_az.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_az.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_az.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_az.min.js",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_az.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_bg.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_bg.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_bg.js",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_bg.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_bg.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_bg.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_bg.min.js",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_bg.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_bn_BD.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_bn_BD.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_bn_BD.js",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_bn_BD.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_bn_BD.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_bn_BD.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_bn_BD.min.js",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_bn_BD.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ca.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ca.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_ca.js",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_ca.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ca.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ca.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_ca.min.js",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_ca.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_cs.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_cs.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_cs.js",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_cs.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_cs.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_cs.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_cs.min.js",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_cs.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_da.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_da.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_da.js",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_da.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_da.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_da.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_da.min.js",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_da.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_de.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_de.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_de.js",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_de.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_de.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_de.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_de.min.js",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_de.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_el.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_el.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_el.js",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_el.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_el.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_el.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_el.min.js",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_el.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_es_AR.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_es_AR.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_es_AR.js",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_es_AR.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_es_AR.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_es_AR.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_es_AR.min.js",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_es_AR.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_es_PE.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_es_PE.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_es_PE.js",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_es_PE.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_es_PE.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_es_PE.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_es_PE.min.js",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_es_PE.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_es.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_es.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_es.js",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_es.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_es.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_es.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_es.min.js",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_es.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_et.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_et.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_et.js",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_et.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_et.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_et.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_et.min.js",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_et.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_eu.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_eu.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_eu.js",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_eu.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_eu.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_eu.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_eu.min.js",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_eu.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_fa.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_fa.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_fa.js",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_fa.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_fa.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_fa.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_fa.min.js",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_fa.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_fi.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_fi.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_fi.js",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_fi.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_fi.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_fi.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_fi.min.js",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_fi.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_fr.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_fr.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_fr.js",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_fr.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_fr.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_fr.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_fr.min.js",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_fr.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ge.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ge.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_ge.js",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_ge.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ge.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ge.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_ge.min.js",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_ge.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_gl.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_gl.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_gl.js",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_gl.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_gl.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_gl.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_gl.min.js",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_gl.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_he.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_he.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_he.js",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_he.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_he.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_he.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_he.min.js",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_he.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_hr.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_hr.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_hr.js",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_hr.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_hr.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_hr.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_hr.min.js",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_hr.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_hu.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_hu.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_hu.js",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_hu.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_hu.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_hu.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_hu.min.js",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_hu.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_hy_AM.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_hy_AM.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_hy_AM.js",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_hy_AM.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_hy_AM.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_hy_AM.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_hy_AM.min.js",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_hy_AM.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_id.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_id.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_id.js",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_id.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_id.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_id.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_id.min.js",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_id.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_is.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_is.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_is.js",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_is.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_is.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_is.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_is.min.js",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_is.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_it.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_it.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_it.js",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_it.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_it.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_it.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_it.min.js",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_it.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ja.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ja.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_ja.js",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_ja.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ja.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ja.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_ja.min.js",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_ja.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ka.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ka.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_ka.js",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_ka.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ka.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ka.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_ka.min.js",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_ka.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_kk.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_kk.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_kk.js",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_kk.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_kk.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_kk.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_kk.min.js",
       "AssetKind": "All",
@@ -1258,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_kk.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ko.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ko.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_ko.js",
       "AssetKind": "All",
@@ -1275,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_ko.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ko.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ko.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_ko.min.js",
       "AssetKind": "All",
@@ -1292,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_ko.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_lt.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_lt.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_lt.js",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_lt.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_lt.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_lt.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_lt.min.js",
       "AssetKind": "All",
@@ -1326,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_lt.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_lv.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_lv.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_lv.js",
       "AssetKind": "All",
@@ -1343,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_lv.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_lv.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_lv.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_lv.min.js",
       "AssetKind": "All",
@@ -1360,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_lv.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_mk.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_mk.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_mk.js",
       "AssetKind": "All",
@@ -1377,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_mk.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_mk.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_mk.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_mk.min.js",
       "AssetKind": "All",
@@ -1394,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_mk.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_my.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_my.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_my.js",
       "AssetKind": "All",
@@ -1411,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_my.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_my.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_my.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_my.min.js",
       "AssetKind": "All",
@@ -1428,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_my.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_nl.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_nl.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_nl.js",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_nl.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_nl.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_nl.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_nl.min.js",
       "AssetKind": "All",
@@ -1462,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_nl.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_no.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_no.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_no.js",
       "AssetKind": "All",
@@ -1479,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_no.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_no.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_no.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_no.min.js",
       "AssetKind": "All",
@@ -1496,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_no.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_pl.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_pl.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_pl.js",
       "AssetKind": "All",
@@ -1513,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_pl.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_pl.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_pl.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_pl.min.js",
       "AssetKind": "All",
@@ -1530,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_pl.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_pt_BR.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_pt_BR.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_pt_BR.js",
       "AssetKind": "All",
@@ -1547,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_pt_BR.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_pt_BR.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_pt_BR.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_pt_BR.min.js",
       "AssetKind": "All",
@@ -1564,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_pt_BR.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_pt_PT.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_pt_PT.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_pt_PT.js",
       "AssetKind": "All",
@@ -1581,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_pt_PT.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_pt_PT.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_pt_PT.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_pt_PT.min.js",
       "AssetKind": "All",
@@ -1598,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_pt_PT.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ro.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ro.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_ro.js",
       "AssetKind": "All",
@@ -1615,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_ro.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ro.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ro.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_ro.min.js",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_ro.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ru.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ru.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_ru.js",
       "AssetKind": "All",
@@ -1649,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_ru.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ru.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ru.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_ru.min.js",
       "AssetKind": "All",
@@ -1666,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_ru.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_sd.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_sd.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_sd.js",
       "AssetKind": "All",
@@ -1683,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_sd.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_sd.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_sd.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_sd.min.js",
       "AssetKind": "All",
@@ -1700,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_sd.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_si.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_si.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_si.js",
       "AssetKind": "All",
@@ -1717,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_si.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_si.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_si.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_si.min.js",
       "AssetKind": "All",
@@ -1734,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_si.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_sk.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_sk.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_sk.js",
       "AssetKind": "All",
@@ -1751,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_sk.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_sk.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_sk.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_sk.min.js",
       "AssetKind": "All",
@@ -1768,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_sk.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_sl.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_sl.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_sl.js",
       "AssetKind": "All",
@@ -1785,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_sl.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_sl.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_sl.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_sl.min.js",
       "AssetKind": "All",
@@ -1802,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_sl.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_sr_lat.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_sr_lat.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_sr_lat.js",
       "AssetKind": "All",
@@ -1819,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_sr_lat.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_sr_lat.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_sr_lat.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_sr_lat.min.js",
       "AssetKind": "All",
@@ -1836,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_sr_lat.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_sr.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_sr.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_sr.js",
       "AssetKind": "All",
@@ -1853,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_sr.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_sr.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_sr.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_sr.min.js",
       "AssetKind": "All",
@@ -1870,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_sr.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_sv.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_sv.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_sv.js",
       "AssetKind": "All",
@@ -1887,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_sv.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_sv.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_sv.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_sv.min.js",
       "AssetKind": "All",
@@ -1904,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_sv.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_th.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_th.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_th.js",
       "AssetKind": "All",
@@ -1921,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_th.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_th.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_th.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_th.min.js",
       "AssetKind": "All",
@@ -1938,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_th.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_tj.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_tj.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_tj.js",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_tj.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_tj.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_tj.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_tj.min.js",
       "AssetKind": "All",
@@ -1972,10 +1972,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_tj.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_tr.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_tr.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_tr.js",
       "AssetKind": "All",
@@ -1989,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_tr.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_tr.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_tr.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_tr.min.js",
       "AssetKind": "All",
@@ -2006,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_tr.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_uk.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_uk.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_uk.js",
       "AssetKind": "All",
@@ -2023,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_uk.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_uk.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_uk.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_uk.min.js",
       "AssetKind": "All",
@@ -2040,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_uk.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ur.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ur.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_ur.js",
       "AssetKind": "All",
@@ -2057,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_ur.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ur.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_ur.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_ur.min.js",
       "AssetKind": "All",
@@ -2074,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_ur.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_vi.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_vi.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_vi.js",
       "AssetKind": "All",
@@ -2091,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_vi.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_vi.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_vi.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_vi.min.js",
       "AssetKind": "All",
@@ -2108,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_vi.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_zh_TW.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_zh_TW.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_zh_TW.js",
       "AssetKind": "All",
@@ -2125,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_zh_TW.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_zh_TW.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_zh_TW.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_zh_TW.min.js",
       "AssetKind": "All",
@@ -2142,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_zh_TW.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_zh.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_zh.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_zh.js",
       "AssetKind": "All",
@@ -2159,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_zh.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_zh.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/messages_zh.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/messages_zh.min.js",
       "AssetKind": "All",
@@ -2176,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/messages_zh.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/methods_de.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/methods_de.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/methods_de.js",
       "AssetKind": "All",
@@ -2193,10 +2193,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/methods_de.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/methods_de.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/methods_de.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/methods_de.min.js",
       "AssetKind": "All",
@@ -2210,10 +2210,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/methods_de.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/methods_es_CL.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/methods_es_CL.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/methods_es_CL.js",
       "AssetKind": "All",
@@ -2227,10 +2227,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/methods_es_CL.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/methods_es_CL.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/methods_es_CL.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/methods_es_CL.min.js",
       "AssetKind": "All",
@@ -2244,10 +2244,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/methods_es_CL.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/methods_fi.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/methods_fi.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/methods_fi.js",
       "AssetKind": "All",
@@ -2261,10 +2261,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/methods_fi.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/methods_fi.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/methods_fi.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/methods_fi.min.js",
       "AssetKind": "All",
@@ -2278,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/methods_fi.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/methods_it.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/methods_it.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/methods_it.js",
       "AssetKind": "All",
@@ -2295,10 +2295,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/methods_it.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/methods_it.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/methods_it.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/methods_it.min.js",
       "AssetKind": "All",
@@ -2312,10 +2312,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/methods_it.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/methods_nl.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/methods_nl.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/methods_nl.js",
       "AssetKind": "All",
@@ -2329,10 +2329,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/methods_nl.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/methods_nl.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/methods_nl.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/methods_nl.min.js",
       "AssetKind": "All",
@@ -2346,10 +2346,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/methods_nl.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/methods_pt.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/methods_pt.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/methods_pt.js",
       "AssetKind": "All",
@@ -2363,10 +2363,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/methods_pt.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/dist/localization/methods_pt.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/dist/localization/methods_pt.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/dist/localization/methods_pt.min.js",
       "AssetKind": "All",
@@ -2380,10 +2380,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/localization/methods_pt.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/LICENSE.md",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/LICENSE.md",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2397,10 +2397,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/LICENSE.md"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/package.json",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/package.json",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/package.json",
       "AssetKind": "All",
@@ -2414,10 +2414,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/package.json"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery-validation/README.md",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation/README.md",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery-validation/README.md",
       "AssetKind": "All",
@@ -2431,10 +2431,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/README.md"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery/dist/jquery.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/dist/jquery.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2448,10 +2448,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery/dist/jquery.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/dist/jquery.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2465,10 +2465,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery/dist/jquery.min.map",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/dist/jquery.min.map",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2482,10 +2482,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.map"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery/dist/jquery.slim.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/dist/jquery.slim.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery/dist/jquery.slim.js",
       "AssetKind": "All",
@@ -2499,10 +2499,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.slim.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery/dist/jquery.slim.min.js",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/dist/jquery.slim.min.js",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery/dist/jquery.slim.min.js",
       "AssetKind": "All",
@@ -2516,10 +2516,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.slim.min.js"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/lib/jquery/dist/jquery.slim.min.map",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/dist/jquery.slim.min.map",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "lib/jquery/dist/jquery.slim.min.map",
       "AssetKind": "All",
@@ -2533,10 +2533,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.slim.min.map"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/media/close.png",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/media/close.png",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "media/close.png",
       "AssetKind": "All",
@@ -2550,10 +2550,10 @@
       "OriginalItemSpec": "wwwroot/media/close.png"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/media/index-background.mp4",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/media/index-background.mp4",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "media/index-background.mp4",
       "AssetKind": "All",
@@ -2567,10 +2567,10 @@
       "OriginalItemSpec": "wwwroot/media/index-background.mp4"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/media/Login-background.mp4",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/media/Login-background.mp4",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "media/Login-background.mp4",
       "AssetKind": "All",
@@ -2584,10 +2584,10 @@
       "OriginalItemSpec": "wwwroot/media/Login-background.mp4"
     },
     {
-      "Identity": "/home/saffron/Development/c#/OpenERP/wwwroot/media/menu.png",
+      "Identity": "/home/saffron/repos/OpenERP/wwwroot/media/menu.png",
       "SourceId": "OpenERP",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/saffron/Development/c#/OpenERP/wwwroot/",
+      "ContentRoot": "/home/saffron/repos/OpenERP/wwwroot/",
       "BasePath": "_content/OpenERP",
       "RelativePath": "media/menu.png",
       "AssetKind": "All",
