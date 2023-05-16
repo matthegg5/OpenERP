@@ -33,6 +33,7 @@ namespace OpenERP.ErpDbContext.DataModel
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseMySQL("Name=OpenERPContextDb");
+                //optionsBuilder.UseSqlServer("Name=OpenERPContextDb");
             }
         }
 
