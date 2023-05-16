@@ -1,80 +1,87 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
+using MySql.EntityFrameworkCore.Metadata;
 
 #nullable disable
 
 namespace OpenERP.Migrations
 {
-    public partial class InitialCreate : Migration
+    /// <inheritdoc />
+    public partial class InitialCreate1 : Migration
     {
+        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.EnsureSchema(
-                name: "Erp");
+            migrationBuilder.AlterDatabase()
+                .Annotation("MySQL:Charset", "utf8mb4");
 
             migrationBuilder.CreateTable(
                 name: "AspNetRoles",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
-                    NormalizedName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
-                    ConcurrencyStamp = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Id = table.Column<string>(type: "varchar(255)", nullable: false),
+                    Name = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: true),
+                    NormalizedName = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: true),
+                    ConcurrencyStamp = table.Column<string>(type: "longtext", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetRoles", x => x.Id);
-                });
+                })
+                .Annotation("MySQL:Charset", "utf8mb4");
 
             migrationBuilder.CreateTable(
                 name: "AspNetUsers",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    CompanyList = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: false),
-                    UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
-                    NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
-                    Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
-                    NormalizedEmail = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
-                    EmailConfirmed = table.Column<bool>(type: "bit", nullable: false),
-                    PasswordHash = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    SecurityStamp = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ConcurrencyStamp = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    PhoneNumberConfirmed = table.Column<bool>(type: "bit", nullable: false),
-                    TwoFactorEnabled = table.Column<bool>(type: "bit", nullable: false),
-                    LockoutEnd = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
-                    LockoutEnabled = table.Column<bool>(type: "bit", nullable: false),
+                    Id = table.Column<string>(type: "varchar(255)", nullable: false),
+                    CompanyList = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: false),
+                    FirstName = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: false),
+                    LastName = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: false),
+                    UserName = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: true),
+                    NormalizedUserName = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: true),
+                    Email = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: true),
+                    NormalizedEmail = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: true),
+                    EmailConfirmed = table.Column<bool>(type: "tinyint(1)", nullable: false),
+                    PasswordHash = table.Column<string>(type: "longtext", nullable: true),
+                    SecurityStamp = table.Column<string>(type: "longtext", nullable: true),
+                    ConcurrencyStamp = table.Column<string>(type: "longtext", nullable: true),
+                    PhoneNumber = table.Column<string>(type: "longtext", nullable: true),
+                    PhoneNumberConfirmed = table.Column<bool>(type: "tinyint(1)", nullable: false),
+                    TwoFactorEnabled = table.Column<bool>(type: "tinyint(1)", nullable: false),
+                    LockoutEnd = table.Column<DateTimeOffset>(type: "datetime(6)", nullable: true),
+                    LockoutEnabled = table.Column<bool>(type: "tinyint(1)", nullable: false),
                     AccessFailedCount = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
-                });
+                })
+                .Annotation("MySQL:Charset", "utf8mb4");
 
             migrationBuilder.CreateTable(
                 name: "Company",
-                schema: "Erp",
                 columns: table => new
                 {
-                    CompanyID = table.Column<string>(type: "nvarchar(8)", maxLength: 8, nullable: false, defaultValueSql: "('')"),
-                    Name = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false, defaultValueSql: "('')"),
-                    Active = table.Column<bool>(type: "bit", nullable: false)
+                    CompanyID = table.Column<string>(type: "varchar(8)", maxLength: 8, nullable: false, defaultValueSql: "('')"),
+                    Name = table.Column<string>(type: "varchar(200)", maxLength: 200, nullable: false, defaultValueSql: "('')"),
+                    Active = table.Column<bool>(type: "tinyint(1)", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Company", x => x.CompanyID);
-                });
+                })
+                .Annotation("MySQL:Charset", "utf8mb4");
 
             migrationBuilder.CreateTable(
                 name: "AspNetRoleClaims",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    RoleId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    ClaimType = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ClaimValue = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                        .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
+                    RoleId = table.Column<string>(type: "varchar(255)", nullable: false),
+                    ClaimType = table.Column<string>(type: "longtext", nullable: true),
+                    ClaimValue = table.Column<string>(type: "longtext", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -85,17 +92,18 @@ namespace OpenERP.Migrations
                         principalTable: "AspNetRoles",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
-                });
+                })
+                .Annotation("MySQL:Charset", "utf8mb4");
 
             migrationBuilder.CreateTable(
                 name: "AspNetUserClaims",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    ClaimType = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ClaimValue = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                        .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
+                    UserId = table.Column<string>(type: "varchar(255)", nullable: false),
+                    ClaimType = table.Column<string>(type: "longtext", nullable: true),
+                    ClaimValue = table.Column<string>(type: "longtext", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -106,16 +114,17 @@ namespace OpenERP.Migrations
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
-                });
+                })
+                .Annotation("MySQL:Charset", "utf8mb4");
 
             migrationBuilder.CreateTable(
                 name: "AspNetUserLogins",
                 columns: table => new
                 {
-                    LoginProvider = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    ProviderKey = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    ProviderDisplayName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                    LoginProvider = table.Column<string>(type: "varchar(255)", nullable: false),
+                    ProviderKey = table.Column<string>(type: "varchar(255)", nullable: false),
+                    ProviderDisplayName = table.Column<string>(type: "longtext", nullable: true),
+                    UserId = table.Column<string>(type: "varchar(255)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -126,14 +135,15 @@ namespace OpenERP.Migrations
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
-                });
+                })
+                .Annotation("MySQL:Charset", "utf8mb4");
 
             migrationBuilder.CreateTable(
                 name: "AspNetUserRoles",
                 columns: table => new
                 {
-                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    RoleId = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                    UserId = table.Column<string>(type: "varchar(255)", nullable: false),
+                    RoleId = table.Column<string>(type: "varchar(255)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -150,16 +160,17 @@ namespace OpenERP.Migrations
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
-                });
+                })
+                .Annotation("MySQL:Charset", "utf8mb4");
 
             migrationBuilder.CreateTable(
                 name: "AspNetUserTokens",
                 columns: table => new
                 {
-                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    LoginProvider = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Value = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    UserId = table.Column<string>(type: "varchar(255)", nullable: false),
+                    LoginProvider = table.Column<string>(type: "varchar(255)", nullable: false),
+                    Name = table.Column<string>(type: "varchar(255)", nullable: false),
+                    Value = table.Column<string>(type: "longtext", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -170,23 +181,23 @@ namespace OpenERP.Migrations
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
-                });
+                })
+                .Annotation("MySQL:Charset", "utf8mb4");
 
             migrationBuilder.CreateTable(
                 name: "Address",
-                schema: "Erp",
                 columns: table => new
                 {
-                    CompanyID = table.Column<string>(type: "nvarchar(8)", maxLength: 8, nullable: false, defaultValueSql: "('')"),
-                    ReferenceTable = table.Column<string>(type: "nvarchar(1)", maxLength: 1, nullable: false, defaultValueSql: "('')"),
+                    CompanyID = table.Column<string>(type: "varchar(8)", maxLength: 8, nullable: false, defaultValueSql: "('')"),
+                    ReferenceTable = table.Column<string>(type: "varchar(1)", maxLength: 1, nullable: false, defaultValueSql: "('')"),
                     ForeignKeyID = table.Column<int>(type: "int", nullable: false),
                     AddressID = table.Column<int>(type: "int", nullable: false),
-                    Address1 = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false, defaultValueSql: "('')"),
-                    Address2 = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false, defaultValueSql: "('')"),
-                    Address3 = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false, defaultValueSql: "('')"),
-                    City = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false, defaultValueSql: "('')"),
+                    Address1 = table.Column<string>(type: "varchar(200)", maxLength: 200, nullable: false, defaultValueSql: "('')"),
+                    Address2 = table.Column<string>(type: "varchar(200)", maxLength: 200, nullable: false, defaultValueSql: "('')"),
+                    Address3 = table.Column<string>(type: "varchar(200)", maxLength: 200, nullable: false, defaultValueSql: "('')"),
+                    City = table.Column<string>(type: "varchar(200)", maxLength: 200, nullable: false, defaultValueSql: "('')"),
                     CountryNum = table.Column<int>(type: "int", nullable: false),
-                    PostCode = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false, defaultValueSql: "('')")
+                    PostCode = table.Column<string>(type: "varchar(20)", maxLength: 20, nullable: false, defaultValueSql: "('')")
                 },
                 constraints: table =>
                 {
@@ -194,22 +205,21 @@ namespace OpenERP.Migrations
                     table.ForeignKey(
                         name: "FK_AddressCompany",
                         column: x => x.CompanyID,
-                        principalSchema: "Erp",
                         principalTable: "Company",
                         principalColumn: "CompanyID",
                         onDelete: ReferentialAction.Cascade);
-                });
+                })
+                .Annotation("MySQL:Charset", "utf8mb4");
 
             migrationBuilder.CreateTable(
                 name: "Customer",
-                schema: "Erp",
                 columns: table => new
                 {
-                    CompanyID = table.Column<string>(type: "nvarchar(8)", maxLength: 8, nullable: false, defaultValueSql: "('')"),
+                    CompanyID = table.Column<string>(type: "varchar(8)", maxLength: 8, nullable: false, defaultValueSql: "('')"),
                     CustomerID = table.Column<int>(type: "int", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false, defaultValueSql: "('')"),
-                    Status = table.Column<string>(type: "nvarchar(5)", maxLength: 5, nullable: false, defaultValueSql: "('')"),
-                    EmailAddress = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false, defaultValueSql: "('')")
+                    Name = table.Column<string>(type: "varchar(200)", maxLength: 200, nullable: false, defaultValueSql: "('')"),
+                    Status = table.Column<string>(type: "varchar(5)", maxLength: 5, nullable: false, defaultValueSql: "('')"),
+                    EmailAddress = table.Column<string>(type: "varchar(200)", maxLength: 200, nullable: false, defaultValueSql: "('')")
                 },
                 constraints: table =>
                 {
@@ -217,18 +227,17 @@ namespace OpenERP.Migrations
                     table.ForeignKey(
                         name: "FK_CustomerCompany",
                         column: x => x.CompanyID,
-                        principalSchema: "Erp",
                         principalTable: "Company",
                         principalColumn: "CompanyID",
                         onDelete: ReferentialAction.Cascade);
-                });
+                })
+                .Annotation("MySQL:Charset", "utf8mb4");
 
             migrationBuilder.CreateTable(
                 name: "PurchaseOrderRel",
-                schema: "Erp",
                 columns: table => new
                 {
-                    CompanyID = table.Column<string>(type: "nvarchar(8)", maxLength: 8, nullable: false, defaultValueSql: "('')"),
+                    CompanyID = table.Column<string>(type: "varchar(8)", maxLength: 8, nullable: false, defaultValueSql: "('')"),
                     PurchaseOrderNum = table.Column<int>(type: "int", nullable: false),
                     PurchaseOrderLineNum = table.Column<int>(type: "int", nullable: false),
                     PurchaseOrderRelNum = table.Column<int>(type: "int", nullable: false),
@@ -237,7 +246,7 @@ namespace OpenERP.Migrations
                     OurOrderQty = table.Column<decimal>(type: "decimal(9,2)", nullable: false),
                     SupplierOrderQty = table.Column<decimal>(type: "decimal(9,2)", nullable: false),
                     LastChangeDate = table.Column<DateTime>(type: "datetime", nullable: true),
-                    LastChangeUser = table.Column<string>(type: "nvarchar(450)", maxLength: 450, nullable: false, defaultValueSql: "('')")
+                    LastChangeUser = table.Column<string>(type: "varchar(450)", maxLength: 450, nullable: false, defaultValueSql: "('')")
                 },
                 constraints: table =>
                 {
@@ -245,21 +254,20 @@ namespace OpenERP.Migrations
                     table.ForeignKey(
                         name: "FK_POR_Company",
                         column: x => x.CompanyID,
-                        principalSchema: "Erp",
                         principalTable: "Company",
                         principalColumn: "CompanyID",
                         onDelete: ReferentialAction.Cascade);
-                });
+                })
+                .Annotation("MySQL:Charset", "utf8mb4");
 
             migrationBuilder.CreateTable(
                 name: "Supplier",
-                schema: "Erp",
                 columns: table => new
                 {
-                    CompanyID = table.Column<string>(type: "nvarchar(8)", maxLength: 8, nullable: false, defaultValueSql: "('')"),
+                    CompanyID = table.Column<string>(type: "varchar(8)", maxLength: 8, nullable: false, defaultValueSql: "('')"),
                     SupplierID = table.Column<int>(type: "int", nullable: false),
-                    SupplierName = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false, defaultValueSql: "('')"),
-                    Active = table.Column<bool>(type: "bit", nullable: false),
+                    SupplierName = table.Column<string>(type: "varchar(200)", maxLength: 200, nullable: false, defaultValueSql: "('')"),
+                    Active = table.Column<bool>(type: "tinyint(1)", nullable: false),
                     AddressID = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -268,21 +276,20 @@ namespace OpenERP.Migrations
                     table.ForeignKey(
                         name: "FK_Supplier_Company",
                         column: x => x.CompanyID,
-                        principalSchema: "Erp",
                         principalTable: "Company",
                         principalColumn: "CompanyID",
                         onDelete: ReferentialAction.Cascade);
-                });
+                })
+                .Annotation("MySQL:Charset", "utf8mb4");
 
             migrationBuilder.CreateTable(
                 name: "UOM",
-                schema: "Erp",
                 columns: table => new
                 {
-                    CompanyID = table.Column<string>(type: "nvarchar(8)", maxLength: 8, nullable: false, defaultValueSql: "('')"),
-                    UOM = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false, defaultValueSql: "('')"),
-                    UOMDescription = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false, defaultValueSql: "('')"),
-                    Active = table.Column<bool>(type: "bit", nullable: false)
+                    CompanyID = table.Column<string>(type: "varchar(8)", maxLength: 8, nullable: false, defaultValueSql: "('')"),
+                    UOM = table.Column<string>(type: "varchar(15)", maxLength: 15, nullable: false, defaultValueSql: "('')"),
+                    UOMDescription = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: false, defaultValueSql: "('')"),
+                    Active = table.Column<bool>(type: "tinyint(1)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -290,29 +297,28 @@ namespace OpenERP.Migrations
                     table.ForeignKey(
                         name: "FK_UOM_Company",
                         column: x => x.CompanyID,
-                        principalSchema: "Erp",
                         principalTable: "Company",
                         principalColumn: "CompanyID",
                         onDelete: ReferentialAction.Cascade);
-                });
+                })
+                .Annotation("MySQL:Charset", "utf8mb4");
 
             migrationBuilder.CreateTable(
                 name: "SalesOrderHed",
-                schema: "Erp",
                 columns: table => new
                 {
-                    CompanyID = table.Column<string>(type: "nvarchar(8)", maxLength: 8, nullable: false, defaultValueSql: "('')"),
+                    CompanyID = table.Column<string>(type: "varchar(8)", maxLength: 8, nullable: false, defaultValueSql: "('')"),
                     SalesOrderNum = table.Column<int>(type: "int", nullable: false),
                     CustomerID = table.Column<int>(type: "int", nullable: false),
                     BillingAddressID = table.Column<int>(type: "int", nullable: false),
                     ShippingAddressID = table.Column<int>(type: "int", nullable: false),
                     CustomerRequiredDate = table.Column<DateTime>(type: "datetime", nullable: true),
                     SuggestedShipDate = table.Column<DateTime>(type: "datetime", nullable: true),
-                    OpenOrder = table.Column<bool>(type: "bit", nullable: false),
-                    CancelledOrder = table.Column<bool>(type: "bit", nullable: false),
+                    OpenOrder = table.Column<bool>(type: "tinyint(1)", nullable: false),
+                    CancelledOrder = table.Column<bool>(type: "tinyint(1)", nullable: false),
                     ClosedDate = table.Column<DateTime>(type: "datetime", nullable: true),
-                    CustomerPONum = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false, defaultValueSql: "('')"),
-                    CreatedByUser = table.Column<string>(type: "nvarchar(450)", maxLength: 450, nullable: false, defaultValueSql: "('')"),
+                    CustomerPONum = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false, defaultValueSql: "('')"),
+                    CreatedByUser = table.Column<string>(type: "varchar(450)", maxLength: 450, nullable: false, defaultValueSql: "('')"),
                     CreatedDate = table.Column<DateTime>(type: "datetime", nullable: true)
                 },
                 constraints: table =>
@@ -321,34 +327,32 @@ namespace OpenERP.Migrations
                     table.ForeignKey(
                         name: "FK_SOH_Company",
                         column: x => x.CompanyID,
-                        principalSchema: "Erp",
                         principalTable: "Company",
                         principalColumn: "CompanyID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_SOH_Customer",
                         columns: x => new { x.CompanyID, x.CustomerID },
-                        principalSchema: "Erp",
                         principalTable: "Customer",
                         principalColumns: new[] { "CompanyID", "CustomerID" });
-                });
+                })
+                .Annotation("MySQL:Charset", "utf8mb4");
 
             migrationBuilder.CreateTable(
                 name: "PurchaseOrderHed",
-                schema: "Erp",
                 columns: table => new
                 {
-                    CompanyID = table.Column<string>(type: "nvarchar(8)", maxLength: 8, nullable: false, defaultValueSql: "('')"),
+                    CompanyID = table.Column<string>(type: "varchar(8)", maxLength: 8, nullable: false, defaultValueSql: "('')"),
                     PurchaseOrderNum = table.Column<int>(type: "int", nullable: false),
                     SupplierID = table.Column<int>(type: "int", nullable: false),
                     OrderDate = table.Column<DateTime>(type: "datetime", nullable: true),
-                    CurrencyCode = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false, defaultValueSql: "('')"),
-                    CreatedByUserID = table.Column<string>(type: "nvarchar(450)", maxLength: 450, nullable: false, defaultValueSql: "('')"),
+                    CurrencyCode = table.Column<string>(type: "varchar(10)", maxLength: 10, nullable: false, defaultValueSql: "('')"),
+                    CreatedByUserID = table.Column<string>(type: "varchar(450)", maxLength: 450, nullable: false, defaultValueSql: "('')"),
                     CreatedDate = table.Column<DateTime>(type: "datetime", nullable: true),
-                    ApprovalStatus = table.Column<string>(type: "nvarchar(1)", maxLength: 1, nullable: false, defaultValueSql: "('')"),
+                    ApprovalStatus = table.Column<string>(type: "varchar(1)", maxLength: 1, nullable: false, defaultValueSql: "('')"),
                     ApprovedDate = table.Column<DateTime>(type: "datetime", nullable: true),
                     LastChangeDate = table.Column<DateTime>(type: "datetime", nullable: true),
-                    LastChangeUser = table.Column<string>(type: "nvarchar(450)", maxLength: 450, nullable: false, defaultValueSql: "('')")
+                    LastChangeUser = table.Column<string>(type: "varchar(450)", maxLength: 450, nullable: false, defaultValueSql: "('')")
                 },
                 constraints: table =>
                 {
@@ -356,28 +360,26 @@ namespace OpenERP.Migrations
                     table.ForeignKey(
                         name: "FK_POH_Company",
                         column: x => x.CompanyID,
-                        principalSchema: "Erp",
                         principalTable: "Company",
                         principalColumn: "CompanyID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_POH_Supplier",
                         columns: x => new { x.CompanyID, x.SupplierID },
-                        principalSchema: "Erp",
                         principalTable: "Supplier",
                         principalColumns: new[] { "CompanyID", "SupplierID" });
-                });
+                })
+                .Annotation("MySQL:Charset", "utf8mb4");
 
             migrationBuilder.CreateTable(
                 name: "Part",
-                schema: "Erp",
                 columns: table => new
                 {
-                    CompanyID = table.Column<string>(type: "nvarchar(8)", maxLength: 8, nullable: false, defaultValueSql: "('')"),
-                    PartNum = table.Column<string>(type: "nvarchar(120)", maxLength: 120, nullable: false, defaultValueSql: "('')"),
-                    PartDescription = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: false, defaultValueSql: "('')"),
-                    SerialTracked = table.Column<bool>(type: "bit", nullable: false),
-                    DefaultUOM = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false, defaultValueSql: "('')")
+                    CompanyID = table.Column<string>(type: "varchar(8)", maxLength: 8, nullable: false, defaultValueSql: "('')"),
+                    PartNum = table.Column<string>(type: "varchar(120)", maxLength: 120, nullable: false, defaultValueSql: "('')"),
+                    PartDescription = table.Column<string>(type: "varchar(1000)", maxLength: 1000, nullable: false, defaultValueSql: "('')"),
+                    SerialTracked = table.Column<bool>(type: "tinyint(1)", nullable: false),
+                    DefaultUOM = table.Column<string>(type: "varchar(15)", maxLength: 15, nullable: false, defaultValueSql: "('')")
                 },
                 constraints: table =>
                 {
@@ -385,38 +387,36 @@ namespace OpenERP.Migrations
                     table.ForeignKey(
                         name: "FK_Part_Company",
                         column: x => x.CompanyID,
-                        principalSchema: "Erp",
                         principalTable: "Company",
                         principalColumn: "CompanyID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Part_UOM",
                         columns: x => new { x.CompanyID, x.DefaultUOM },
-                        principalSchema: "Erp",
                         principalTable: "UOM",
                         principalColumns: new[] { "CompanyID", "UOM" });
-                });
+                })
+                .Annotation("MySQL:Charset", "utf8mb4");
 
             migrationBuilder.CreateTable(
                 name: "PurchaseOrderDtl",
-                schema: "Erp",
                 columns: table => new
                 {
-                    CompanyID = table.Column<string>(type: "nvarchar(8)", maxLength: 8, nullable: false, defaultValueSql: "('')"),
+                    CompanyID = table.Column<string>(type: "varchar(8)", maxLength: 8, nullable: false, defaultValueSql: "('')"),
                     PurchaseOrderNum = table.Column<int>(type: "int", nullable: false),
                     PurchaseOrderLineNum = table.Column<int>(type: "int", nullable: false),
-                    PartNum = table.Column<string>(type: "nvarchar(120)", maxLength: 120, nullable: false, defaultValueSql: "('')"),
-                    LineDesc = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: false, defaultValueSql: "('')"),
+                    PartNum = table.Column<string>(type: "varchar(120)", maxLength: 120, nullable: false, defaultValueSql: "('')"),
+                    LineDesc = table.Column<string>(type: "varchar(1000)", maxLength: 1000, nullable: false, defaultValueSql: "('')"),
                     OurOrderQty = table.Column<decimal>(type: "decimal(9,2)", nullable: false),
                     SupplierOrderQty = table.Column<decimal>(type: "decimal(9,2)", nullable: false),
-                    OurUOM = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false, defaultValueSql: "('')"),
-                    SupplierUOM = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false, defaultValueSql: "('')"),
-                    CostElement = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false, defaultValueSql: "('')"),
-                    CostCentre = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false, defaultValueSql: "('')"),
-                    InternalOrder = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false, defaultValueSql: "('')"),
+                    OurUOM = table.Column<string>(type: "varchar(15)", maxLength: 15, nullable: false, defaultValueSql: "('')"),
+                    SupplierUOM = table.Column<string>(type: "varchar(15)", maxLength: 15, nullable: false, defaultValueSql: "('')"),
+                    CostElement = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false, defaultValueSql: "('')"),
+                    CostCentre = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false, defaultValueSql: "('')"),
+                    InternalOrder = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false, defaultValueSql: "('')"),
                     RequiredDate = table.Column<DateTime>(type: "datetime", nullable: true),
                     LastChangeDate = table.Column<DateTime>(type: "datetime", nullable: true),
-                    LastChangeUser = table.Column<string>(type: "nvarchar(450)", maxLength: 450, nullable: false, defaultValueSql: "('')")
+                    LastChangeUser = table.Column<string>(type: "varchar(450)", maxLength: 450, nullable: false, defaultValueSql: "('')")
                 },
                 constraints: table =>
                 {
@@ -424,71 +424,66 @@ namespace OpenERP.Migrations
                     table.ForeignKey(
                         name: "FK_POD_Company",
                         column: x => x.CompanyID,
-                        principalSchema: "Erp",
                         principalTable: "Company",
                         principalColumn: "CompanyID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_POD_OurUOM",
                         columns: x => new { x.CompanyID, x.OurUOM },
-                        principalSchema: "Erp",
                         principalTable: "UOM",
                         principalColumns: new[] { "CompanyID", "UOM" });
                     table.ForeignKey(
                         name: "FK_POD_SupplierUOM",
                         columns: x => new { x.CompanyID, x.SupplierUOM },
-                        principalSchema: "Erp",
                         principalTable: "UOM",
                         principalColumns: new[] { "CompanyID", "UOM" });
-                });
+                })
+                .Annotation("MySQL:Charset", "utf8mb4");
 
             migrationBuilder.CreateTable(
                 name: "PartRev",
-                schema: "Erp",
                 columns: table => new
                 {
-                    CompanyID = table.Column<string>(type: "nvarchar(8)", maxLength: 8, nullable: false, defaultValueSql: "('')"),
-                    PartNum = table.Column<string>(type: "nvarchar(120)", maxLength: 120, nullable: false, defaultValueSql: "('')"),
-                    PartRevNum = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false, defaultValueSql: "('')"),
-                    PartRevDesc = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false, defaultValueSql: "('')"),
-                    Approved = table.Column<bool>(type: "bit", nullable: false),
+                    CompanyID = table.Column<string>(type: "varchar(8)", maxLength: 8, nullable: false, defaultValueSql: "('')"),
+                    PartNum = table.Column<string>(type: "varchar(120)", maxLength: 120, nullable: false, defaultValueSql: "('')"),
+                    PartRevNum = table.Column<string>(type: "varchar(20)", maxLength: 20, nullable: false, defaultValueSql: "('')"),
+                    PartRevDesc = table.Column<string>(type: "varchar(200)", maxLength: 200, nullable: false, defaultValueSql: "('')"),
+                    Approved = table.Column<bool>(type: "tinyint(1)", nullable: false),
                     ApprovedDate = table.Column<DateTime>(type: "datetime", nullable: true),
-                    ApprovedUser = table.Column<string>(type: "nvarchar(450)", maxLength: 450, nullable: false, defaultValueSql: "('')")
+                    ApprovedUser = table.Column<string>(type: "varchar(450)", maxLength: 450, nullable: false, defaultValueSql: "('')")
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_PartRev", x => new { x.CompanyID, x.PartNum, x.PartRevNum });
                     table.ForeignKey(
+                        name: "FK_PR_Part",
+                        columns: x => new { x.CompanyID, x.PartNum },
+                        principalTable: "Part",
+                        principalColumns: new[] { "CompanyID", "PartNum" });
+                    table.ForeignKey(
                         name: "FK_PartRev_Company",
                         column: x => x.CompanyID,
-                        principalSchema: "Erp",
                         principalTable: "Company",
                         principalColumn: "CompanyID",
                         onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_PR_Part",
-                        columns: x => new { x.CompanyID, x.PartNum },
-                        principalSchema: "Erp",
-                        principalTable: "Part",
-                        principalColumns: new[] { "CompanyID", "PartNum" });
-                });
+                })
+                .Annotation("MySQL:Charset", "utf8mb4");
 
             migrationBuilder.CreateTable(
                 name: "SalesOrderDtl",
-                schema: "Erp",
                 columns: table => new
                 {
-                    CompanyID = table.Column<string>(type: "nvarchar(8)", maxLength: 8, nullable: false, defaultValueSql: "('')"),
+                    CompanyID = table.Column<string>(type: "varchar(8)", maxLength: 8, nullable: false, defaultValueSql: "('')"),
                     SalesOrderNum = table.Column<int>(type: "int", nullable: false),
                     SalesOrderLineNum = table.Column<int>(type: "int", nullable: false),
-                    PartNum = table.Column<string>(type: "nvarchar(120)", maxLength: 120, nullable: false, defaultValueSql: "('')"),
-                    LineDesc = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: false, defaultValueSql: "('')"),
+                    PartNum = table.Column<string>(type: "varchar(120)", maxLength: 120, nullable: false, defaultValueSql: "('')"),
+                    LineDesc = table.Column<string>(type: "varchar(1000)", maxLength: 1000, nullable: false, defaultValueSql: "('')"),
                     LineQty = table.Column<decimal>(type: "decimal(9,2)", nullable: false),
-                    SalesUOM = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false, defaultValueSql: "('')"),
-                    SOLineComments = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: false, defaultValueSql: "('')"),
-                    CostElement = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false, defaultValueSql: "('')"),
-                    CostCentre = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false, defaultValueSql: "('')"),
-                    InternalOrder = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false, defaultValueSql: "('')")
+                    SalesUOM = table.Column<string>(type: "varchar(15)", maxLength: 15, nullable: false, defaultValueSql: "('')"),
+                    SOLineComments = table.Column<string>(type: "varchar(1000)", maxLength: 1000, nullable: false, defaultValueSql: "('')"),
+                    CostElement = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false, defaultValueSql: "('')"),
+                    CostCentre = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false, defaultValueSql: "('')"),
+                    InternalOrder = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false, defaultValueSql: "('')")
                 },
                 constraints: table =>
                 {
@@ -496,36 +491,32 @@ namespace OpenERP.Migrations
                     table.ForeignKey(
                         name: "FK_SOD_Company",
                         column: x => x.CompanyID,
-                        principalSchema: "Erp",
                         principalTable: "Company",
                         principalColumn: "CompanyID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_SOD_Part",
                         columns: x => new { x.CompanyID, x.PartNum },
-                        principalSchema: "Erp",
                         principalTable: "Part",
                         principalColumns: new[] { "CompanyID", "PartNum" });
                     table.ForeignKey(
                         name: "FK_SOD_SOHed",
                         columns: x => new { x.CompanyID, x.SalesOrderNum },
-                        principalSchema: "Erp",
                         principalTable: "SalesOrderHed",
                         principalColumns: new[] { "CompanyID", "SalesOrderNum" });
                     table.ForeignKey(
                         name: "FK_SOD_UOM",
                         columns: x => new { x.CompanyID, x.SalesUOM },
-                        principalSchema: "Erp",
                         principalTable: "UOM",
                         principalColumns: new[] { "CompanyID", "UOM" });
-                });
+                })
+                .Annotation("MySQL:Charset", "utf8mb4");
 
             migrationBuilder.CreateTable(
                 name: "SalesOrderRel",
-                schema: "Erp",
                 columns: table => new
                 {
-                    CompanyID = table.Column<string>(type: "nvarchar(8)", maxLength: 8, nullable: false, defaultValueSql: "('')"),
+                    CompanyID = table.Column<string>(type: "varchar(8)", maxLength: 8, nullable: false, defaultValueSql: "('')"),
                     SalesOrderNum = table.Column<int>(type: "int", nullable: false),
                     SalesOrderLineNum = table.Column<int>(type: "int", nullable: false),
                     SalesOrderRelNum = table.Column<int>(type: "int", nullable: false),
@@ -538,17 +529,16 @@ namespace OpenERP.Migrations
                     table.ForeignKey(
                         name: "FK_SOR_Company",
                         column: x => x.CompanyID,
-                        principalSchema: "Erp",
                         principalTable: "Company",
                         principalColumn: "CompanyID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_SOR_SODtl",
                         columns: x => new { x.CompanyID, x.SalesOrderNum, x.SalesOrderLineNum },
-                        principalSchema: "Erp",
                         principalTable: "SalesOrderDtl",
                         principalColumns: new[] { "CompanyID", "SalesOrderNum", "SalesOrderLineNum" });
-                });
+                })
+                .Annotation("MySQL:Charset", "utf8mb4");
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
@@ -559,8 +549,7 @@ namespace OpenERP.Migrations
                 name: "RoleNameIndex",
                 table: "AspNetRoles",
                 column: "NormalizedName",
-                unique: true,
-                filter: "[NormalizedName] IS NOT NULL");
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetUserClaims_UserId",
@@ -586,57 +575,49 @@ namespace OpenERP.Migrations
                 name: "UserNameIndex",
                 table: "AspNetUsers",
                 column: "NormalizedUserName",
-                unique: true,
-                filter: "[NormalizedUserName] IS NOT NULL");
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_Part_CompanyID_DefaultUOM",
-                schema: "Erp",
                 table: "Part",
                 columns: new[] { "CompanyID", "DefaultUOM" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_PurchaseOrderDtl_CompanyID_OurUOM",
-                schema: "Erp",
                 table: "PurchaseOrderDtl",
                 columns: new[] { "CompanyID", "OurUOM" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_PurchaseOrderDtl_CompanyID_SupplierUOM",
-                schema: "Erp",
                 table: "PurchaseOrderDtl",
                 columns: new[] { "CompanyID", "SupplierUOM" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_PurchaseOrderHed_CompanyID_SupplierID",
-                schema: "Erp",
                 table: "PurchaseOrderHed",
                 columns: new[] { "CompanyID", "SupplierID" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_SalesOrderDtl_CompanyID_PartNum",
-                schema: "Erp",
                 table: "SalesOrderDtl",
                 columns: new[] { "CompanyID", "PartNum" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_SalesOrderDtl_CompanyID_SalesUOM",
-                schema: "Erp",
                 table: "SalesOrderDtl",
                 columns: new[] { "CompanyID", "SalesUOM" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_SalesOrderHed_CompanyID_CustomerID",
-                schema: "Erp",
                 table: "SalesOrderHed",
                 columns: new[] { "CompanyID", "CustomerID" });
         }
 
+        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Address",
-                schema: "Erp");
+                name: "Address");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoleClaims");
@@ -654,24 +635,19 @@ namespace OpenERP.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "PartRev",
-                schema: "Erp");
+                name: "PartRev");
 
             migrationBuilder.DropTable(
-                name: "PurchaseOrderDtl",
-                schema: "Erp");
+                name: "PurchaseOrderDtl");
 
             migrationBuilder.DropTable(
-                name: "PurchaseOrderHed",
-                schema: "Erp");
+                name: "PurchaseOrderHed");
 
             migrationBuilder.DropTable(
-                name: "PurchaseOrderRel",
-                schema: "Erp");
+                name: "PurchaseOrderRel");
 
             migrationBuilder.DropTable(
-                name: "SalesOrderRel",
-                schema: "Erp");
+                name: "SalesOrderRel");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
@@ -680,32 +656,25 @@ namespace OpenERP.Migrations
                 name: "AspNetUsers");
 
             migrationBuilder.DropTable(
-                name: "Supplier",
-                schema: "Erp");
+                name: "Supplier");
 
             migrationBuilder.DropTable(
-                name: "SalesOrderDtl",
-                schema: "Erp");
+                name: "SalesOrderDtl");
 
             migrationBuilder.DropTable(
-                name: "Part",
-                schema: "Erp");
+                name: "Part");
 
             migrationBuilder.DropTable(
-                name: "SalesOrderHed",
-                schema: "Erp");
+                name: "SalesOrderHed");
 
             migrationBuilder.DropTable(
-                name: "UOM",
-                schema: "Erp");
+                name: "UOM");
 
             migrationBuilder.DropTable(
-                name: "Customer",
-                schema: "Erp");
+                name: "Customer");
 
             migrationBuilder.DropTable(
-                name: "Company",
-                schema: "Erp");
+                name: "Company");
         }
     }
 }

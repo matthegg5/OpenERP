@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/saffron/Development/c#/OpenERP/OpenERP.csproj": {}
+    "/home/saffron/repos/OpenERP/OpenERP.csproj": {}
   },
   "projects": {
-    "/home/saffron/Development/c#/OpenERP/ErpDbContext/ErpDbContext.csproj": {
+    "/home/saffron/repos/OpenERP/ErpDbContext/ErpDbContext.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/saffron/Development/c#/OpenERP/ErpDbContext/ErpDbContext.csproj",
+        "projectUniqueName": "/home/saffron/repos/OpenERP/ErpDbContext/ErpDbContext.csproj",
         "projectName": "ErpDbContext",
-        "projectPath": "/home/saffron/Development/c#/OpenERP/ErpDbContext/ErpDbContext.csproj",
+        "projectPath": "/home/saffron/repos/OpenERP/ErpDbContext/ErpDbContext.csproj",
         "packagesPath": "/home/saffron/.nuget/packages/",
-        "outputPath": "/home/saffron/Development/c#/OpenERP/ErpDbContext/obj/",
+        "outputPath": "/home/saffron/repos/OpenERP/ErpDbContext/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/saffron/.nuget/NuGet/NuGet.Config"
@@ -60,23 +60,31 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.6, )"
+              "version": "[7.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.6, )"
+              "version": "[7.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.6, )"
+              "version": "[7.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.6, )"
+              "version": "[7.0.2, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -95,18 +103,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/7.0.105/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/saffron/Development/c#/OpenERP/OpenERP.Infrastructure/OpenERP.Infrastructure.csproj": {
+    "/home/saffron/repos/OpenERP/OpenERP.Infrastructure/OpenERP.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/saffron/Development/c#/OpenERP/OpenERP.Infrastructure/OpenERP.Infrastructure.csproj",
+        "projectUniqueName": "/home/saffron/repos/OpenERP/OpenERP.Infrastructure/OpenERP.Infrastructure.csproj",
         "projectName": "OpenERP.Infrastructure",
-        "projectPath": "/home/saffron/Development/c#/OpenERP/OpenERP.Infrastructure/OpenERP.Infrastructure.csproj",
+        "projectPath": "/home/saffron/repos/OpenERP/OpenERP.Infrastructure/OpenERP.Infrastructure.csproj",
         "packagesPath": "/home/saffron/.nuget/packages/",
-        "outputPath": "/home/saffron/Development/c#/OpenERP/OpenERP.Infrastructure/obj/",
+        "outputPath": "/home/saffron/repos/OpenERP/OpenERP.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/saffron/.nuget/NuGet/NuGet.Config"
@@ -121,8 +129,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/home/saffron/Development/c#/OpenERP/ErpDbContext/ErpDbContext.csproj": {
-                "projectPath": "/home/saffron/Development/c#/OpenERP/ErpDbContext/ErpDbContext.csproj"
+              "/home/saffron/repos/OpenERP/ErpDbContext/ErpDbContext.csproj": {
+                "projectPath": "/home/saffron/repos/OpenERP/ErpDbContext/ErpDbContext.csproj"
               }
             }
           }
@@ -168,6 +176,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.2, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.2, )"
             }
           },
           "imports": [
@@ -186,18 +198,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/7.0.105/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/saffron/Development/c#/OpenERP/OpenERP.csproj": {
+    "/home/saffron/repos/OpenERP/OpenERP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/saffron/Development/c#/OpenERP/OpenERP.csproj",
+        "projectUniqueName": "/home/saffron/repos/OpenERP/OpenERP.csproj",
         "projectName": "OpenERP",
-        "projectPath": "/home/saffron/Development/c#/OpenERP/OpenERP.csproj",
+        "projectPath": "/home/saffron/repos/OpenERP/OpenERP.csproj",
         "packagesPath": "/home/saffron/.nuget/packages/",
-        "outputPath": "/home/saffron/Development/c#/OpenERP/obj/",
+        "outputPath": "/home/saffron/repos/OpenERP/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/saffron/.nuget/NuGet/NuGet.Config"
@@ -212,8 +224,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/home/saffron/Development/c#/OpenERP/OpenERP.Infrastructure/OpenERP.Infrastructure.csproj": {
-                "projectPath": "/home/saffron/Development/c#/OpenERP/OpenERP.Infrastructure/OpenERP.Infrastructure.csproj"
+              "/home/saffron/repos/OpenERP/OpenERP.Infrastructure/OpenERP.Infrastructure.csproj": {
+                "projectPath": "/home/saffron/repos/OpenERP/OpenERP.Infrastructure/OpenERP.Infrastructure.csproj"
               }
             }
           }
@@ -272,6 +284,14 @@
               "target": "Package",
               "version": "[4.18.2, )"
             },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "nunit": {
               "target": "Package",
               "version": "[3.13.3, )"
@@ -296,7 +316,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/7.0.105/RuntimeIdentifierGraph.json"
         }
       }
     }
