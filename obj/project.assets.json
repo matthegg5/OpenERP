@@ -2807,7 +2807,8 @@
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.2",
           "Microsoft.EntityFrameworkCore": "7.0.2",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.2"
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.2",
+          "MySql.EntityFrameworkCore": "7.0.2"
         },
         "compile": {
           "bin/placeholder/OpenERP.Infrastructure.dll": {}

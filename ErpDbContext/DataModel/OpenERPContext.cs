@@ -9,11 +9,6 @@ namespace OpenERP.ErpDbContext.DataModel
     public partial class OpenERPContext : IdentityDbContext<User>
     {
 
-        public OpenERPContext()
-        {
-
-        }
-
         public OpenERPContext(DbContextOptions<OpenERPContext> options)
             : base(options)
         {
@@ -48,7 +43,7 @@ namespace OpenERP.ErpDbContext.DataModel
             {
                 entity.HasKey(e => new { e.CompanyId, e.ReferenceTable, e.ForeignKeyId, e.AddressId });
 
-                entity.ToTable("Address", "Erp");
+                entity.ToTable("Address");
 
                 entity.Property(e => e.CompanyId)
                     .HasMaxLength(8)
@@ -91,7 +86,7 @@ namespace OpenERP.ErpDbContext.DataModel
 
             modelBuilder.Entity<Company>(entity =>
             {
-                entity.ToTable("Company", "Erp");
+                entity.ToTable("Company");
 
                 entity.Property(e => e.CompanyId)
                     .HasMaxLength(8)
@@ -107,7 +102,7 @@ namespace OpenERP.ErpDbContext.DataModel
             {
                 entity.HasKey(e => new { e.CompanyId, e.CustomerId });
 
-                entity.ToTable("Customer", "Erp");
+                entity.ToTable("Customer");
 
                 entity.Property(e => e.CompanyId)
                     .HasMaxLength(8)
@@ -138,7 +133,7 @@ namespace OpenERP.ErpDbContext.DataModel
             {
                 entity.HasKey(e => new { e.CompanyId, e.PartNum });
 
-                entity.ToTable("Part", "Erp");
+                entity.ToTable("Part");
 
                 entity.HasIndex(e => new { e.CompanyId, e.DefaultUom }, "IX_Part_CompanyID_DefaultUOM");
 
@@ -176,7 +171,7 @@ namespace OpenERP.ErpDbContext.DataModel
             {
                 entity.HasKey(e => new { e.CompanyId, e.PartNum, e.PartRevNum });
 
-                entity.ToTable("PartRev", "Erp");
+                entity.ToTable("PartRev");
 
                 entity.Property(e => e.CompanyId)
                     .HasMaxLength(8)
@@ -217,7 +212,7 @@ namespace OpenERP.ErpDbContext.DataModel
             {
                 entity.HasKey(e => new { e.CompanyId, e.PurchaseOrderNum, e.PurchaseOrderLineNum });
 
-                entity.ToTable("PurchaseOrderDtl", "Erp");
+                entity.ToTable("PurchaseOrderDtl");
 
                 entity.HasIndex(e => new { e.CompanyId, e.OurUom }, "IX_PurchaseOrderDtl_CompanyID_OurUOM");
 
@@ -292,7 +287,7 @@ namespace OpenERP.ErpDbContext.DataModel
             {
                 entity.HasKey(e => new { e.CompanyId, e.PurchaseOrderNum });
 
-                entity.ToTable("PurchaseOrderHed", "Erp");
+                entity.ToTable("PurchaseOrderHed");
 
                 entity.HasIndex(e => new { e.CompanyId, e.SupplierId }, "IX_PurchaseOrderHed_CompanyID_SupplierID");
 
@@ -344,7 +339,7 @@ namespace OpenERP.ErpDbContext.DataModel
             {
                 entity.HasKey(e => new { e.CompanyId, e.PurchaseOrderNum, e.PurchaseOrderLineNum, e.PurchaseOrderRelNum });
 
-                entity.ToTable("PurchaseOrderRel", "Erp");
+                entity.ToTable("PurchaseOrderRel");
 
                 entity.Property(e => e.CompanyId)
                     .HasMaxLength(8)
@@ -375,7 +370,7 @@ namespace OpenERP.ErpDbContext.DataModel
             {
                 entity.HasKey(e => new { e.CompanyId, e.SalesOrderNum, e.SalesOrderLineNum });
 
-                entity.ToTable("SalesOrderDtl", "Erp");
+                entity.ToTable("SalesOrderDtl");
 
                 entity.HasIndex(e => new { e.CompanyId, e.PartNum }, "IX_SalesOrderDtl_CompanyID_PartNum");
 
@@ -446,7 +441,7 @@ namespace OpenERP.ErpDbContext.DataModel
             {
                 entity.HasKey(e => new { e.CompanyId, e.SalesOrderNum });
 
-                entity.ToTable("SalesOrderHed", "Erp");
+                entity.ToTable("SalesOrderHed");
 
                 entity.HasIndex(e => new { e.CompanyId, e.CustomerId }, "IX_SalesOrderHed_CompanyID_CustomerID");
 
@@ -494,7 +489,7 @@ namespace OpenERP.ErpDbContext.DataModel
             {
                 entity.HasKey(e => new { e.CompanyId, e.SalesOrderNum, e.SalesOrderLineNum, e.SalesOrderRelNum });
 
-                entity.ToTable("SalesOrderRel", "Erp");
+                entity.ToTable("SalesOrderRel");
 
                 entity.Property(e => e.CompanyId)
                     .HasMaxLength(8)
@@ -521,7 +516,7 @@ namespace OpenERP.ErpDbContext.DataModel
             {
                 entity.HasKey(e => new { e.CompanyId, e.SupplierId });
 
-                entity.ToTable("Supplier", "Erp");
+                entity.ToTable("Supplier");
 
                 entity.Property(e => e.CompanyId)
                     .HasMaxLength(8)
@@ -546,7 +541,7 @@ namespace OpenERP.ErpDbContext.DataModel
             {
                 entity.HasKey(e => new { e.CompanyId, e.Uom1 });
 
-                entity.ToTable("UOM", "Erp");
+                entity.ToTable("UOM");
 
                 entity.Property(e => e.CompanyId)
                     .HasMaxLength(8)

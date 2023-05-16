@@ -15,7 +15,8 @@
           "Microsoft.EntityFrameworkCore": "7.0.2",
           "Microsoft.EntityFrameworkCore.Design": "7.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.2",
-          "Microsoft.EntityFrameworkCore.Tools": "7.0.2"
+          "Microsoft.EntityFrameworkCore.Tools": "7.0.2",
+          "MySql.EntityFrameworkCore": "7.0.2"
         },
         "runtime": {
           "OpenERP.Infrastructure.dll": {}
