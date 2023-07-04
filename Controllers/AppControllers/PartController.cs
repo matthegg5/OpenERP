@@ -13,11 +13,11 @@ namespace OpenERP.Controllers.App
     {
         private readonly ILogger _logger;
         private readonly UserManager<User> _userManager;
-        private readonly UnitOfWork unitOfWork;
+        private readonly IUnitOfWork unitOfWork;
 
         public PartController(ILogger<OpenERP.Controllers.App.PartController> logger,
                                 UserManager<User> userManager, 
-                                UnitOfWork unitOfWork)
+                                IUnitOfWork unitOfWork)
         {
             this._logger = logger;
             this._userManager = userManager;
@@ -45,10 +45,6 @@ namespace OpenERP.Controllers.App
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult> CreatePart(Part part)  //(OpenERP.ViewModels.PartViewModel model)
         {
-
-            if (ModelState.IsValid)
-            {
-            }
             try
             {
                 //can't validate ModelState here as when the POST is called it is invalid, and it is immutable, so adding

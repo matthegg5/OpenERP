@@ -68,8 +68,10 @@ namespace OpenERP
             services.AddDistributedMemoryCache();
 
             services.AddTransient<OpenERPSeeder>();
+            
 
             //add the implementations for the interfaces in here so dependency injection chooses the right implementation
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IRepository<Part>, PartRepository>();
             services.AddScoped<IRepository<Uom>, UomRepository>();
             services.AddScoped<IRepository<Company>, CompanyRepository>();

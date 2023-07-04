@@ -45,7 +45,7 @@ namespace OpenERP.Controllers.App
         {
             if (ModelState.IsValid)
             {
-                var result = await _signInManager.PasswordSignInAsync(model.Username, model.Password, model.RememberMe, false).ConfigureAwait(false);
+                var result = await _signInManager.PasswordSignInAsync(model.Username, model.Password, model.RememberMe, false);
 
                 if (result.Succeeded)
                 {
@@ -110,7 +110,7 @@ namespace OpenERP.Controllers.App
         [HttpGet]
         public async Task<IActionResult> Logout()
         {
-            await _signInManager.SignOutAsync().ConfigureAwait(false);
+            await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "App");
 
         }
@@ -122,11 +122,11 @@ namespace OpenERP.Controllers.App
             if (ModelState.IsValid)
             {
 
-                var user = await _userManager.FindByNameAsync(model.Username).ConfigureAwait(false);
+                var user = await _userManager.FindByNameAsync(model.Username);
 
                 if (user != null)
                 {
-                    var result = await _signInManager.CheckPasswordSignInAsync(user, model.Password, false).ConfigureAwait(false);
+                    var result = await _signInManager.CheckPasswordSignInAsync(user, model.Password, false);
 
                     if (result.Succeeded)
                     {

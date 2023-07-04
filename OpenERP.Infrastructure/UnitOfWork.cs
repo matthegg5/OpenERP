@@ -60,7 +60,7 @@ namespace OpenERP.Infrastructure
 
         public async Task SaveChangesAsync()
         {
-            await context.SaveChangesAsync().ConfigureAwait(false);
+            await context.SaveChangesAsync();
         }
 
         public void SaveChanges()
