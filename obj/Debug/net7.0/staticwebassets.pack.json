@@ -25,6 +25,810 @@
       "PackagePath": "staticwebassets/js/menu.js"
     },
     {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/README.md",
+      "PackagePath": "staticwebassets/lib/bootstrap/README.md"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/alert.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/alert.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/alert.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/alert.js.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/base-component.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/base-component.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/base-component.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/base-component.js.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/button.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/button.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/button.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/button.js.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/carousel.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/carousel.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/carousel.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/carousel.js.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/collapse.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/collapse.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/collapse.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/collapse.js.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/dom/data.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/dom/data.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/dom/data.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/dom/data.js.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/dom/event-handler.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/dom/event-handler.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/dom/event-handler.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/dom/event-handler.js.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/dom/manipulator.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/dom/manipulator.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/dom/manipulator.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/dom/manipulator.js.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/dom/selector-engine.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/dom/selector-engine.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/dom/selector-engine.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/dom/selector-engine.js.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/dropdown.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/dropdown.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/dropdown.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/dropdown.js.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/modal.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/modal.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/modal.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/modal.js.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/offcanvas.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/offcanvas.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/offcanvas.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/offcanvas.js.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/popover.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/popover.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/popover.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/popover.js.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/scrollspy.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/scrollspy.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/scrollspy.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/scrollspy.js.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/tab.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/tab.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/tab.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/tab.js.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/toast.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/toast.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/toast.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/toast.js.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/tooltip.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/tooltip.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/dist/tooltip.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/dist/tooltip.js.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/src/alert.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/src/alert.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/src/base-component.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/src/base-component.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/src/button.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/src/button.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/src/carousel.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/src/carousel.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/src/collapse.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/src/collapse.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/src/dom/data.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/src/dom/data.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/src/dom/event-handler.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/src/dom/event-handler.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/src/dom/manipulator.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/src/dom/manipulator.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/src/dom/selector-engine.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/src/dom/selector-engine.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/src/dropdown.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/src/dropdown.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/src/modal.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/src/modal.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/src/offcanvas.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/src/offcanvas.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/src/popover.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/src/popover.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/src/scrollspy.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/src/scrollspy.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/src/tab.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/src/tab.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/src/toast.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/src/toast.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/src/tooltip.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/src/tooltip.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/src/util/backdrop.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/src/util/backdrop.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/src/util/component-functions.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/src/util/component-functions.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/src/util/focustrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/src/util/focustrap.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/src/util/index.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/src/util/index.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/src/util/sanitizer.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/src/util/sanitizer.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/js/src/util/scrollbar.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/js/src/util/scrollbar.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/package.json",
+      "PackagePath": "staticwebassets/lib/bootstrap/package.json"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_accordion.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_accordion.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_alert.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_alert.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_badge.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_badge.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_breadcrumb.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_breadcrumb.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_button-group.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_button-group.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_buttons.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_buttons.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_card.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_card.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_carousel.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_carousel.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_close.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_close.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_containers.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_containers.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_dropdown.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_dropdown.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_forms.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_forms.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_functions.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_functions.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_grid.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_grid.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_helpers.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_helpers.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_images.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_images.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_list-group.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_list-group.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_mixins.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_mixins.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_modal.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_modal.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_nav.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_nav.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_navbar.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_navbar.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_offcanvas.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_offcanvas.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_pagination.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_pagination.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_placeholders.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_placeholders.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_popover.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_popover.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_progress.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_progress.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_reboot.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_reboot.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_root.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_root.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_spinners.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_spinners.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_tables.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_tables.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_toasts.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_toasts.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_tooltip.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_tooltip.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_transitions.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_transitions.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_type.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_type.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_utilities.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_utilities.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/_variables.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/_variables.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/bootstrap-grid.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/bootstrap-grid.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/bootstrap-reboot.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/bootstrap-utilities.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/bootstrap-utilities.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/bootstrap.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/bootstrap.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/forms/_floating-labels.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/forms/_floating-labels.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/forms/_form-check.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/forms/_form-check.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/forms/_form-control.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/forms/_form-control.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/forms/_form-range.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/forms/_form-range.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/forms/_form-select.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/forms/_form-select.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/forms/_form-text.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/forms/_form-text.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/forms/_input-group.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/forms/_input-group.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/forms/_labels.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/forms/_labels.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/forms/_validation.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/forms/_validation.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/helpers/_clearfix.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/helpers/_clearfix.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/helpers/_colored-links.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/helpers/_colored-links.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/helpers/_position.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/helpers/_position.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/helpers/_ratio.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/helpers/_ratio.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/helpers/_stacks.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/helpers/_stacks.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/helpers/_stretched-link.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/helpers/_stretched-link.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/helpers/_text-truncation.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/helpers/_text-truncation.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/helpers/_visually-hidden.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/helpers/_visually-hidden.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/helpers/_vr.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/helpers/_vr.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/mixins/_alert.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/mixins/_alert.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/mixins/_backdrop.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/mixins/_backdrop.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/mixins/_border-radius.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/mixins/_border-radius.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/mixins/_box-shadow.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/mixins/_box-shadow.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/mixins/_breakpoints.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/mixins/_breakpoints.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/mixins/_buttons.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/mixins/_buttons.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/mixins/_caret.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/mixins/_caret.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/mixins/_clearfix.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/mixins/_clearfix.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/mixins/_color-scheme.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/mixins/_color-scheme.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/mixins/_container.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/mixins/_container.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/mixins/_deprecate.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/mixins/_deprecate.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/mixins/_forms.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/mixins/_forms.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/mixins/_gradients.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/mixins/_gradients.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/mixins/_grid.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/mixins/_grid.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/mixins/_image.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/mixins/_image.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/mixins/_list-group.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/mixins/_list-group.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/mixins/_lists.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/mixins/_lists.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/mixins/_pagination.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/mixins/_pagination.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/mixins/_reset-text.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/mixins/_reset-text.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/mixins/_resize.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/mixins/_resize.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/mixins/_table-variants.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/mixins/_table-variants.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/mixins/_text-truncate.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/mixins/_text-truncate.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/mixins/_transition.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/mixins/_transition.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/mixins/_utilities.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/mixins/_utilities.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/mixins/_visually-hidden.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/mixins/_visually-hidden.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/utilities/_api.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/utilities/_api.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/bootstrap/scss/vendor/_rfs.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/scss/vendor/_rfs.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/flexbox/.npmignore",
+      "PackagePath": "staticwebassets/lib/flexbox/.npmignore"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/flexbox/LICENSE",
+      "PackagePath": "staticwebassets/lib/flexbox"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/flexbox/README.md",
+      "PackagePath": "staticwebassets/lib/flexbox/README.md"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/flexbox/bower.json",
+      "PackagePath": "staticwebassets/lib/flexbox/bower.json"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/flexbox/css/grid.css",
+      "PackagePath": "staticwebassets/lib/flexbox/css/grid.css"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/flexbox/css/grid.min.css",
+      "PackagePath": "staticwebassets/lib/flexbox/css/grid.min.css"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/flexbox/css/media-object.css",
+      "PackagePath": "staticwebassets/lib/flexbox/css/media-object.css"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/flexbox/css/media-object.min.css",
+      "PackagePath": "staticwebassets/lib/flexbox/css/media-object.min.css"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/flexbox/gulpfile.js",
+      "PackagePath": "staticwebassets/lib/flexbox/gulpfile.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/flexbox/package.json",
+      "PackagePath": "staticwebassets/lib/flexbox/package.json"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/flexbox/scss/grid.scss",
+      "PackagePath": "staticwebassets/lib/flexbox/scss/grid.scss"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/flexbox/scss/media-object.scss",
+      "PackagePath": "staticwebassets/lib/flexbox/scss/media-object.scss"
+    },
+    {
       "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
@@ -569,6 +1373,22 @@
       "PackagePath": "staticwebassets/lib/jquery-validation/package.json"
     },
     {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/AUTHORS.txt",
+      "PackagePath": "staticwebassets/lib/jquery/AUTHORS.txt"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/README.md",
+      "PackagePath": "staticwebassets/lib/jquery/README.md"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/bower.json",
+      "PackagePath": "staticwebassets/lib/jquery/bower.json"
+    },
+    {
       "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/dist/jquery.js",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
     },
@@ -591,6 +1411,466 @@
     {
       "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/dist/jquery.slim.min.map",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.map"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/package.json",
+      "PackagePath": "staticwebassets/lib/jquery/package.json"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/ajax.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/ajax.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/ajax/jsonp.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/ajax/jsonp.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/ajax/load.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/ajax/load.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/ajax/script.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/ajax/script.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/ajax/var/location.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/ajax/var/location.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/ajax/var/nonce.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/ajax/var/nonce.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/ajax/var/rquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/ajax/var/rquery.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/ajax/xhr.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/ajax/xhr.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/attributes.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/attributes.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/attributes/attr.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/attributes/attr.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/attributes/classes.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/attributes/classes.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/attributes/prop.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/attributes/prop.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/attributes/support.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/attributes/support.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/attributes/val.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/attributes/val.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/callbacks.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/callbacks.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/core.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/core.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/core/DOMEval.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/core/DOMEval.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/core/access.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/core/access.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/core/camelCase.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/core/camelCase.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/core/init.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/core/init.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/core/isAttached.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/core/isAttached.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/core/nodeName.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/core/nodeName.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/core/parseHTML.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/core/parseHTML.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/core/parseXML.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/core/parseXML.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/core/ready-no-deferred.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/core/ready-no-deferred.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/core/ready.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/core/ready.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/core/readyException.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/core/readyException.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/core/stripAndCollapse.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/core/stripAndCollapse.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/core/support.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/core/support.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/core/toType.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/core/toType.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/core/var/rhtml.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/core/var/rhtml.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/core/var/rsingleTag.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/core/var/rsingleTag.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/css.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/css.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/css/addGetHookIf.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/css/addGetHookIf.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/css/adjustCSS.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/css/adjustCSS.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/css/curCSS.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/css/curCSS.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/css/finalPropName.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/css/finalPropName.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/css/hiddenVisibleSelectors.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/css/hiddenVisibleSelectors.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/css/showHide.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/css/showHide.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/css/support.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/css/support.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/css/var/cssExpand.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/css/var/cssExpand.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/css/var/getStyles.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/css/var/getStyles.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/css/var/isHiddenWithinTree.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/css/var/isHiddenWithinTree.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/css/var/rboxStyle.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/css/var/rboxStyle.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/css/var/rcustomProp.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/css/var/rcustomProp.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/css/var/rnumnonpx.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/css/var/rnumnonpx.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/css/var/swap.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/css/var/swap.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/data.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/data.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/data/Data.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/data/Data.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/data/var/acceptData.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/data/var/acceptData.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/data/var/dataPriv.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/data/var/dataPriv.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/data/var/dataUser.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/data/var/dataUser.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/deferred.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/deferred.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/deferred/exceptionHook.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/deferred/exceptionHook.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/deprecated.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/deprecated.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/deprecated/ajax-event-alias.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/deprecated/ajax-event-alias.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/deprecated/event.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/deprecated/event.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/dimensions.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/dimensions.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/effects.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/effects.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/effects/Tween.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/effects/Tween.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/effects/animatedSelector.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/effects/animatedSelector.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/event.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/event.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/event/trigger.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/event/trigger.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/exports/amd.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/exports/amd.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/exports/global.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/exports/global.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/jquery.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/manipulation.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/manipulation.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/manipulation/_evalUrl.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/manipulation/_evalUrl.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/manipulation/buildFragment.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/manipulation/buildFragment.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/manipulation/getAll.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/manipulation/getAll.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/manipulation/setGlobalEval.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/manipulation/setGlobalEval.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/manipulation/support.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/manipulation/support.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/manipulation/var/rscriptType.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/manipulation/var/rscriptType.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/manipulation/var/rtagName.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/manipulation/var/rtagName.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/manipulation/wrapMap.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/manipulation/wrapMap.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/offset.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/offset.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/queue.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/queue.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/queue/delay.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/queue/delay.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/selector-native.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/selector-native.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/selector.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/selector.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/selector/contains.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/selector/contains.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/selector/escapeSelector.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/selector/escapeSelector.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/serialize.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/serialize.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/traversing.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/traversing.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/traversing/findFilter.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/traversing/findFilter.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/traversing/var/dir.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/traversing/var/dir.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/traversing/var/rneedsContext.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/traversing/var/rneedsContext.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/traversing/var/siblings.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/traversing/var/siblings.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/var/ObjectFunctionString.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/var/ObjectFunctionString.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/var/arr.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/var/arr.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/var/class2type.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/var/class2type.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/var/document.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/var/document.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/var/documentElement.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/var/documentElement.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/var/flat.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/var/flat.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/var/fnToString.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/var/fnToString.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/var/getProto.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/var/getProto.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/var/hasOwn.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/var/hasOwn.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/var/indexOf.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/var/indexOf.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/var/isFunction.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/var/isFunction.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/var/isWindow.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/var/isWindow.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/var/pnum.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/var/pnum.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/var/pop.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/var/pop.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/var/push.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/var/push.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/var/rcheckableType.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/var/rcheckableType.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/var/rcssNum.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/var/rcssNum.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/var/rnothtmlwhite.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/var/rnothtmlwhite.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/var/rtrimCSS.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/var/rtrimCSS.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/var/slice.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/var/slice.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/var/sort.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/var/sort.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/var/splice.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/var/splice.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/var/support.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/var/support.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/var/toString.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/var/toString.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/var/whitespace.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/var/whitespace.js"
+    },
+    {
+      "Id": "/home/saffron/repos/OpenERP/wwwroot/lib/jquery/src/wrap.js",
+      "PackagePath": "staticwebassets/lib/jquery/src/wrap.js"
     },
     {
       "Id": "/home/saffron/repos/OpenERP/wwwroot/media/Login-background.mp4",
