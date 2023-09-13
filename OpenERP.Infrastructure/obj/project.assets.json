@@ -6033,19 +6033,19 @@
     ]
   },
   "packageFolders": {
-    "/home/saffron/.nuget/packages/": {}
+    "/Users/saffron/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/saffron/repos/OpenERP/OpenERP.Infrastructure/OpenERP.Infrastructure.csproj",
+      "projectUniqueName": "/Users/saffron/repos/OpenERP/OpenERP.Infrastructure/OpenERP.Infrastructure.csproj",
       "projectName": "OpenERP.Infrastructure",
-      "projectPath": "/home/saffron/repos/OpenERP/OpenERP.Infrastructure/OpenERP.Infrastructure.csproj",
-      "packagesPath": "/home/saffron/.nuget/packages/",
-      "outputPath": "/home/saffron/repos/OpenERP/OpenERP.Infrastructure/obj/",
+      "projectPath": "/Users/saffron/repos/OpenERP/OpenERP.Infrastructure/OpenERP.Infrastructure.csproj",
+      "packagesPath": "/Users/saffron/.nuget/packages/",
+      "outputPath": "/Users/saffron/repos/OpenERP/OpenERP.Infrastructure/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/saffron/.nuget/NuGet/NuGet.Config"
+        "/Users/saffron/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -6057,8 +6057,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/home/saffron/repos/OpenERP/ErpDbContext/ErpDbContext.csproj": {
-              "projectPath": "/home/saffron/repos/OpenERP/ErpDbContext/ErpDbContext.csproj"
+            "/Users/saffron/repos/OpenERP/ErpDbContext/ErpDbContext.csproj": {
+              "projectPath": "/Users/saffron/repos/OpenERP/ErpDbContext/ErpDbContext.csproj"
             }
           }
         }
@@ -6126,7 +6126,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/7.0.105/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.401/RuntimeIdentifierGraph.json"
       }
     }
   }
