@@ -9,3 +9,4 @@ bin/Debug/
 OpenERP-binaries/
 OpenERP.Infrastructure/bin/
 OpenERP.Infrastructure/obj/
+Migrations/
