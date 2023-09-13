@@ -7,3 +7,5 @@ obj/
 obj/Debug/
 bin/Debug/
 OpenERP-binaries/
+OpenERP.Infrastructure/bin/
+OpenERP.Infrastructure/obj/
