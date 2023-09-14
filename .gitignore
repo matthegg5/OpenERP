@@ -10,3 +10,5 @@ OpenERP-binaries/
 OpenERP.Infrastructure/bin/
 OpenERP.Infrastructure/obj/
 Migrations/
+Tests/bin/
+Tests/obj/
