@@ -5,6 +5,7 @@ config.json
 ErpDbContext/obj/
 obj/
 obj/Debug/
+bin/
 bin/Debug/
 OpenERP-binaries/
 OpenERP.Infrastructure/bin/
