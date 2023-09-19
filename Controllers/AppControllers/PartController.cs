@@ -43,7 +43,7 @@ namespace OpenERP.Controllers.App
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult> CreatePart(Part part)  //(OpenERP.ViewModels.PartViewModel model)
+        public async Task<ActionResult> CreatePart(OpenERP.ViewModels.PartViewModel model)
         {
             try
             {
@@ -51,28 +51,29 @@ namespace OpenERP.Controllers.App
                 // the required values below doesn't change the IsValid value to true, (even though after the successful
                 // assignments, the model will be valid)
 
+                var newPart = new ErpDbContext.DataModel.Part();
+
                 //get company record for CompanyID    
                 //part.Company = _context.Companies.Where(c => c.CompanyId.Equals(part.CompanyId)).ToList().FirstOrDefault();
-                part.CompanyId = HttpContext.Session.GetObjectFromJson<string>("CurrentCompanyID");
 
-                HttpContext.Session.SetObjectAsJson("CurrentCompanyID", part.CompanyId);
+                HttpContext.Session.SetObjectAsJson("CurrentCompanyID", model.CompanyId);
 
-                part.Company = unitOfWork.CompanyRepository.GetByID(part.CompanyId);
-                
-                
+                newPart.Company = unitOfWork.CompanyRepository.GetByID(model.CompanyId);
                 //get UOM record for DefaultUOM string
-                part.Uom = unitOfWork.UomRepository.GetByID(part.DefaultUom);
+                newPart.Uom = unitOfWork.UomRepository.GetByID(model.CompanyId, model.DefaultUOM);
 
-                if (part.Company != null && part.Uom != null)
+                if (newPart.Company != null && newPart.Uom != null)
                 {
+                    newPart.PartNum = model.PartNum;
+                    newPart.PartDescription = model.PartDescription;
 
-                    unitOfWork.PartRepository.Add(part);
+                    unitOfWork.PartRepository.Add(newPart);
                     await unitOfWork.SaveChangesAsync();
                     return RedirectToAction("Part", "App");
                 }
                 else
                 {
-                    return BadRequest($"Failed to create Part {part.PartNum} - Company or UOM value invalid");
+                    return BadRequest($"Failed to create Part {model.PartNum} - Company or UOM value invalid");
                 }
 
 

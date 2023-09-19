@@ -46,7 +46,7 @@ namespace OpenERP.ErpDbContext.DataModel
                 user.CompanyList = "Test";
             }
 
-            var result = await _userManager.CreateAsync(user, "T0A55um3#");
+            var result = await _userManager.CreateAsync(user, "P455@w0rd!");
             if (result != IdentityResult.Success)
             {
                 throw new InvalidOperationException("Could not create new user");
