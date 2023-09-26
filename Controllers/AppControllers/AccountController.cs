@@ -31,7 +31,7 @@ namespace OpenERP.Controllers.App
             this._companyRepository = companyRepository;
         }
 
-        public IActionResult Login()
+        public async Task<ActionResult> Login()
         {
             if (this.User.Identity.IsAuthenticated)
             {
@@ -72,7 +72,7 @@ namespace OpenERP.Controllers.App
         }
 
         [HttpPost]
-        public IActionResult SessionProperties(SessionPropertiesViewModel model)
+        public async Task<ActionResult> SessionProperties(SessionPropertiesViewModel model)
         {
 
             if (ModelState.IsValid)

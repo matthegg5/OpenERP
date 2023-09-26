@@ -25,7 +25,7 @@ namespace OpenERP.Controllers.App
         }
 
         [HttpGet]
-        public IActionResult Part()
+        public async Task<ActionResult> Part()
         {
             //var companyID = HttpContext.Session.GetObjectFromJson<String>("CurrentCompanyID");
             //above de-serializes so we want this data to persist so needs reset

@@ -13,7 +13,7 @@ namespace OpenERP.Controllers.App
         public AppController()
         {
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         { 
             var companyID = HttpContext.Session.GetString("CurrentCompanyID");
             if (!String.IsNullOrEmpty(companyID))
@@ -24,13 +24,13 @@ namespace OpenERP.Controllers.App
         }
 
         [HttpGet("contact")]
-        public IActionResult Contact() //name of IAction needs to match the name of the .cshtml file
+        public async Task<ActionResult> Contact() //name of IAction needs to match the name of the .cshtml file
         {
             return View();
         }
 
         [HttpPost("contact")]
-        public IActionResult Contact(ContactViewModel model)
+        public async Task<IActionResult> Contact(ContactViewModel model)
         {
             if (ModelState.IsValid)
             {
@@ -43,7 +43,7 @@ namespace OpenERP.Controllers.App
             return View();
         }
 
-        public IActionResult About()
+        public async Task<ActionResult> About()
         {
             ViewBag.Title = "OpenERP - About the project";
             return View();
