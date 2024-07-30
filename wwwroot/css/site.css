@@ -54,6 +54,14 @@ header .logo
     list-style-type:none;
 }
 
+#grid {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
 #loginToggle {
     cursor:pointer; 
 }

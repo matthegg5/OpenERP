@@ -29,6 +29,12 @@ namespace OpenERP.Controllers.App
             return View();
         }
 
+        [HttpGet("Games")]
+        public async Task<ActionResult> Games() //name of IAction needs to match the name of the .cshtml file
+        {
+            return View();
+        }
+
         [HttpPost("contact")]
         public async Task<IActionResult> Contact(ContactViewModel model)
         {

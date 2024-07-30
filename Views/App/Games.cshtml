@@ -1,0 +1,29 @@
+@model ContactViewModel
+@{
+    ViewBag.Title="OpenERP - Javascript Games";
+}
+@section Scripts {
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/css/login.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+</head>    
+<body>
+    <section class="showcase">
+    <header>
+        <h2 class="logo">Javascript Games</h2>
+        <div class="toggle"></div>
+    </header>
+    <div class="col-md-6 offset-md-3">
+        <div class="card card-body bg-light">
+        <h3 class="logo">Score: <span id="result"></span></h3>
+            <div id="grid"></div>
+            <script src="~/js/memorygame.js" charset="utf-8"></script>
+        </div>
+    </section>
+</body>
+</html>
