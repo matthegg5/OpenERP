@@ -5,6 +5,7 @@
 <html>
 <head>
     <link href="~/css/site.css" rel="stylesheet" />
+    @RenderSection("head",false)
 </head>    
 <body>
     @RenderBody()
@@ -20,8 +21,8 @@
             <li><a asp-controller="Account" asp-action="Login">Login</a></li>
         }    
         <li><a asp-controller="App" asp-action="Part">Part</a></li>
-        <li><a asp-controller="App" asp-action="Contact">Contact</a></li>
-        <li><a asp-contoller="App" asp-action="About">About Us</a></li>
+        <li><a asp-controller="App" asp-action="Games">Games</a></li>
+        <li><a asp-controller="App" asp-action="About">About Us</a></li>
       </ul>
   </div>  
     <script src="~/js/menu.js"></script>
