@@ -79,21 +79,25 @@ function checkmatch() {
         cards[optionTwoId].setAttribute('src', 'media/memorygame/blank.png')
     }
 
-    //check for a match here
-    if(cardsChosen[0] == cardsChosen[1])
-    {
-        alert('Match!')
-        cards[optionOneId].setAttribute('src', 'media/memorygame/white.png') //set the matched cards to white
-        cards[optionTwoId].setAttribute('src', 'media/memorygame/white.png')
-        cards[optionOneId].removeEventListener('click', flipCard)
-        cards[optionTwoId].removeEventListener('click', flipCard)
-        cardsWon.push(cardsChosen)
-
-    } else {
-        cards[optionOneId].setAttribute('src', 'media/memorygame/blank.png') //set the matched cards to white
-        cards[optionTwoId].setAttribute('src', 'media/memorygame/blank.png')
-        alert('No match!')
+    else {
+        //check for a match here
+        if(cardsChosen[0] == cardsChosen[1])
+        {
+            alert('Match!')
+            cards[optionOneId].setAttribute('src', 'media/memorygame/white.png') //set the matched cards to white
+            cards[optionTwoId].setAttribute('src', 'media/memorygame/white.png')
+            cards[optionOneId].removeEventListener('click', flipCard)
+            cards[optionTwoId].removeEventListener('click', flipCard)
+            cardsWon.push(cardsChosen)
+    
+        } else {
+            cards[optionOneId].setAttribute('src', 'media/memorygame/blank.png') //set the matched cards to white
+            cards[optionTwoId].setAttribute('src', 'media/memorygame/blank.png')
+            alert('No match!')
+        }
     }
+
+
     resultDisplay.textContent = cardsWon.length
     cardsChosen = [] //reset array
     cardsChosenIds = [] //reset array
